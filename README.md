@@ -24,6 +24,7 @@ Download this repository using GitHub's **Code → Download ZIP**, extract it, a
 - **Methods:** choose among 30 analytical methods with evidence requirements and common mistakes.
 - **My study:** choose a protocol, add claims and citations, check the evidence structure, save a local draft, and export JSON/Markdown.
 - **Coverage:** see which branches have selected studies and which still contain only research requirements.
+- **Organizations:** build requirements for solo operators, micro/small businesses, growing organizations, large enterprises and major public institutions. Combine 12 organization types with critical-service and sensitive-data flags; export an assessment with evidence needs, deliverables and acceptance checks.
 
 English/Nepali navigation labels are available; source text is not automatically translated. Drafts saved in the browser stay in that browser. Download JSON for a portable backup. The interface has no analytics, account connections, automatic source retrieval or network API requests. External source links open only when you choose them.
 
@@ -43,6 +44,20 @@ python3 skills/dharma-os/scripts/research.py report qr-growth
 The local helper needs Python 3.10+, no extra packages, no API key and no account connection. It reads the bundled snapshot; live research requires your agent's own available tools.
 
 ## Complete a real workflow
+
+### From small industry to major institutions
+
+Use **Organizations** in the browser, or:
+
+```bash
+python3 skills/dharma-os/scripts/organizations.py profiles
+python3 skills/dharma-os/scripts/organizations.py assess --scale micro --type manufacturing --format markdown
+python3 skills/dharma-os/scripts/organizations.py assess --scale enterprise --type software --critical --sensitive-data
+```
+
+Six scale profiles combine with repair, retail/distribution, manufacturing, software/IT, education, health, finance/cooperatives, government, NGOs, hospitality, agriculture and research organizations. Sixteen requirement areas address workflow, cost, identity, backup, power/connectivity, records, training, support, procurement, integration, security/privacy, continuity, governance, delivery, people and measurement.
+
+Each assessment starts **NOT_ASSESSED**, with evidence to collect, expected deliverables and acceptance tests. Criticality and sensitive data can deepen requirements at any size. These are authored assessment frameworks, not verified audits, legal enterprise-size definitions or proof of regulatory compliance. Nepal remains the geographic scope. Relevant professional and current regulatory evidence must be obtained for the actual organization.
 
 **Student:** choose `student-thesis`, establish the question and sample, build a literature/evidence matrix, and export a study for supervisor review. Your institution's ethics, academic-integrity and thesis-format requirements still apply.
 

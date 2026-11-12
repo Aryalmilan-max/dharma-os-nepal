@@ -172,6 +172,7 @@ def main():
                                  distinct_measurements=52, desk_studies=len(studies), protocols=len(data['templates']),
                                  domains_with_linked_desk_study=len({d for s in studies for d in s['domain_ids']}),
                                  observation_source_check=CHECKED, independent_academic_peer_review=False)
+    coverage['organization_assessment'] = dict(scale_profiles=6, organization_types=12, requirement_areas=16, status='AUTHORED_GUIDANCE_NOT_ORGANIZATION_AUDITS')
     dump(REF / 'coverage.json', coverage)
     provenance = json.loads((REPO / 'sources/provenance.json').read_text())
     provenance['workbench'] = data['provenance']
@@ -180,7 +181,7 @@ def main():
             item['verification_date'] = CHECKED
     dump(REPO / 'sources/provenance.json', provenance)
     # One generated browser catalog; script tags escaped for safe local rendering.
-    catalog = dict(data, domains=research.read('domains.json'), sources=registry,
+    catalog = dict(data, organization_needs=research.read('organization-needs.json'), domains=research.read('domains.json'), sources=registry,
                    methods=research.read('principles-and-methods.json')['methods'], aliases=research.ALIASES,
                    coverage=coverage)
     (REPO / 'web').mkdir(exist_ok=True)
