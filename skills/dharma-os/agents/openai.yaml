@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dharma OS"
+  short_description: "Nepal technology-business research and evidence workflows"
+  default_prompt: "Use $dharma-os to investigate this Nepal technology-business question with the relevant domain, locality, sources, and explicit evidence gaps."

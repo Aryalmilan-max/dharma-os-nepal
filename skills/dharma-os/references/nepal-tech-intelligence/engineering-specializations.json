@@ -1,0 +1,922 @@
+[
+  {
+    "id": "networking-telecom",
+    "leaves": [
+      {
+        "topic": "Terrain-aware link budgets",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "FTTH/PON access design",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Structured copper/fibre cabling",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "LAN/VLAN/routing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Wi-Fi density and roaming",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Microwave/radio licensing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "ISP/backhaul diversity",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "QoS and SLA measurement",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Remote network monitoring",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Rural last-mile maintainability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "software-engineering",
+    "leaves": [
+      {
+        "topic": "Requirements and acceptance",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "API and interoperability contracts",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Web/mobile/offline design",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Nepali Unicode and localization",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Bikram Sambat/timezone handling",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Automated testing and regression",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Release and rollback",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Software licensing and source custody",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "data-engineering",
+    "leaves": [
+      {
+        "topic": "Data dictionary and ownership",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Relational modelling",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "ETL/OCR provenance",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Deduplication and entity resolution",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Retention and backups",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Data quality and missingness",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Access-controlled analytics",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Reproducible reporting",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "ai-and-automation",
+    "leaves": [
+      {
+        "topic": "Nepali-language evaluation",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "OCR accuracy on local documents",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "RAG source attribution",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Human review thresholds",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Model cost/latency tradeoffs",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Prompt-injection boundaries",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Task-specific benchmark design",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Automation idempotency and failure handling",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "leaves": [
+      {
+        "topic": "Asset and data inventories",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Identity/MFA/least privilege",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Network segmentation",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Secure configurations and patching",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Application security testing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Backup recovery drills",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Incident response",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Supplier/cloud risk",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "PKI and digital signatures",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Privacy and consent",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "cloud-datacenter",
+    "leaves": [
+      {
+        "topic": "Workload sizing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Virtualization/container operations",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Storage redundancy",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Power/cooling capacity",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Disaster recovery geography",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Monitoring and observability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Cloud exit and portability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Data custody and authorized hosting",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "end-user-hardware",
+    "leaves": [
+      {
+        "topic": "Exact-model comparisons",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "CPU/memory/storage sizing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Device fleet provisioning",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "OS and software entitlement",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Warranty and serviceability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Repair/spares lifecycle",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Printer duty and consumable costs",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "E-waste and secure disposal",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "education-technology",
+    "leaves": [
+      {
+        "topic": "School baseline/needs assessment",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Computer/science/TVET labs",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Interactive display usability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Classroom connectivity",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Teacher enablement",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Accessible learning materials",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Content/license ownership",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Education data integration",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "power-and-resilience",
+    "leaves": [
+      {
+        "topic": "UPS load/autonomy sizing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Battery chemistry and lifecycle",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Solar PV and controller sizing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Earthing and surge protection",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Lightning/environmental protection",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Cable protection and fire safety",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Power quality measurement",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Critical-load continuity",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "electronics-iot",
+    "leaves": [
+      {
+        "topic": "Sensor calibration",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Low-power communications",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Edge device security",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Enclosures/weatherproofing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Telemetry data quality",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Remote firmware updates",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Instrumentation maintenance",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Interoperability and gateways",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "physical-security",
+    "leaves": [
+      {
+        "topic": "CCTV lens/FOV planning",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Retention/bitrate/storage",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "PoE and network separation",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Access-control architecture",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Biometric data handling",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Alarm/intrusion integration",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Evidence export chain",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Site lighting and acceptance tests",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "av-and-interactive",
+    "leaves": [
+      {
+        "topic": "Display visibility and placement",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Audio coverage and feedback",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Conference/video meeting rooms",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Accessibility and captions",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Touch/input/annotation workflows",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Content casting interoperability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Cable/interface compatibility",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Operator training and maintainability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "digital-government",
+    "leaves": [
+      {
+        "topic": "Citizen service journeys",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Government enterprise architecture",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Interagency interoperability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Records/document management",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Revenue and service integration",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Public information accessibility",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Role separation and audit logs",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Vendor handover and continuity",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "gis-geomatics",
+    "leaves": [
+      {
+        "topic": "Administrative-code matching",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Coordinate systems and accuracy",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Asset mapping",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Remote sensing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Survey/GNSS data provenance",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Municipal spatial layers",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Hazard-aware infrastructure planning",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Geospatial licensing and privacy",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "health-technology",
+    "leaves": [
+      {
+        "topic": "Health-system interoperability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Clinical workflow requirements",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Patient identity matching",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Authorized health-data processing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Hospital LAN/Wi-Fi uptime",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Medical device interfaces",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Disaster recovery",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Usability and operational support",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "fintech-payments",
+    "leaves": [
+      {
+        "topic": "PSO/PSP license verification",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Merchant integration contracts",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Reconciliation and settlement",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Fraud monitoring",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Payment availability/dependency risk",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Key and certificate handling",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Transaction auditability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Financial user privacy",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "accessibility-localization",
+    "leaves": [
+      {
+        "topic": "Nepali scripts/fonts/input",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Local-language content workflows",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Screen reader/keyboard access",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Low-bandwidth and offline usability",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Disability-inclusive physical setup",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Plain-language support",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Time/date/number formats",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Inclusive field testing",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "quality-delivery-maintenance",
+    "leaves": [
+      {
+        "topic": "Survey and as-built documentation",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Installation quality checks",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Factory/site acceptance",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Configuration and credential handover",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Service response and escalation",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Preventive maintenance",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Spares and end-of-life planning",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Measured outcomes and lessons",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "industrial-automation",
+    "leaves": [
+      {
+        "topic": "PLC/SCADA interfaces",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "OT network segmentation",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Machine/sensor integration",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Safety interlocks and authorized design",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Process instrumentation",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Remote operational constraints",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Retrofit compatibility",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Maintenance skills and spares",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  },
+  {
+    "id": "research-professional-practice",
+    "leaves": [
+      {
+        "topic": "Engineering registration checks",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Local experimental evidence",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Technical education curricula",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "University/research collaboration",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Standards edition tracking",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Product qualification methods",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Technology-transfer feasibility",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      },
+      {
+        "topic": "Professional responsibility and sign-off",
+        "knowledge_status": "RESEARCH_REQUIREMENT",
+        "scope": "Apply to Nepal technology business/project with local evidence; this is a research taxonomy, not a verified factual claim."
+      }
+    ]
+  }
+]

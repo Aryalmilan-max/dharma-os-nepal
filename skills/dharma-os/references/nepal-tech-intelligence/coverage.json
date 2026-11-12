@@ -1,0 +1,36 @@
+{
+  "edition": "public-portable",
+  "prepared_date": "2026-11-12",
+  "source_snapshot_date": "2026-11-11",
+  "packaged": {
+    "domains": 60,
+    "core_research_topics": 600,
+    "engineering_specialization_topics": 164,
+    "principles_and_methods": 30,
+    "source_records": 119,
+    "unique_source_urls": 117,
+    "statistical_observations": 10,
+    "checked_publisher_records": 37
+  },
+  "research_snapshot_not_bundled": {
+    "local_levels": 753,
+    "online_raw_domain_candidates": 5864,
+    "newspaper_register_rows": 8050,
+    "fm_register_rows": 749
+  },
+  "data_policy": "Bulk locality/media-register extracts and original PDFs are not distributed. Obtain data from its publisher under applicable terms and validate before use. Source metadata, original annotations and a small attributed numerical sample are provided.",
+  "municipal_media_coverage_validated": false,
+  "continuous_monitoring_deployed": false,
+  "complete_sector_coverage": false,
+  "remaining_gaps": [
+    "Current municipal website/contact directory",
+    "Ward-level current sources and institution registers",
+    "Every locality budget/plan/ICT record and media mapping",
+    "Active status and technology relevance of registry candidates",
+    "FM font-artifact correction and registration extraction gaps",
+    "Further provincial datasets, sector statistics and measured market/HR/engineering evidence",
+    "Article corpus and monitored feed coverage",
+    "Unlisted/new/unregistered media and broadcasts without text archives",
+    "Source-by-source legal status, dates, amendments and technical verification"
+  ]
+}

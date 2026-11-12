@@ -1,0 +1,722 @@
+{
+  "prepared_date": "2026-11-12",
+  "source_verification_snapshot": "2026-11-11",
+  "selection": "Authored domain tree, research methods and annotations; attributed small numerical sample and selected publisher check metadata. No bulk registers or original source PDFs.",
+  "third_party_rights": "Referenced source material retains its original rights and terms. This metadata is not a redistribution license for underlying works.",
+  "sources": [
+    {
+      "id": "NP-BIZ-NSO-CENSUS-LOCAL",
+      "publisher": "National Statistics Office",
+      "url": "https://censusresults.nsonepal.gov.np/local-level",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NSO-NLSS4",
+      "publisher": "National Statistics Office",
+      "url": "https://microdata.nsonepal.gov.np/index.php/catalog/149",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NSO-ECON-CENSUS",
+      "publisher": "National Statistics Office",
+      "url": "https://data.nsonepal.gov.np/en/dataset/nepal-economic-census-2018",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NSO-LABOUR",
+      "publisher": "National Statistics Office",
+      "url": "https://microdata.nsonepal.gov.np/index.php/catalog/88/study-description",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NSO-DATA-CATALOG",
+      "publisher": "National Statistics Office",
+      "url": "https://data.nsonepal.gov.np/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NRB-MACRO",
+      "publisher": "Nepal Rastra Bank",
+      "url": "https://www.nrb.org.np/category/current-macroeconomic-situation/current-macroeconomic-situation-engl/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NRB-PAYMENTS",
+      "publisher": "Nepal Rastra Bank",
+      "url": "https://www.nrb.org.np/category/indicators/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NRB-FIN-INCLUSION",
+      "publisher": "Nepal Rastra Bank",
+      "url": "https://www.nrb.org.np/departments/ficpd/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NRB-FOREX",
+      "publisher": "Nepal Rastra Bank",
+      "url": "https://www.nrb.org.np/forex/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NRB-MONETARY",
+      "publisher": "Nepal Rastra Bank",
+      "url": "https://www.nrb.org.np/category/monetary-policy/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-MOF-SURVEY",
+      "publisher": "Ministry of Finance",
+      "url": "https://mof.gov.np/category/economic-survey/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-MOF-BUDGET-8384",
+      "publisher": "Ministry of Finance",
+      "url": "https://mof.gov.np/content/1741/budget8384/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-FCGO-CONSOLIDATED",
+      "publisher": "Financial Comptroller General Office",
+      "url": "https://fcgo.gov.np/category/consolidated-us/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NNRFC-TRANSFERS",
+      "publisher": "National Natural Resources and Fiscal Commission",
+      "url": "https://nnrfc.gov.np/pages/important-information/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NPC-16PLAN",
+      "publisher": "National Planning Commission",
+      "url": "https://www.npc.gov.np/content/6462/the-sixteenth-plan--fical-year-2024-25-2028-29-/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-OCR-REGISTRATION",
+      "publisher": "Office of Company Registrar",
+      "url": "https://ocr.gov.np/pages/registration/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-IRD-ACTS",
+      "publisher": "Inland Revenue Department",
+      "url": "https://ird.gov.np/category/acts/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-SSF-LAW",
+      "publisher": "Social Security Fund",
+      "url": "https://ssf.gov.np/list/act_regulation",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-DOL-LABOUR-ACT",
+      "publisher": "Department of Labour and Occupational Safety",
+      "url": "https://dol.gov.np/public/files/612024693-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A4%AE%20%E0%A4%90%E0%A4%A8%20%E0%A5%A8%E0%A5%A6%E0%A5%AD%E0%A5%AA.pdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-IEDI-STARTUP",
+      "publisher": "Industrial Enterprise Development Institute",
+      "url": "https://iedi.gov.np/downloads",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-DOI-INDUSTRY-STATS",
+      "publisher": "Department of Industry",
+      "url": "https://www.doind.gov.np/industrial-statistics",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-DOI-IP",
+      "publisher": "Department of Industry",
+      "url": "https://doind.gov.np/industrial-property-section",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NNSW-TARIFF",
+      "publisher": "Government of Nepal / Department of Customs",
+      "url": "https://nnsw.gov.np/trade/customs/tariff/search",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-PPMO-GOODS",
+      "publisher": "Public Procurement Monitoring Office",
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-PPMO-EGP",
+      "publisher": "Public Procurement Monitoring Office",
+      "url": "https://bolpatra.gov.np/egp/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-TEPC-TRADE",
+      "publisher": "Trade and Export Promotion Centre",
+      "url": "https://www.tepc.gov.np/pages/tepc-publication",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-MOICS-POLICY",
+      "publisher": "Ministry of Industry, Commerce and Supplies",
+      "url": "https://www.moics.gov.np/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NBSM-STANDARDS",
+      "publisher": "Nepal Bureau of Standards and Metrology",
+      "url": "https://www.nbsm.gov.np/en/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-DCSCP-CONSUMER",
+      "publisher": "Department of Commerce, Supplies and Consumer Protection",
+      "url": "https://www.doc.gov.np/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-IIDS-IT-EXPORT",
+      "publisher": "Institute for Integrated Development Studies",
+      "url": "https://iids.org.np/wp-content/uploads/2025/02/unleashing.pdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-TU-BBS-CURRICULUM",
+      "publisher": "Tribhuvan University Faculty of Management",
+      "url": "https://fomecd.edu.np/cms/dhurbas/BBS%20Curriculum%20with%20First%20Year%20Course%202019%20with%20Notice%201.pdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-TU-BBA-ENTREPRENEURSHIP",
+      "publisher": "Tribhuvan University Faculty of Management",
+      "url": "https://fomecd.edu.np/cms/syllabuses/BBA%206th%20Semester%20Syllabus%202024-2.pdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-TU-BBA-LOCAL",
+      "publisher": "Tribhuvan University Degree Campus",
+      "url": "https://degreecampus.tu.edu.np/courses/963",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-TU-MBS-CURRICULUM",
+      "publisher": "Tribhuvan University Faculty of Management",
+      "url": "https://www.fomecd.edu.np/syllabuses/MBS_semester2071_72%20%283rd%20batch%20onwards%29.pdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "publisher": "Nepal Rastra Bank, Payment Systems Department",
+      "url": "https://www.nrb.org.np/psd/payment-systems-indicators-of-2083-bhadra/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nso-census-local-directory",
+      "publisher": "National Statistics Office",
+      "url": "https://censusresults.nsonepal.gov.np/local-level",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nso-local-codes",
+      "publisher": "National Statistics Office",
+      "url": "https://ec.nsonepal.gov.np/html/admin_code.html",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-mofaga-local-contact",
+      "publisher": "Ministry of Federal Affairs and General Administration",
+      "url": "https://www.mofaga.gov.np/local-contact",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-mis-dashboard",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/misreport",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-mis-pdf",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/mispdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-license",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/license",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-spectrum",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/page/spectrum",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-type-approval",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/page/standardization",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-qos",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/page/quality-of-service",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-cyber-advisories",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/cyber-security-advisor",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-rtdf",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/page/nta-rtdf-progress",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nta-procedures",
+      "publisher": "Nepal Telecommunications Authority",
+      "url": "https://nta.gov.np/page/procedure",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-national-cyber-policy",
+      "publisher": "Ministry of Information and Communication",
+      "url": "https://moic.gov.np/content/7119/7119-national-cyber-security-policy/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-digital-nepal-framework",
+      "publisher": "Government of Nepal / communications and IT ministry",
+      "url": "https://giwmscdnone.gov.np/media/pdf_upload/digital_nepal_framework_english_matgc8r.pdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-gea",
+      "publisher": "Information Technology and Digital Governance Office",
+      "url": "https://doit.gov.np/pages/16261196/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nea-draft",
+      "publisher": "ITDGO via Nepal Government Portal",
+      "url": "https://nepal.gov.np/updates/4adc4596-665c-4fff-8a87-2d15a4851e12",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nbsm-electrical-ict",
+      "publisher": "Nepal Bureau of Standards and Metrology",
+      "url": "https://www.nbsm.gov.np/uploads/files/Electrical-PDF.pdf",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-aepc-solar-standards",
+      "publisher": "Alternative Energy Promotion Centre",
+      "url": "https://www.aepc.gov.np/sections/solar/technical-standards",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-aepc-solar-irrigation",
+      "publisher": "Alternative Energy Promotion Centre",
+      "url": "https://aepc.gov.np/doc/technical-criteria-for-solar-irrigation-systems",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nec",
+      "publisher": "Nepal Engineering Council",
+      "url": "https://www.nec.gov.np/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-ctevt-it-curriculum",
+      "publisher": "Council for Technical Education and Vocational Training",
+      "url": "https://ctevt.org.np/curriculum/diplomapcl/information%20technology",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-ctevt-school-minimums",
+      "publisher": "Council for Technical Education and Vocational Training",
+      "url": "https://seecs.ctevt.org.np/documents/minimum-requirement-for-technical-schools",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-iemis",
+      "publisher": "Department of Education / CEHRD",
+      "url": "https://emis.cehrd.gov.np/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nrb-payment-indicators",
+      "publisher": "Nepal Rastra Bank",
+      "url": "https://www.nrb.org.np/category/indicators/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nrb-payment-licensed",
+      "publisher": "Nepal Rastra Bank",
+      "url": "https://www.nrb.org.np/departments/psd",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-dhm-data",
+      "publisher": "Department of Hydrology and Meteorology",
+      "url": "https://dhm.gov.np/pages/data",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-bipad-risk",
+      "publisher": "Government of Nepal / NDRRMA",
+      "url": "https://bipadportal.gov.np/risk-info/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-national-geoportal",
+      "publisher": "Department of Survey",
+      "url": "https://www.nationalgeoportal.gov.np/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-health-interoperability",
+      "publisher": "Ministry of Health and Population",
+      "url": "https://digitalhealth.mohp.gov.np/sil-nepal/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-occ-digital-signature",
+      "publisher": "Office of Controller of Certification",
+      "url": "https://occ.gov.np/pages/digital-signature/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-dudbc-building-codes",
+      "publisher": "Department of Urban Development and Building Construction",
+      "url": "https://dudbc.gov.np/pages/building-code/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "eng-nast-research",
+      "publisher": "Nepal Academy of Science and Technology",
+      "url": "https://www.nast.gov.np/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-001",
+      "publisher": "TechPana",
+      "url": "https://techpana.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-002",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-003",
+      "publisher": "Technology Khabar",
+      "url": "https://www.technologykhabar.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-004",
+      "publisher": "ICT Byte",
+      "url": "https://ictbyte.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-005",
+      "publisher": "Onlinekhabar",
+      "url": "https://www.onlinekhabar.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-006",
+      "publisher": "Kantipur",
+      "url": "https://ekantipur.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-007",
+      "publisher": "The Kathmandu Post",
+      "url": "https://kathmandupost.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-008",
+      "publisher": "Setopati",
+      "url": "https://www.setopati.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-009",
+      "publisher": "Ratopati",
+      "url": "https://www.ratopati.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-010",
+      "publisher": "Gorkhapatra",
+      "url": "https://gorkhapatraonline.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-011",
+      "publisher": "The Rising Nepal",
+      "url": "https://risingnepaldaily.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-012",
+      "publisher": "Bizmandu",
+      "url": "https://bizmandu.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-013",
+      "publisher": "Clickmandu",
+      "url": "https://clickmandu.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-014",
+      "publisher": "Karobar Daily",
+      "url": "https://www.karobardaily.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-015",
+      "publisher": "New Business Age",
+      "url": "https://www.newbusinessage.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-016",
+      "publisher": "ShareSansar",
+      "url": "https://www.sharesansar.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-017",
+      "publisher": "Blast Khabar",
+      "url": "https://www.blastkhabar.com/about-us",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-018",
+      "publisher": "Our Biratnagar",
+      "url": "https://ourbiratnagar.net/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-019",
+      "publisher": "Pradesh Portal",
+      "url": "https://www.pradeshportal.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-020",
+      "publisher": "Udghosh Daily",
+      "url": "https://udghoshdaily.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-021",
+      "publisher": "Janakpur Today",
+      "url": "https://ejanakpurtoday.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-022",
+      "publisher": "Janakpur News",
+      "url": "https://janakpurnews.com/aboutus/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-023",
+      "publisher": "Madheshvani",
+      "url": "https://madheshvani.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-024",
+      "publisher": "Ganthan",
+      "url": "https://ganthan.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-025",
+      "publisher": "Adarsha Samaj",
+      "url": "https://www.eadarsha.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-026",
+      "publisher": "Samadhan News",
+      "url": "https://www.samadhannews.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-027",
+      "publisher": "Butwal Today",
+      "url": "https://butwaltoday.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-028",
+      "publisher": "Khabar Patro",
+      "url": "https://khabarpatro.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-029",
+      "publisher": "Khabar Patra",
+      "url": "https://ekhabarpatra.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-030",
+      "publisher": "Nepalgunj Daily",
+      "url": "https://nepalgunjnews.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-031",
+      "publisher": "Tulsipur Online",
+      "url": "https://tulsipuronline.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-032",
+      "publisher": "Sajha Bisaunee",
+      "url": "https://sajhabisaunee.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-033",
+      "publisher": "Yug Aahwan",
+      "url": "https://www.yugnews.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-034",
+      "publisher": "Karnali Khabar",
+      "url": "https://karnalikhabar.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-035",
+      "publisher": "Dinesh Khabar",
+      "url": "https://dineshkhabar.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-036",
+      "publisher": "Paschim Today",
+      "url": "https://www.paschimtoday.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-OUT-037",
+      "publisher": "Anumodan Khabar",
+      "url": "https://anumodankhabar.com/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-REG-PCN-ONLINE",
+      "publisher": "Press Council Nepal",
+      "url": "https://www.presscouncilnepal.gov.np/np/services/registered-online-media/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-REG-DOIB-ONLINE",
+      "publisher": "Department of Information and Broadcasting",
+      "url": "https://www.doib.gov.np/content/13251/details-of-online-media-registered-in-information/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-REG-DOIB-PRINT",
+      "publisher": "Department of Information and Broadcasting",
+      "url": "https://www.doib.gov.np/content/13197/2082-records-registered-magazines-registered-up-to/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-REG-DOIB-FM",
+      "publisher": "Department of Information and Broadcasting",
+      "url": "https://www.doib.gov.np/content/13144/f-m-records-to-the-license-of-radio/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-TECH-PROVINCE-KOSHI",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/category/koshi/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-TECH-PROVINCE-MADHESH",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/category/madhesh",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-TECH-PROVINCE-BAGMATI",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/category/bagmati",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-TECH-PROVINCE-GANDAKI",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/category/gandaki",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-TECH-PROVINCE-LUMBINI",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/category/lumbini",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-TECH-PROVINCE-KARNALI",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/category/karnali",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-TECH-PROVINCE-SUDURPASHCHIM",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/category/sudurpaschim",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-ARTICLE-ARUN-IT",
+      "publisher": "Technology Khabar",
+      "url": "https://www.technologykhabar.com/2026/11/11/260198/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-ARTICLE-THANGPAL-DIGITAL",
+      "publisher": "ICT Samachar",
+      "url": "https://ictsamachar.com/news/deusibhailo--more-than-1-7-million-support-was/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-ARTICLE-ICT-LAB",
+      "publisher": "Butwal Today",
+      "url": "https://butwaltoday.com/2026/10/25/information-technology-laboratory/",
+      "verification_date": "2026-11-11"
+    },
+    {
+      "id": "MEDIA-ARTICLE-DIGITAL-LUMBINI",
+      "publisher": "Butwal Today",
+      "url": "https://butwaltoday.com/2026/06/28/digital-lumbini-concept/",
+      "verification_date": "2026-11-11"
+    }
+  ]
+}

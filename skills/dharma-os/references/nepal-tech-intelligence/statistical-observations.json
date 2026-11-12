@@ -1,0 +1,108 @@
+{
+  "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+  "source_url": "https://www.nrb.org.np/psd/payment-systems-indicators-of-2083-bhadra/",
+  "page": 1,
+  "geography": "Nepal national",
+  "reference_periods": {
+    "stock": "Mid-Sept 2026 (2083 Bhadra)",
+    "flow": "Mid-Aug 2026 to mid-Sept 2026 (2083 Bhadra)"
+  },
+  "source_index_publication_date": "2026-10-26",
+  "verification_date": "2026-11-11",
+  "method": "Text extraction cross-checked against rendered source table; original units preserved.",
+  "caveats": [
+    "Counts are not unique people.",
+    "E-commerce means online card payments.",
+    "No municipal breakdown; not complete sector statistics."
+  ],
+  "columns": [
+    "id",
+    "indicator",
+    "value",
+    "unit",
+    "table_row",
+    "period_type"
+  ],
+  "observations": [
+    [
+      "NP-OBS-PS-2083-05-001",
+      "Payment system operators, excluding BFIs",
+      8,
+      "number",
+      "A1",
+      "stock"
+    ],
+    [
+      "NP-OBS-PS-2083-05-002",
+      "Payment service providers, excluding BFIs",
+      19,
+      "number",
+      "A2",
+      "stock"
+    ],
+    [
+      "NP-OBS-PS-2083-05-003",
+      "Wallet",
+      28150508,
+      "number",
+      "A4",
+      "stock"
+    ],
+    [
+      "NP-OBS-PS-2083-05-004",
+      "ATM machines",
+      5098,
+      "number",
+      "A5",
+      "stock"
+    ],
+    [
+      "NP-OBS-PS-2083-05-005",
+      "Mobile banking",
+      30473251,
+      "number",
+      "A9",
+      "stock"
+    ],
+    [
+      "NP-OBS-PS-2083-05-006",
+      "Internet banking",
+      2515803,
+      "number",
+      "A10",
+      "stock"
+    ],
+    [
+      "NP-OBS-PS-2083-05-007",
+      "QR payments",
+      75581982,
+      "transactions",
+      "B13",
+      "flow"
+    ],
+    [
+      "NP-OBS-PS-2083-05-008",
+      "QR payments amount",
+      167933,
+      "NPR million",
+      "B13",
+      "flow"
+    ],
+    [
+      "NP-OBS-PS-2083-05-009",
+      "Card e-commerce",
+      244488,
+      "transactions",
+      "B15",
+      "flow"
+    ],
+    [
+      "NP-OBS-PS-2083-05-010",
+      "Card e-commerce amount",
+      2485,
+      "NPR million",
+      "B15",
+      "flow"
+    ]
+  ]
+}
