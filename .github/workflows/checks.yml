@@ -21,9 +21,12 @@ jobs:
       - run: node --check web/assessment.js
       - run: node tests/browser_core.cjs
       - run: node tests/assessment_core.cjs
+      - run: node tests/library_core.cjs
+      - run: node --check web/library.js
       - name: Verify generated artifacts are reproducible
         run: |
           python3 scripts/build_library.py
           python3 scripts/build_packs.py
           python3 scripts/build_assessment_example.py
+          python3 scripts/build_skill_library.py
           git diff --exit-code

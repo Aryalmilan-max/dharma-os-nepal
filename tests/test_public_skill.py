@@ -59,9 +59,11 @@ class PublicSkillTests(unittest.TestCase):
             self.assertNotIn(path.suffix, {'.sqlite3', '.db', '.jsonl', '.pem', '.key'}, str(path))
             if path != Path(__file__).resolve():
                 text = path.read_text(encoding='utf-8')
-                self.assertNotIn('/Users/', text, str(path))
-                self.assertNotIn('/home/', text, str(path))
-                self.assertNotIn('BEGIN PRIVATE KEY', text, str(path))
+                # This exact official documentation URL contains a public /home/ section.
+                scanned = text.replace('https://kubernetes.io/docs/home/supported-doc-versions', '')
+                self.assertFalse('/Users/' in scanned, str(path))
+                self.assertFalse('/home/' in scanned, str(path))
+                self.assertFalse('BEGIN PRIVATE KEY' in scanned, str(path))
 
 
 if __name__ == '__main__':

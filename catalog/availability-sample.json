@@ -1,0 +1,270 @@
+{
+  "method": "First, middle and last URL per selected publisher index, plus curated task links; bounded GET reads at most 1024 response bytes.",
+  "limitations": "Nonrandom convenience sample. Availability is not content validation, statistical coverage or proof of applicability. Unchecked records remain index discoveries.",
+  "records": [
+    {
+      "url": "https://bolpatra.gov.np/egp/",
+      "checked_at": "2026-11-12T16:58:03.348112+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://bolpatra.gov.np/egp/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+      "checked_at": "2026-11-12T16:58:03.348837+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+      "checked_at": "2026-11-12T16:58:03.348996+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overscroll_behavior",
+      "checked_at": "2026-11-12T16:58:03.349135+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overscroll_behavior",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies",
+      "checked_at": "2026-11-12T16:58:03.703865+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status",
+      "checked_at": "2026-11-12T16:58:04.045045+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Privacy",
+      "checked_at": "2026-11-12T16:58:04.205128+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/Privacy",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/urn",
+      "checked_at": "2026-11-12T16:58:04.432497+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/urn",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://emis.cehrd.gov.np/",
+      "checked_at": "2026-11-12T16:58:04.542412+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://emis.cehrd.gov.np/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://kubernetes.io/docs/concepts",
+      "checked_at": "2026-11-12T16:58:04.613064+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/concepts/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/user-info-v1-authentication",
+      "checked_at": "2026-11-12T16:58:05.456019+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/user-info-v1-authentication/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://kubernetes.io/docs/tutorials/stateless-application/guestbook",
+      "checked_at": "2026-11-12T16:58:05.473472+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/tutorials/stateless-application/guestbook/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability",
+      "checked_at": "2026-11-12T16:58:05.629902+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/devops/server/install/sql-server/reporting-services-roles",
+      "checked_at": "2026-11-12T16:58:06.374384+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/server/install/sql-server/reporting-services-roles?view=azure-devops-server",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/zone-resilience",
+      "checked_at": "2026-11-12T16:58:06.374936+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/zone-resilience",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/entra/architecture",
+      "checked_at": "2026-11-12T16:58:06.484105+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/architecture/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/entra/identity/saas-apps/canva-provisioning-tutorial",
+      "checked_at": "2026-11-12T16:58:06.850251+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/saas-apps/canva-provisioning-tutorial",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/entra/standards/standards-overview",
+      "checked_at": "2026-11-12T16:58:06.850518+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/standards/standards-overview",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/security/ai-red-team",
+      "checked_at": "2026-11-12T16:58:07.186572+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/security/ai-red-team/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/june2020",
+      "checked_at": "2026-11-12T16:58:07.250505+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/june2020",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-tech-illus",
+      "checked_at": "2026-11-12T16:58:07.279950+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-tech-illus",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/azure",
+      "checked_at": "2026-11-12T16:58:07.285429+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/azure",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-g--securing-administrators-groups-in-active-directory",
+      "checked_at": "2026-11-12T16:58:07.713946+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-g--securing-administrators-groups-in-active-directory",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-server/windows-server-licensing/windows-server-licensing",
+      "checked_at": "2026-11-12T16:58:07.876207+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/windows-server-licensing/windows-server-licensing",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://nnsw.gov.np/trade/customs/tariff/search",
+      "checked_at": "2026-11-12T16:58:07.896033+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://nnsw.gov.np/trade/customs/tariff/search",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "checked_at": "2026-11-12T16:58:07.970111+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://ppmo.gov.np/category/1211/?page=1",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://www.nrb.org.np/bfr/it-guidelines-2012/",
+      "checked_at": "2026-11-12T16:58:08.116733+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://www.nrb.org.np/contents/uploads/2019/12/Guidelines-IT-Guidelines-2012.pdf",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://www.nrb.org.np/category/policies-guidelines/",
+      "checked_at": "2026-11-12T16:58:08.221695+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://www.nrb.org.np/category/policies-guidelines/",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/acronyms.html",
+      "checked_at": "2026-11-12T16:58:08.302981+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://www.postgresql.org/docs/current/acronyms.html",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/backup.html",
+      "checked_at": "2026-11-12T16:58:08.365354+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://www.postgresql.org/docs/current/backup.html",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/pgbench.html",
+      "checked_at": "2026-11-12T16:58:09.018984+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://www.postgresql.org/docs/current/pgbench.html",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/using-explain.html",
+      "checked_at": "2026-11-12T16:58:09.641469+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://www.postgresql.org/docs/current/using-explain.html",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/xtypes.html",
+      "checked_at": "2026-11-12T16:58:10.220162+00:00",
+      "content_reviewed": false,
+      "http_status": 200,
+      "final_url": "https://www.postgresql.org/docs/current/xtypes.html",
+      "state": "HTTP_RESPONDED_NOT_CONTENT_VALIDATED"
+    }
+  ]
+}

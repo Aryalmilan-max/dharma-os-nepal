@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; script-src 'self' file:; style-src 'self' file:; connect-src 'none'; object-src 'none'; base-uri 'none'">
+<title>Dharma OS · Task skills and reference library</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="library-catalog.js"></script><script defer src="library-core.js"></script><script defer src="library.js"></script>
+</head>
+<body>
+<header><a class="brand" href="index.html">ध · Dharma OS Nepal</a><a href="index.html">Research workspace ←</a></header>
+<main>
+<section class="hero"><div><p class="eyebrow">NEPAL TECHNOLOGY WORK · 0.4</p><h1>Find the task.<br>Check the source.</h1><p class="intro" id="counts"></p></div><aside class="hero-note"><strong>Evidence has limits</strong><p>International links were discovered in official publisher indexes. They have not all been opened or reviewed. Use them only for the technology actually selected in your Nepal project.</p><p>117 Nepal reference URLs are a separate collection. Neither collection proves local demand, compliance or an outcome.</p></aside></section>
+<section aria-label="Library search">
+<label for="mode">Collection</label><select id="mode"><option value="skills">Task skills</option><option value="sources">Reference URLs</option></select>
+<label for="query">Search all words</label><input id="query" type="search" placeholder="restore, consent, procurement…">
+<label for="filter">Family / source kind</label><select id="filter"><option value="">All</option></select>
+<label for="topic">Topic</label><select id="topic"><option value="">All topics</option></select>
+<label for="publisher">Publisher</label><select id="publisher"><option value="">All publishers</option></select>
+<p id="status" role="status" aria-live="polite"></p>
+<div id="results"></div>
+<div class="header-actions"><button id="previous" type="button">← Previous</button><span id="page"></span><button id="next" type="button">Next →</button></div>
+</section>
+<noscript>Read <a href="../docs/task-skills.md">the task skill catalog</a> without JavaScript.</noscript>
+</main>
+<footer><a href="../docs/reference-library.md">Count rules, installation and verification limits</a><span>Offline · no API key · no automatic retrieval</span></footer>
+</body></html>

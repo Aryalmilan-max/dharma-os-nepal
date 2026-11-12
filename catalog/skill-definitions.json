@@ -1,0 +1,2975 @@
+{
+  "schema_version": "1.0",
+  "scope": "Nepal technology-business tasks, not all industries or professions",
+  "skills": [
+    {
+      "id": "np-bank-service-map",
+      "family": "bank",
+      "title": "Map bank service dependencies",
+      "trigger": "A bank needs to understand which services fail with a branch, system or provider.",
+      "inputs": "Service catalogue, branch/channel scope and outage records",
+      "steps": [
+        "Trace a customer service across branch, application, data and provider dependencies",
+        "Identify single points of failure and responsible roles",
+        "Agree service-specific recovery questions with the business owner"
+      ],
+      "artifact_columns": [
+        "service_id",
+        "channel",
+        "dependency",
+        "owner_role",
+        "failure_effect",
+        "evidence_ref",
+        "unresolved_dependency"
+      ],
+      "acceptance": "The business owner can trace an outage from dependency to affected service.",
+      "source_topics": [
+        "continuity"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-access-review",
+      "family": "bank",
+      "title": "Review bank access and conflicting powers",
+      "trigger": "A bank needs an evidence-backed access and segregation review.",
+      "inputs": "Role export, authorized policy, joiner/leaver records and synthetic transaction cases",
+      "steps": [
+        "Map permissions to initiation, approval and reconciliation powers",
+        "Compare actual permissions with authorized duties and exceptions",
+        "Test allowed and prohibited actions only in an approved test environment"
+      ],
+      "artifact_columns": [
+        "system_id",
+        "role",
+        "permission",
+        "conflict_rule",
+        "evidence_ref",
+        "exception",
+        "reviewer_role",
+        "action"
+      ],
+      "acceptance": "Every conflict or permission conclusion has actual evidence and an accountable reviewer.",
+      "source_topics": [
+        "identity"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-branch-readiness",
+      "family": "bank",
+      "title": "Assess bank branch technology readiness",
+      "trigger": "A bank is considering a new or changed branch service.",
+      "inputs": "Site survey, service hours, approved connectivity design and support responsibilities",
+      "steps": [
+        "Map branch equipment and connectivity dependencies to critical services",
+        "Check observed site conditions and backup paths against the intended design",
+        "Record readiness gaps and acceptance tests before rollout"
+      ],
+      "artifact_columns": [
+        "branch_ref",
+        "service",
+        "site_condition",
+        "network_dependency",
+        "power_evidence",
+        "readiness_gap",
+        "acceptance_test",
+        "owner_role"
+      ],
+      "acceptance": "Readiness statements stay specific to the observed branch and approved service design.",
+      "source_topics": [
+        "network"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-recovery-exercise",
+      "family": "bank",
+      "title": "Plan a bank recovery exercise",
+      "trigger": "A bank needs to rehearse service recovery without disrupting live operations.",
+      "inputs": "Approved exercise scope, recovery targets, dependency map and restore evidence",
+      "steps": [
+        "Define the failure scenario, permitted environment and abort conditions",
+        "Capture restore and reconciliation timestamps against agreed objectives",
+        "Separate measured recovery from planned capability and assign remediation"
+      ],
+      "artifact_columns": [
+        "service_ref",
+        "scenario",
+        "target_RTO",
+        "target_RPO",
+        "approval_ref",
+        "test_ref",
+        "measured_result",
+        "abort_condition",
+        "remediation"
+      ],
+      "acceptance": "The exercise has explicit authorization, safe boundaries and measured results rather than assumed recovery.",
+      "source_topics": [
+        "continuity"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-supplier-exit",
+      "family": "bank",
+      "title": "Review bank supplier exit readiness",
+      "trigger": "A bank depends on an outsourced service and needs a credible exit assessment.",
+      "inputs": "Contract, data/interface inventory, supplier commitments and authorized export test",
+      "steps": [
+        "Trace operational and data dependencies on the provider and subcontractors",
+        "Identify export, transition, support and deletion evidence needed for exit",
+        "Test an approved representative export and record unresolved dependencies"
+      ],
+      "artifact_columns": [
+        "service_ref",
+        "supplier_role",
+        "contract_ref",
+        "data_scope",
+        "exit_dependency",
+        "export_test_ref",
+        "gap",
+        "decision_owner"
+      ],
+      "acceptance": "Exit capability is supported by an actual test or remains explicitly unproven.",
+      "source_topics": [
+        "cloud"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-change-reconciliation",
+      "family": "bank",
+      "title": "Review a bank system migration",
+      "trigger": "A bank needs evidence before approving a release or data migration.",
+      "inputs": "Source/target mappings, change authority, test totals and rollback plan",
+      "steps": [
+        "Define reconciliation invariants and rejected-record handling",
+        "Rehearse a representative migration in an isolated environment",
+        "Compare totals, duplicates, exceptions and rollback results before human go/no-go"
+      ],
+      "artifact_columns": [
+        "change_ref",
+        "mapping_ref",
+        "invariant",
+        "source_total",
+        "target_total",
+        "exception",
+        "rollback_test",
+        "approval_ref"
+      ],
+      "acceptance": "A change decision traces to reconciled test results and unresolved exceptions.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-incident-triage",
+      "family": "bank",
+      "title": "Structure bank incident triage",
+      "trigger": "A bank needs a factual incident record and response handoff.",
+      "inputs": "Authorized incident scope, logs, known service impact and response roles",
+      "steps": [
+        "Preserve relevant timestamps and observations without exposing credentials",
+        "Separate confirmed impact from hypotheses and ongoing investigation",
+        "Record containment options and escalation for the authorized responder"
+      ],
+      "artifact_columns": [
+        "incident_ref",
+        "event_time",
+        "observed_fact",
+        "affected_service",
+        "evidence_ref",
+        "hypothesis",
+        "response_owner",
+        "next_check"
+      ],
+      "acceptance": "The handoff preserves uncertainty and does not authorize unrequested production containment.",
+      "source_topics": [
+        "security"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-regulatory-crosswalk",
+      "family": "bank",
+      "title": "Build a bank regulatory evidence crosswalk",
+      "trigger": "A bank needs to map an actual obligation to implementation evidence.",
+      "inputs": "Original instruments, applicability scope, amendments, internal policy and reviewer authority",
+      "steps": [
+        "Identify the current instrument and exact provision for the entity and service",
+        "Trace each provision to control, actual evidence and owner",
+        "Escalate unresolved applicability and conflicting editions to qualified review"
+      ],
+      "artifact_columns": [
+        "instrument",
+        "original_url",
+        "effective_period",
+        "scope",
+        "clause",
+        "amendment_ref",
+        "control",
+        "evidence_ref",
+        "gap",
+        "reviewer_role"
+      ],
+      "acceptance": "No compliance conclusion is produced from a historical guideline or an unreviewed checklist alone.",
+      "source_topics": [
+        "nepal-bank"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-channel-failure",
+      "family": "bank",
+      "title": "Analyze digital banking channel failures",
+      "trigger": "A bank needs to investigate failed channel transactions or service errors.",
+      "inputs": "Defined channel, redacted event records, failure categories and reconciliation evidence",
+      "steps": [
+        "Define a failure unit and time window without counting retries as new customers",
+        "Group observed failures and distinguish correlated from established causes",
+        "Reconcile failed, reversed and completed events before recommending a controlled next test"
+      ],
+      "artifact_columns": [
+        "channel",
+        "period",
+        "event_definition",
+        "failure_category",
+        "count",
+        "retry_rule",
+        "reconciliation_ref",
+        "cause_status",
+        "next_test"
+      ],
+      "acceptance": "Counts and causal statements can be reproduced from the authorized evidence.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-remediation-tracking",
+      "family": "bank",
+      "title": "Review bank audit remediation",
+      "trigger": "A bank needs to know which audit issues are actually closed.",
+      "inputs": "Original findings, agreed actions, responsible roles, target dates and closure tests",
+      "steps": [
+        "Keep the original finding and authority separate from implementation claims",
+        "Trace action completion to independent closure evidence where required",
+        "Flag overdue or unsupported closure and retain residual risk decisions"
+      ],
+      "artifact_columns": [
+        "finding_ref",
+        "action",
+        "owner_role",
+        "target_date",
+        "implementation_ref",
+        "closure_test_ref",
+        "reviewer_role",
+        "residual_gap",
+        "status"
+      ],
+      "acceptance": "Closed means the stated acceptance and review evidence exists, not merely that a ticket changed state.",
+      "source_topics": [
+        "governance"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-customer-data-flow",
+      "family": "bank",
+      "title": "Map bank customer-data flows",
+      "trigger": "A bank needs to understand customer-data exposure across systems and providers.",
+      "inputs": "Authorized process map, data classes, system interfaces and permitted access scope",
+      "steps": [
+        "Trace collection, use, transfer, storage and disposal for the selected process",
+        "Identify data owners and third-party access without copying customer records",
+        "Record the applicable institutional and legal review needed for each exposure"
+      ],
+      "artifact_columns": [
+        "process_ref",
+        "data_class",
+        "system",
+        "recipient_role",
+        "purpose",
+        "retention_basis",
+        "control_ref",
+        "unresolved_exposure"
+      ],
+      "acceptance": "The map uses minimized references and does not disclose real customer data in public artifacts.",
+      "source_topics": [
+        "security"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-bank-capacity-plan",
+      "family": "bank",
+      "title": "Assess bank service capacity",
+      "trigger": "A bank needs capacity evidence for a specific channel or service.",
+      "inputs": "Observed workload, peak-window definition, latency/error measures and approved test limits",
+      "steps": [
+        "Define service-level measures and a representative workload",
+        "Compare observed demand and tested capacity under explicit conditions",
+        "Document bottlenecks, uncertainty and a safe scaling or retest option"
+      ],
+      "artifact_columns": [
+        "service",
+        "workload_definition",
+        "period",
+        "peak_basis",
+        "test_limit",
+        "latency",
+        "error_rate",
+        "bottleneck",
+        "capacity_limit",
+        "next_test"
+      ],
+      "acceptance": "Capacity claims apply only to measured conditions and do not imply guaranteed future service levels.",
+      "source_topics": [
+        "performance"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-offer-fit",
+      "family": "shop",
+      "title": "Match a tech-shop offer to a buyer need",
+      "trigger": "A small tech shop needs to prepare a relevant and supportable offer.",
+      "inputs": "Actual use case, budget authority, exact configuration and dated supplier evidence",
+      "steps": [
+        "Separate the buyer problem from a preferred product name",
+        "Map required capabilities to exact variants and included services",
+        "Record exclusions, evidence gaps and quote validity before approval"
+      ],
+      "artifact_columns": [
+        "need",
+        "requirement",
+        "exact_variant",
+        "evidence_ref",
+        "included_service",
+        "exclusion",
+        "valid_until",
+        "unknown"
+      ],
+      "acceptance": "No price, stock, compatibility or warranty is invented to fill the offer.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-stock-receipt",
+      "family": "shop",
+      "title": "Inspect received technology stock",
+      "trigger": "A shop needs to reconcile a delivery with its order.",
+      "inputs": "Purchase order, received items, exact variants, quantities and condition evidence",
+      "steps": [
+        "Count received units and identify exact configurations",
+        "Trace damaged, missing or substituted units to the purchase record",
+        "Separate available, quarantined and unresolved stock states"
+      ],
+      "artifact_columns": [
+        "receipt_ref",
+        "SKU",
+        "variant",
+        "ordered_quantity",
+        "received_quantity",
+        "condition",
+        "discrepancy",
+        "evidence_ref",
+        "status"
+      ],
+      "acceptance": "The stock record reconciles to physical receipt and does not silently accept substitutions.",
+      "source_topics": [
+        "inventory"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-repair-intake",
+      "family": "shop",
+      "title": "Record repair authorization and custody",
+      "trigger": "A shop needs a safe, reviewable device intake.",
+      "inputs": "Device condition, accessories, fault description and customer authorization scope",
+      "steps": [
+        "Record device identifier or UNKNOWN, custody timestamp, accessories, visible condition and the customer-reported symptom separately from a diagnosis",
+        "Record the authorized diagnostic scope and data-access consent reference before inspection; missing authorization blocks intrusive work",
+        "Define approval points before extra work or parts replacement"
+      ],
+      "artifact_columns": [
+        "intake_id",
+        "custody_received_at",
+        "device_identifier",
+        "identifier_status",
+        "accessories",
+        "visible_condition",
+        "customer_reported_symptom",
+        "data_sensitivity",
+        "authorization_ref",
+        "authorized_scope",
+        "custodian_role",
+        "handover_ref"
+      ],
+      "acceptance": "Work and data access remain within actual authorization and custody is traceable.",
+      "source_topics": [
+        "endpoint"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-repair-diagnosis",
+      "family": "shop",
+      "title": "Plan a bounded device diagnosis",
+      "trigger": "A technician needs to investigate a reported fault before promising repair.",
+      "inputs": "Authorized job scope, fault reproduction, device documentation and safe test conditions",
+      "steps": [
+        "Reproduce the fault and record baseline observations",
+        "Choose non-destructive checks appropriate to the exact device and competence",
+        "Distinguish diagnosis, hypothesis and proposed repair with further-approval needs"
+      ],
+      "artifact_columns": [
+        "job_ref",
+        "fault_reproduction",
+        "baseline",
+        "test_method",
+        "observation",
+        "hypothesis",
+        "proposed_action",
+        "approval_needed"
+      ],
+      "acceptance": "No destructive repair, data access or electrical work is implied by a diagnostic plan.",
+      "source_topics": [
+        "endpoint"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-repair-return",
+      "family": "shop",
+      "title": "Verify a repaired device before return",
+      "trigger": "A shop needs evidence that agreed repair work was delivered.",
+      "inputs": "Authorized work, parts record, pre/post observations and agreed return tests",
+      "steps": [
+        "Compare delivered work with the approved scope",
+        "Run agreed functional checks and record remaining faults",
+        "Reconcile accessories, custody and customer acceptance without claiming unsupported data recovery"
+      ],
+      "artifact_columns": [
+        "job_ref",
+        "approved_scope",
+        "work_ref",
+        "test",
+        "expected_result",
+        "observed_result",
+        "remaining_issue",
+        "return_ref"
+      ],
+      "acceptance": "The return record identifies what was tested, what failed and what remains excluded.",
+      "source_topics": [
+        "endpoint"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-warranty-case",
+      "family": "shop",
+      "title": "Trace warranty and support responsibility",
+      "trigger": "A shop needs to handle a device or repair warranty case.",
+      "inputs": "Sale/job reference, exact warranty terms, reported fault and supplier route",
+      "steps": [
+        "Distinguish the sold warranty from assumed manufacturer coverage",
+        "Trace eligibility and exclusions to actual documents",
+        "Record responsible parties, evidence and the next support action"
+      ],
+      "artifact_columns": [
+        "case_ref",
+        "sale_or_job_ref",
+        "warranty_ref",
+        "fault",
+        "coverage_basis",
+        "exclusion",
+        "supplier_case",
+        "owner_role",
+        "next_action"
+      ],
+      "acceptance": "Support promises match documented coverage and unresolved eligibility remains unknown.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-landed-cost",
+      "family": "shop",
+      "title": "Build a traceable landed-cost worksheet",
+      "trigger": "A shop needs to compare acquisition cost scenarios.",
+      "inputs": "Dated supplier values, currency, logistics costs and current applicable tax/customs evidence",
+      "steps": [
+        "Separate observed costs from scenario assumptions",
+        "Normalize currency, units and inclusion bases before comparison",
+        "Identify missing charges and sensitivity to exchange or delivery changes"
+      ],
+      "artifact_columns": [
+        "cost_item",
+        "amount",
+        "currency",
+        "unit",
+        "observed_or_assumption",
+        "source_ref",
+        "tax_basis",
+        "inclusion",
+        "unknown"
+      ],
+      "acceptance": "The worksheet is a labelled cost scenario, not a fabricated market quotation or tax opinion.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-stock-reconciliation",
+      "family": "shop",
+      "title": "Reconcile stock and movement records",
+      "trigger": "A shop needs to explain physical-to-record stock differences.",
+      "inputs": "Opening stock, receipts, sales, returns, adjustments and physical count",
+      "steps": [
+        "Use consistent SKU and variant identifiers for every movement",
+        "Reconcile recorded closing stock with a dated count",
+        "Investigate exceptions without deleting the original movement evidence"
+      ],
+      "artifact_columns": [
+        "SKU",
+        "variant",
+        "opening",
+        "receipts",
+        "sales",
+        "returns",
+        "adjustments",
+        "counted",
+        "variance",
+        "evidence_ref",
+        "action"
+      ],
+      "acceptance": "Every unexplained variance remains visible and corrections have an authorized record.",
+      "source_topics": [
+        "inventory"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-reorder-plan",
+      "family": "shop",
+      "title": "Plan replenishment from real stock history",
+      "trigger": "A shop needs a defensible replenishment decision.",
+      "inputs": "Actual demand history, stock states, supplier lead times and available cash",
+      "steps": [
+        "Separate confirmed demand from enquiries and one-off projects",
+        "Estimate replenishment scenarios with observed lead-time and uncertainty",
+        "Compare cash and support constraints before an owner decision"
+      ],
+      "artifact_columns": [
+        "SKU",
+        "demand_period",
+        "demand_basis",
+        "usable_stock",
+        "lead_time_basis",
+        "reorder_scenario",
+        "cash_constraint",
+        "uncertainty",
+        "owner_decision"
+      ],
+      "acceptance": "A scenario does not become a purchase commitment or invented demand forecast.",
+      "source_topics": [
+        "inventory"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-supplier-compare",
+      "family": "shop",
+      "title": "Normalize technology supplier offers",
+      "trigger": "A shop needs an apples-to-apples supplier comparison.",
+      "inputs": "Dated offers, exact variants, tax/inclusion terms and delivery/warranty evidence",
+      "steps": [
+        "Resolve configuration and quantity differences first",
+        "Separate firm terms from advertised or unverified claims",
+        "Compare total included scope and unresolved commercial risks"
+      ],
+      "artifact_columns": [
+        "supplier_ref",
+        "offer_date",
+        "variant",
+        "quantity",
+        "amount",
+        "currency",
+        "tax_basis",
+        "delivery_basis",
+        "warranty_ref",
+        "exclusion",
+        "unknown"
+      ],
+      "acceptance": "No cheapest-offer conclusion hides different configurations or missing services.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-receivable-review",
+      "family": "shop",
+      "title": "Review shop receivables and next actions",
+      "trigger": "A shop needs to follow up actual unpaid transactions.",
+      "inputs": "Authorized sales records, receipts, due terms and disputed balances",
+      "steps": [
+        "Reconcile each balance before classifying age or status",
+        "Separate disputes, missing receipts and confirmed overdue items",
+        "Prepare a human-review follow-up list without contacting customers"
+      ],
+      "artifact_columns": [
+        "transaction_ref",
+        "due_basis",
+        "amount",
+        "currency",
+        "receipts_ref",
+        "reconciled_balance",
+        "dispute",
+        "status",
+        "next_action",
+        "owner_role"
+      ],
+      "acceptance": "No payment demand is sent and no unverified debt is asserted as fact.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-shop-job-margin",
+      "family": "shop",
+      "title": "Review service-job economics",
+      "trigger": "A shop needs to understand the cost of a completed or proposed job.",
+      "inputs": "Actual or explicitly assumed labour, parts, delivery, support and revenue bases",
+      "steps": [
+        "Separate cash movement from cost and revenue recognition assumptions",
+        "Normalize labour/time and included support obligations",
+        "Report scenario sensitivity and unresolved costs rather than inventing profit"
+      ],
+      "artifact_columns": [
+        "job_ref",
+        "item",
+        "amount",
+        "currency",
+        "time_unit",
+        "basis",
+        "evidence_ref",
+        "inclusion",
+        "unknown",
+        "scenario_result"
+      ],
+      "acceptance": "Any margin is reproducible from labelled inputs and is not a guaranteed outcome.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-teaching-needs",
+      "family": "school",
+      "title": "Establish a school technology need",
+      "trigger": "A school needs to define the teaching problem before choosing equipment.",
+      "inputs": "Teacher workflows, class context, current equipment/use and accessibility barriers",
+      "steps": [
+        "Observe the selected teaching task and existing alternatives",
+        "Define a measurable intended change with actual operators",
+        "Separate a documented need from preference or vendor demonstration"
+      ],
+      "artifact_columns": [
+        "institution_ref",
+        "teaching_task",
+        "current_method",
+        "observed_barrier",
+        "baseline_ref",
+        "intended_change",
+        "alternative",
+        "unknown"
+      ],
+      "acceptance": "A product purchase is not presented as proof of teaching need or learning benefit.",
+      "source_topics": [
+        "education"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-room-survey",
+      "family": "school",
+      "title": "Survey a classroom for technology installation",
+      "trigger": "A school needs evidence of room suitability.",
+      "inputs": "Actual room layout, intended users, sightlines, acoustics and mounting constraints",
+      "steps": [
+        "Record room conditions and intended teaching positions",
+        "Test visibility, sound and interaction using an authorized representative setup",
+        "Escalate safety and accessibility issues before installation design"
+      ],
+      "artifact_columns": [
+        "room_ref",
+        "teaching_position",
+        "sightline_test",
+        "acoustic_test",
+        "mounting_review",
+        "accessibility_gap",
+        "evidence_ref",
+        "next_action"
+      ],
+      "acceptance": "Room-readiness claims stay tied to the observed room and test conditions.",
+      "source_topics": [
+        "education"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-power-readiness",
+      "family": "school",
+      "title": "Review school equipment power readiness",
+      "trigger": "A school needs to understand power constraints for proposed ICT.",
+      "inputs": "Equipment load information, site evidence, operating hours and competent safety review",
+      "steps": [
+        "Map the intended load and power dependencies",
+        "Record measured/verified conditions separately from estimates",
+        "Define safe outage behaviour and unresolved professional checks"
+      ],
+      "artifact_columns": [
+        "site_ref",
+        "equipment",
+        "load_basis",
+        "power_condition",
+        "outage_need",
+        "safety_review_ref",
+        "unknown",
+        "acceptance_test"
+      ],
+      "acceptance": "The assessment does not substitute for competent electrical design or certify safety.",
+      "source_topics": [
+        "power"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-campus-network",
+      "family": "school",
+      "title": "Assess school network requirements",
+      "trigger": "A school needs a network that supports actual teaching and administration.",
+      "inputs": "Users, rooms, applications, coverage observations and support capacity",
+      "steps": [
+        "Map intended tasks to connectivity and access needs",
+        "Check observed coverage and shared-capacity constraints",
+        "Define acceptance tests and support ownership without promising unmeasured bandwidth"
+      ],
+      "artifact_columns": [
+        "site_ref",
+        "user_group",
+        "task",
+        "coverage_evidence",
+        "capacity_basis",
+        "access_boundary",
+        "support_owner",
+        "acceptance_test"
+      ],
+      "acceptance": "Network requirements follow actual workflows and measured or explicit unknown conditions.",
+      "source_topics": [
+        "network"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-funding-stage",
+      "family": "school",
+      "title": "Verify school ICT funding and purchase stages",
+      "trigger": "A school or supplier needs to distinguish a plan from funded procurement.",
+      "inputs": "Institution identity, official budget/notice, fiscal year and amendments",
+      "steps": [
+        "Trace each asserted stage to its own owning document",
+        "Keep allocation, fund release, procurement and award separate",
+        "Record missing approvals and current verification dates"
+      ],
+      "artifact_columns": [
+        "institution_ref",
+        "stage",
+        "document_title",
+        "official_url",
+        "fiscal_year",
+        "page_clause",
+        "amount_as_printed",
+        "unit",
+        "amendment",
+        "unknown"
+      ],
+      "acceptance": "No announcement or budget heading becomes a confirmed purchase or customer commitment.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-ict-specification",
+      "family": "school",
+      "title": "Draft outcome-based school ICT requirements",
+      "trigger": "A school needs a reviewable specification tied to teaching and operation.",
+      "inputs": "Teaching need, site constraints, accessibility needs and acceptance authority",
+      "steps": [
+        "Translate tasks into measurable functional and operating requirements",
+        "Include installation, content rights, training and support requirements",
+        "Separate mandatory requirements from preferences with evidence bases"
+      ],
+      "artifact_columns": [
+        "requirement_id",
+        "need_ref",
+        "function",
+        "operating_constraint",
+        "mandatory_basis",
+        "evidence_needed",
+        "acceptance_method",
+        "owner_role"
+      ],
+      "acceptance": "The draft does not invent approvals or disguise an unsupported brand restriction.",
+      "source_topics": [
+        "education"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-content-license",
+      "family": "school",
+      "title": "Review educational content and software rights",
+      "trigger": "A school needs to understand what it may use and renew.",
+      "inputs": "Actual licence terms, content sources, account model and language/accessibility needs",
+      "steps": [
+        "Identify the exact permitted use and user/device limits",
+        "Map renewal, offline use and data-sharing conditions to the teaching task",
+        "Record unsupported permissions and accountable renewal ownership"
+      ],
+      "artifact_columns": [
+        "content_ref",
+        "licence_ref",
+        "permitted_use",
+        "user_limit",
+        "offline_basis",
+        "renewal_basis",
+        "accessibility_gap",
+        "unknown",
+        "owner_role"
+      ],
+      "acceptance": "The review does not claim rights or included content without an actual licence basis.",
+      "source_topics": [
+        "education"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-student-data",
+      "family": "school",
+      "title": "Map school account and student-data boundaries",
+      "trigger": "A school needs a minimal-data technology workflow.",
+      "inputs": "Institution policy, intended process, data classes, roles and provider terms",
+      "steps": [
+        "Map required collection and user access for the selected task",
+        "Identify avoidable identifiers and external sharing",
+        "Prepare a permission/minimization review without publishing student records"
+      ],
+      "artifact_columns": [
+        "process_ref",
+        "data_class",
+        "purpose",
+        "role",
+        "recipient",
+        "retention_basis",
+        "permission_ref",
+        "exposure_gap",
+        "next_review"
+      ],
+      "acceptance": "No identifiable student dataset is inserted into a public example or research package.",
+      "source_topics": [
+        "security"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-teacher-training",
+      "family": "school",
+      "title": "Design task-based teacher training",
+      "trigger": "A school needs training that operators can actually use.",
+      "inputs": "Teaching tasks, operator language/accessibility needs, available time and support route",
+      "steps": [
+        "Select real tasks and common failure/exception cases",
+        "Prepare task practice and reference materials for actual operators",
+        "Record demonstrated capability separately from attendance"
+      ],
+      "artifact_columns": [
+        "task_id",
+        "operator_role",
+        "prerequisite",
+        "practice_step",
+        "exception_case",
+        "demonstration_ref",
+        "remaining_gap",
+        "support_route"
+      ],
+      "acceptance": "Attendance alone is not reported as successful adoption or capability.",
+      "source_topics": [
+        "education"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-installation-acceptance",
+      "family": "school",
+      "title": "Review school ICT installation acceptance",
+      "trigger": "A school needs to decide whether delivered work meets the agreed scope.",
+      "inputs": "Approved requirements, exact delivered configuration, test plan and acceptance authority",
+      "steps": [
+        "Reconcile equipment and services with the approved scope",
+        "Run agreed site and operator acceptance tests",
+        "Record defects, exclusions and authorized acceptance evidence"
+      ],
+      "artifact_columns": [
+        "requirement_ref",
+        "delivered_configuration",
+        "installation_ref",
+        "test",
+        "expected",
+        "observed",
+        "defect",
+        "acceptance_ref",
+        "reviewer_role"
+      ],
+      "acceptance": "Equipment delivery is not automatically installation or teaching acceptance.",
+      "source_topics": [
+        "education"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-usage-evaluation",
+      "family": "school",
+      "title": "Evaluate school technology usage claims",
+      "trigger": "A school or researcher needs to review use and outcome evidence.",
+      "inputs": "Usage definitions, baseline/follow-up periods, denominators and support records",
+      "steps": [
+        "Distinguish installation, actual use and learning outcomes",
+        "Reconcile denominators and missing data before comparisons",
+        "Assess alternative explanations and report design limits"
+      ],
+      "artifact_columns": [
+        "asset_ref",
+        "period",
+        "usage_definition",
+        "numerator",
+        "denominator",
+        "downtime",
+        "baseline_ref",
+        "followup_ref",
+        "alternative_explanation",
+        "limit"
+      ],
+      "acceptance": "A usage increase is not automatically a causal learning improvement.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-school-maintenance-plan",
+      "family": "school",
+      "title": "Plan school ICT maintenance and renewals",
+      "trigger": "A school needs a sustainable support plan after installation.",
+      "inputs": "Asset/configuration records, warranty terms, subscriptions, staff capability and local support",
+      "steps": [
+        "Identify recurring maintenance, renewal and replacement dependencies",
+        "Assign accountable roles and escalation routes",
+        "Define periodic checks and an evidence-based review schedule"
+      ],
+      "artifact_columns": [
+        "asset_ref",
+        "maintenance_task",
+        "frequency_basis",
+        "warranty_ref",
+        "renewal_basis",
+        "owner_role",
+        "local_support",
+        "escalation",
+        "unknown"
+      ],
+      "acceptance": "The plan identifies actual support capacity rather than assuming the installer remains available.",
+      "source_topics": [
+        "education"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-question-scope",
+      "family": "research",
+      "title": "Bound a Nepal technology research question",
+      "trigger": "A researcher needs an answerable question and intended decision.",
+      "inputs": "Proposed topic, population, geography, timeframe and decision audience",
+      "steps": [
+        "Define the unit and intended inference",
+        "Separate broad interest from a feasible answerable question",
+        "Record exclusions and evidence needed before analysis"
+      ],
+      "artifact_columns": [
+        "question_id",
+        "question",
+        "unit",
+        "population",
+        "geography",
+        "period",
+        "intended_inference",
+        "exclusion",
+        "evidence_gap"
+      ],
+      "acceptance": "The question has a defined scope and does not claim the research has already been done.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-literature-matrix",
+      "family": "research",
+      "title": "Build a source-traceable literature matrix",
+      "trigger": "A researcher needs to establish an actual literature gap.",
+      "inputs": "Original studies, exact locators, designs, populations and conflicting findings",
+      "steps": [
+        "Read relevant methods and findings in the original sources",
+        "Compare definitions, scope and limitations across studies",
+        "State the gap without treating search results as completed reading"
+      ],
+      "artifact_columns": [
+        "source_ref",
+        "original_url",
+        "design",
+        "population",
+        "period",
+        "finding_locator",
+        "finding_paraphrase",
+        "limitation",
+        "contradiction",
+        "gap_relevance"
+      ],
+      "acceptance": "A reviewer can trace the claimed gap to the actual sources and their limits.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-sampling-frame",
+      "family": "research",
+      "title": "Review a research sampling plan",
+      "trigger": "A researcher needs to justify who or what is observed.",
+      "inputs": "Target population, available frame, inclusion rules, selection method and feasible resources",
+      "steps": [
+        "Compare frame coverage with the intended population",
+        "Identify selection, non-response and missingness risks",
+        "Limit inference to the design and document any justified weighting/estimation needs"
+      ],
+      "artifact_columns": [
+        "population",
+        "frame_ref",
+        "coverage_gap",
+        "selection_method",
+        "inclusion",
+        "nonresponse_plan",
+        "weighting_basis",
+        "inference_limit"
+      ],
+      "acceptance": "A convenience sample is not labelled representative of Nepal or every municipality.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-instrument-pilot",
+      "family": "research",
+      "title": "Review a research instrument pilot",
+      "trigger": "A researcher needs to test a questionnaire, observation or technical measurement instrument.",
+      "inputs": "Research constructs, draft instrument, respondent/operator context and pilot permission",
+      "steps": [
+        "Map each item to the intended construct and analysis",
+        "Test comprehension, burden and measurement behaviour in an authorized pilot",
+        "Record changes and unresolved validity limits before main collection"
+      ],
+      "artifact_columns": [
+        "item_id",
+        "construct",
+        "measure_definition",
+        "pilot_observation",
+        "ambiguity",
+        "change",
+        "version",
+        "remaining_limit"
+      ],
+      "acceptance": "Pilot convenience or face validity is not overstated as full instrument validation.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-consent-minimization",
+      "family": "research",
+      "title": "Plan research permissions and data minimization",
+      "trigger": "A researcher needs to establish what may be collected and shared.",
+      "inputs": "Institution requirements, participant/system context, intended fields and access roles",
+      "steps": [
+        "Identify required permissions and review authority before relevant collection",
+        "Minimize identifiers and define access/retention boundaries",
+        "Separate public reproducibility materials from confidential records"
+      ],
+      "artifact_columns": [
+        "data_field",
+        "purpose",
+        "necessity",
+        "permission_basis",
+        "access_role",
+        "retention_basis",
+        "public_or_private",
+        "review_gap"
+      ],
+      "acceptance": "No collection permission or ethics approval is invented by the toolkit.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-variable-dictionary",
+      "family": "research",
+      "title": "Create a research data dictionary",
+      "trigger": "A researcher needs consistent definitions before combining or analysing data.",
+      "inputs": "Actual source schema, units, codes, periods, geography and access limits",
+      "steps": [
+        "Preserve original variable names and definitions",
+        "Specify units, missingness, classifications and transformations",
+        "Version the dictionary and identify incompatible fields before joining"
+      ],
+      "artifact_columns": [
+        "variable",
+        "definition",
+        "unit",
+        "period",
+        "geography",
+        "classification",
+        "missing_code",
+        "transformation_ref",
+        "version",
+        "access_class"
+      ],
+      "acceptance": "Each derived measure can be traced to defined original inputs and transformations.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-cleaning-audit",
+      "family": "research",
+      "title": "Audit research data transformations",
+      "trigger": "A researcher needs to explain how analysis data differs from source data.",
+      "inputs": "Authorized raw/derived versions, transformation code and exclusion rules",
+      "steps": [
+        "Trace input versions through each transformation",
+        "Reconcile row counts, duplicates, missing values and exclusions",
+        "Record decisions without deleting contradictory evidence"
+      ],
+      "artifact_columns": [
+        "step",
+        "input_version",
+        "output_version",
+        "operation",
+        "row_count_before",
+        "row_count_after",
+        "exclusion_basis",
+        "exception",
+        "evidence_ref"
+      ],
+      "acceptance": "Another researcher can reproduce the transformation and explain exclusions.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-calendar-review",
+      "family": "research",
+      "title": "Review Nepal research dates and calendars",
+      "trigger": "A researcher needs to compare records with BS, AD, fiscal and publication dates.",
+      "inputs": "Original date strings, calendar labels, reference periods and conversion evidence",
+      "steps": [
+        "Preserve raw dates and identify the calendar and semantic date type",
+        "Verify any conversion with a suitable owning or validated source",
+        "Separate retrieval, publication, event and measurement periods"
+      ],
+      "artifact_columns": [
+        "record_ref",
+        "raw_date",
+        "calendar",
+        "date_type",
+        "converted_date",
+        "conversion_basis",
+        "reference_period",
+        "ambiguity"
+      ],
+      "acceptance": "A URL year or retrieval date is not silently used as an event or observation date.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-geography-crosswalk",
+      "family": "research",
+      "title": "Review Nepal locality joins",
+      "trigger": "A researcher needs to join local evidence without mixing places or boundaries.",
+      "inputs": "Owning locality codes, district/province context, boundary editions and aliases",
+      "steps": [
+        "Resolve identity within its district and boundary version",
+        "Document aliases and unresolved matches",
+        "Check join cardinality and coverage before assigning local findings"
+      ],
+      "artifact_columns": [
+        "raw_name",
+        "province",
+        "district",
+        "local_code",
+        "boundary_version",
+        "source_ref",
+        "match_basis",
+        "ambiguity",
+        "join_check"
+      ],
+      "acceptance": "National or provincial evidence is not relabelled as municipal or ward evidence.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-measure-comparison",
+      "family": "research",
+      "title": "Check comparable denominators and units",
+      "trigger": "A researcher needs to compare rates or counts responsibly.",
+      "inputs": "Original numerator, denominator, unit, period, population and scope definitions",
+      "steps": [
+        "Check that quantities refer to compatible units and populations",
+        "Normalize only justified conversions and retain original values",
+        "Explain exclusions and refuse unsupported adoption or market interpretations"
+      ],
+      "artifact_columns": [
+        "indicator",
+        "numerator",
+        "denominator",
+        "unit",
+        "population",
+        "period",
+        "geography",
+        "conversion_basis",
+        "comparison_limit"
+      ],
+      "acceptance": "Account counts are not treated as unique people and unmatched windows are not combined.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-descriptive-summary",
+      "family": "research",
+      "title": "Prepare a reproducible descriptive analysis",
+      "trigger": "A researcher needs a summary of observed data without unsupported inference.",
+      "inputs": "Authorized dataset, dictionary, scope, missingness and intended output",
+      "steps": [
+        "Define the analysis population and summary statistic",
+        "Reproduce counts and distributions with explicit missing-data handling",
+        "Separate description from causal or population-wide claims"
+      ],
+      "artifact_columns": [
+        "measure",
+        "population",
+        "period",
+        "statistic",
+        "input_ref",
+        "missingness",
+        "calculation_ref",
+        "result",
+        "interpretation_limit"
+      ],
+      "acceptance": "Every reported result is reproducible and bounded by the observed data.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-uncertainty-review",
+      "family": "research",
+      "title": "Review uncertainty and robustness claims",
+      "trigger": "A researcher needs to know which assumptions can change the conclusion.",
+      "inputs": "Study design, sample/measurement uncertainty, analysis choices and sensitivity results",
+      "steps": [
+        "Identify material uncertainty and unsupported precision",
+        "Test feasible alternative definitions or assumptions",
+        "Report sensitivity and design limits rather than inventing confidence"
+      ],
+      "artifact_columns": [
+        "claim_ref",
+        "uncertainty_source",
+        "assumption",
+        "sensitivity_test",
+        "result_ref",
+        "conclusion_change",
+        "remaining_limit"
+      ],
+      "acceptance": "Precision and confidence claims are justified by an actual method and evidence.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-qualitative-coding",
+      "family": "research",
+      "title": "Build a transparent qualitative coding record",
+      "trigger": "A researcher needs a traceable interpretation of authorized qualitative evidence.",
+      "inputs": "Research question, consented/redacted material, coding approach and reviewer roles",
+      "steps": [
+        "Define a codebook and preserve context around extracts",
+        "Record coding decisions, disagreements and negative cases",
+        "Bound themes to the material and sampling design"
+      ],
+      "artifact_columns": [
+        "material_ref",
+        "code",
+        "definition",
+        "context_locator",
+        "interpretation",
+        "negative_case",
+        "review_note",
+        "scope_limit"
+      ],
+      "acceptance": "Themes are traceable without publishing identifiable participant material or inventing prevalence.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-causal-claims",
+      "family": "research",
+      "title": "Review a proposed causal conclusion",
+      "trigger": "A researcher needs to distinguish an effect claim from association.",
+      "inputs": "Design, baseline, comparison, timing, confounders and alternative explanations",
+      "steps": [
+        "Map the causal claim to the identification strategy",
+        "Examine selection, timing, concurrent changes and missing counterfactual evidence",
+        "Revise the conclusion to the strongest supported inference"
+      ],
+      "artifact_columns": [
+        "claim",
+        "design",
+        "comparison_basis",
+        "baseline_ref",
+        "confounder",
+        "alternative_explanation",
+        "test_ref",
+        "supported_inference",
+        "limit"
+      ],
+      "acceptance": "A before-after change alone is not presented as proof of causation.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-reproducibility-package",
+      "family": "research",
+      "title": "Prepare a research reproducibility package",
+      "trigger": "A researcher needs another person to reproduce permitted outputs.",
+      "inputs": "Source/access rights, input versions, environment, code and expected outputs",
+      "steps": [
+        "Separate distributable metadata/code from restricted data",
+        "Document exact transformations and execution steps",
+        "Record independent reproduction differences and correction actions"
+      ],
+      "artifact_columns": [
+        "output_ref",
+        "input_version",
+        "access_requirement",
+        "environment",
+        "command_ref",
+        "expected_output",
+        "reproduced_ref",
+        "difference",
+        "correction"
+      ],
+      "acceptance": "No restricted dataset or invented independent review is included to claim reproducibility.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-research-report-claim-audit",
+      "family": "research",
+      "title": "Audit research-report claims and citations",
+      "trigger": "A researcher needs a final check of methods, results and interpretation.",
+      "inputs": "Draft report, original evidence, calculation records and required format",
+      "steps": [
+        "Trace material claims to original sources or reproducible analysis",
+        "Check quotation, scope, dates and contradictions",
+        "Separate findings, assumptions and recommendations before reviewer handoff"
+      ],
+      "artifact_columns": [
+        "claim_ref",
+        "claim_kind",
+        "source_or_analysis_ref",
+        "locator",
+        "scope_match",
+        "contradiction",
+        "required_revision",
+        "review_status"
+      ],
+      "acceptance": "Unsupported or overgeneralized claims remain open rather than being polished into apparent fact.",
+      "source_topics": [
+        "research"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-notice-triage",
+      "family": "procurement",
+      "title": "Qualify a Nepal ICT procurement notice",
+      "trigger": "A supplier needs to decide whether a notice deserves full review.",
+      "inputs": "Official notice, procuring entity, scope, dates and accessible documents",
+      "steps": [
+        "Establish the exact entity and substantive ICT scope",
+        "Distinguish notice type and procurement stage",
+        "Record missing documents and a justified pursue/review/exclude decision"
+      ],
+      "artifact_columns": [
+        "notice_ref",
+        "official_url",
+        "entity",
+        "notice_type",
+        "ICT_scope",
+        "stage",
+        "date_basis",
+        "missing_document",
+        "triage_decision"
+      ],
+      "acceptance": "Incidental computer terminology is not enough to qualify unrelated work.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-submission-deadline",
+      "family": "procurement",
+      "title": "Verify procurement deadlines and submission conditions",
+      "trigger": "A bidder needs a reliable deadline and submission checklist.",
+      "inputs": "Actual bid document, amendments, original dates, timezone and submission route",
+      "steps": [
+        "Extract each deadline with its clause and calendar",
+        "Resolve amendments and verify any date conversion",
+        "List remaining security, location and procedural uncertainties for human review"
+      ],
+      "artifact_columns": [
+        "deadline_type",
+        "raw_date",
+        "calendar",
+        "timezone",
+        "clause",
+        "amendment_ref",
+        "verified_value",
+        "submission_route",
+        "unknown"
+      ],
+      "acceptance": "No deadline or conversion is inferred from an unrelated publication timestamp.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-eligibility-matrix",
+      "family": "procurement",
+      "title": "Build a bidder eligibility matrix",
+      "trigger": "A bidder needs to check documentary and organizational eligibility.",
+      "inputs": "Full current bid document, actual bidder evidence and amendment history",
+      "steps": [
+        "Extract exact requirements and their scope",
+        "Map each to actual dated bidder evidence",
+        "Flag missing, expired, partial or conflicting records before a human bid decision"
+      ],
+      "artifact_columns": [
+        "requirement_id",
+        "clause",
+        "eligibility_requirement",
+        "bidder_evidence_ref",
+        "validity",
+        "assessment",
+        "gap",
+        "owner_role"
+      ],
+      "acceptance": "The matrix does not invent authorizations, experience, turnover or eligibility.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-boq-extraction",
+      "family": "procurement",
+      "title": "Extract a technology BOQ with traceability",
+      "trigger": "A supplier needs a reliable item/quantity/specification working sheet.",
+      "inputs": "Original BOQ pages, schedules, units, specifications and amendments",
+      "steps": [
+        "Retain item numbering, raw descriptions, units and quantities",
+        "Link technical requirements and commercial inclusions by clause",
+        "Reconcile totals and flag OCR or ambiguous rows"
+      ],
+      "artifact_columns": [
+        "item_no",
+        "raw_description",
+        "quantity",
+        "unit",
+        "page_ref",
+        "spec_ref",
+        "inclusion",
+        "amendment",
+        "extraction_issue"
+      ],
+      "acceptance": "No unreadable quantity, omitted row or OCR guess is silently accepted as verified.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-model-evidence",
+      "family": "procurement",
+      "title": "Review exact-model technical compliance",
+      "trigger": "A bidder needs evidence for an offered model and included configuration.",
+      "inputs": "Actual tender clauses, exact manufacturer model/SKU and authoritative configuration documents",
+      "steps": [
+        "Separate base, optional and supplied features",
+        "Map each requirement to an exact document/version and locator",
+        "Record deviations and evidence gaps without claiming equivalent compliance automatically"
+      ],
+      "artifact_columns": [
+        "requirement_id",
+        "clause",
+        "offered_model",
+        "configuration",
+        "OEM_document",
+        "locator",
+        "included_or_optional",
+        "assessment",
+        "gap"
+      ],
+      "acceptance": "Compatibility, an optional feature and official approval remain distinct claims.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-amendment-register",
+      "family": "procurement",
+      "title": "Reconcile bid amendments and document versions",
+      "trigger": "A bidder needs to know which requirement or deadline is current.",
+      "inputs": "Original documents, official amendments, issue dates and affected clauses",
+      "steps": [
+        "Identify the authoritative version chain",
+        "Map each amendment to changed clauses, dates and schedules",
+        "Retain unresolved conflicts for clarification"
+      ],
+      "artifact_columns": [
+        "document_ref",
+        "issue_date",
+        "version",
+        "amendment_ref",
+        "affected_clause",
+        "previous_text_ref",
+        "current_effect",
+        "conflict",
+        "next_check"
+      ],
+      "acceptance": "A later amendment is not omitted merely because an older downloaded file is easier to read.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-clarification-draft",
+      "family": "procurement",
+      "title": "Prepare a procurement clarification request",
+      "trigger": "A bidder needs a concise source-linked clarification draft.",
+      "inputs": "Exact ambiguous clauses, conflicting evidence and authorized communication route",
+      "steps": [
+        "State the ambiguity without alleging unsupported intent",
+        "Explain its bid/design consequence with document references",
+        "Draft a precise question for human review without sending it"
+      ],
+      "artifact_columns": [
+        "question_id",
+        "clause",
+        "ambiguity",
+        "evidence_ref",
+        "bid_effect",
+        "proposed_question",
+        "deadline_basis",
+        "approval_status"
+      ],
+      "acceptance": "No official communication is sent or procuring-entity approval fabricated.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-bid-readiness",
+      "family": "procurement",
+      "title": "Review final bid readiness and unresolved gaps",
+      "trigger": "A bidder needs a reviewable go/no-go packet.",
+      "inputs": "Eligibility, technical, commercial, deadline and approval records",
+      "steps": [
+        "Reconcile checklist items to actual final bid artifacts",
+        "Identify unresolved dependencies, deviations and required signatures",
+        "Prepare the authorized decision packet without submitting a bid"
+      ],
+      "artifact_columns": [
+        "check_id",
+        "requirement_ref",
+        "artifact_ref",
+        "version",
+        "assessment",
+        "gap",
+        "owner_role",
+        "approval_ref",
+        "decision_needed"
+      ],
+      "acceptance": "A completed checklist does not itself authorize submission or assert an award.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-lifecycle-offers",
+      "family": "procurement",
+      "title": "Compare technology offers on lifecycle scope",
+      "trigger": "A buyer needs to compare offers beyond headline price.",
+      "inputs": "Exact configurations, installation/training scope, licence/support terms and dated costs",
+      "steps": [
+        "Normalize functional and commercial inclusions",
+        "Separate acquisition, recurring and replacement assumptions",
+        "Compare lifecycle scenarios and unknowns for the buyer decision"
+      ],
+      "artifact_columns": [
+        "offer_ref",
+        "configuration",
+        "cost_item",
+        "period",
+        "amount",
+        "currency",
+        "basis",
+        "inclusion",
+        "exclusion",
+        "lifecycle_limit"
+      ],
+      "acceptance": "A low headline price is not called best value when scope or operating costs differ.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-contract-handover",
+      "family": "procurement",
+      "title": "Translate a technology contract into delivery obligations",
+      "trigger": "A delivery team needs an actionable contract handover.",
+      "inputs": "Executed/authorized contract, schedules, requirements and responsibility records",
+      "steps": [
+        "Trace scope, deliverables, dependencies and evidence obligations",
+        "Identify change authority and acceptance/payment conditions",
+        "Assign unresolved interpretations to the authorized contract owner"
+      ],
+      "artifact_columns": [
+        "obligation_id",
+        "contract_clause",
+        "deliverable",
+        "dependency",
+        "owner_role",
+        "due_basis",
+        "acceptance_ref",
+        "payment_condition",
+        "unknown"
+      ],
+      "acceptance": "The handover does not invent contractual terms or authorize a variation.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-delivery-inspection",
+      "family": "procurement",
+      "title": "Inspect a technology delivery against agreed scope",
+      "trigger": "A buyer or integrator needs a traceable delivery discrepancy record.",
+      "inputs": "Approved order/contract, actual delivered items, variants and condition evidence",
+      "steps": [
+        "Reconcile item identity, quantity and included components",
+        "Record damage, substitutions and missing services",
+        "Separate goods receipt from installation and final acceptance"
+      ],
+      "artifact_columns": [
+        "item_ref",
+        "agreed_variant",
+        "delivered_variant",
+        "quantity",
+        "condition",
+        "discrepancy",
+        "evidence_ref",
+        "required_action",
+        "receipt_status"
+      ],
+      "acceptance": "Physical receipt is not treated as full contract or technical acceptance.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-procurement-acceptance-payment",
+      "family": "procurement",
+      "title": "Trace acceptance evidence to payment conditions",
+      "trigger": "A project owner needs to check whether payment conditions are evidenced.",
+      "inputs": "Actual contract conditions, tests, acceptance authority, invoices and defect records",
+      "steps": [
+        "Match each payment condition to the required acceptance evidence",
+        "Reconcile completed work, unresolved defects and authorized decisions",
+        "Prepare a review packet without committing payment or certifying completion"
+      ],
+      "artifact_columns": [
+        "condition_ref",
+        "contract_clause",
+        "work_ref",
+        "test_ref",
+        "defect",
+        "acceptance_authority",
+        "evidence_ref",
+        "invoice_ref",
+        "decision_needed"
+      ],
+      "acceptance": "No payment commitment or completion certificate is generated from missing evidence.",
+      "source_topics": [
+        "procurement"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-requirements-trace",
+      "family": "engineering",
+      "title": "Trace technical requirements to verification",
+      "trigger": "An engineering team needs a testable requirements baseline.",
+      "inputs": "Actual users/tasks, constraints, source requirements and acceptance authority",
+      "steps": [
+        "Define measurable functional and nonfunctional requirements",
+        "Map each to design and verification evidence",
+        "Retain unresolved assumptions and change ownership"
+      ],
+      "artifact_columns": [
+        "requirement_id",
+        "source_ref",
+        "requirement",
+        "constraint",
+        "design_ref",
+        "verification_method",
+        "acceptance_owner",
+        "gap"
+      ],
+      "acceptance": "Every material requirement has a testable verification route or an explicit unresolved gap.",
+      "source_topics": [
+        "architecture"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-architecture-options",
+      "family": "engineering",
+      "title": "Compare architecture options for a Nepal deployment",
+      "trigger": "A team needs an architecture decision suited to its workload and operating capacity.",
+      "inputs": "Workload, data sensitivity, connectivity, team capability and operating constraints",
+      "steps": [
+        "Define decision criteria before selecting vendors or patterns",
+        "Compare feasible options and failure/recovery dependencies",
+        "Record assumptions, trade-offs and a reversible validation step"
+      ],
+      "artifact_columns": [
+        "option",
+        "criterion",
+        "evidence_ref",
+        "operating_dependency",
+        "cost_basis",
+        "failure_mode",
+        "tradeoff",
+        "validation_step"
+      ],
+      "acceptance": "An architecture is not recommended solely because it is fashionable or used elsewhere.",
+      "source_topics": [
+        "architecture"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-api-contract",
+      "family": "engineering",
+      "title": "Review an integration API contract",
+      "trigger": "A team needs predictable interfaces and failure handling.",
+      "inputs": "Current endpoint/schema documentation, authorized test environment and data ownership",
+      "steps": [
+        "Specify identity, payload, version and error semantics",
+        "Test valid, rejected, duplicate and retried requests within scope",
+        "Record reconciliation and compatibility gaps"
+      ],
+      "artifact_columns": [
+        "interface",
+        "version",
+        "auth_scope",
+        "payload_ref",
+        "error_case",
+        "retry_rule",
+        "idempotency_basis",
+        "test_ref",
+        "gap"
+      ],
+      "acceptance": "A successful happy-path request is not treated as complete integration acceptance.",
+      "source_topics": [
+        "web"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-migration-rehearsal",
+      "family": "engineering",
+      "title": "Rehearse an application data migration",
+      "trigger": "A team needs evidence before migrating an actual system.",
+      "inputs": "Authorized copy, source/target schema, invariants and rollback authority",
+      "steps": [
+        "Define safe test data and transformation mappings",
+        "Run an isolated rehearsal and reconcile counts/content",
+        "Test rejected records and restoration before a release recommendation"
+      ],
+      "artifact_columns": [
+        "migration_ref",
+        "input_version",
+        "mapping_ref",
+        "invariant",
+        "result_ref",
+        "exception",
+        "rollback_test",
+        "go_no_go_gap"
+      ],
+      "acceptance": "No rehearsal command is applied to production without separately authorized scope.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-restore-test",
+      "family": "engineering",
+      "title": "Verify a representative backup restore",
+      "trigger": "A team needs evidence that selected data can actually be restored.",
+      "inputs": "Backup scope, authorized isolated environment, recovery target and integrity checks",
+      "steps": [
+        "Choose a representative permitted restore case",
+        "Record timing and compare restored content with expected invariants",
+        "Document losses, dependencies and retest actions"
+      ],
+      "artifact_columns": [
+        "backup_ref",
+        "test_scope",
+        "target_basis",
+        "start_time",
+        "end_time",
+        "integrity_check",
+        "observed_result",
+        "gap",
+        "retest"
+      ],
+      "acceptance": "A backup job success or file presence is not accepted as proof of recoverability.",
+      "source_topics": [
+        "continuity"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-auth-boundary",
+      "family": "engineering",
+      "title": "Review application authentication and authorization boundaries",
+      "trigger": "A team needs to test access appropriate to actual roles.",
+      "inputs": "Role/action matrix, session/token design and authorized test cases",
+      "steps": [
+        "Separate authentication from permission decisions",
+        "Exercise permitted, forbidden, signed-out and cross-user cases safely",
+        "Record evidence and remediation without exposing credentials"
+      ],
+      "artifact_columns": [
+        "role",
+        "action",
+        "resource_scope",
+        "expected_decision",
+        "test_ref",
+        "observed_decision",
+        "session_case",
+        "gap"
+      ],
+      "acceptance": "Testing stays authorized and does not infer security from a login screen alone.",
+      "source_topics": [
+        "identity"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-privacy-design",
+      "family": "engineering",
+      "title": "Review data exposure in a technical design",
+      "trigger": "A team needs to minimize data collection and unintended disclosure.",
+      "inputs": "Data classes, purpose, flows, provider access and retention requirements",
+      "steps": [
+        "Trace sensitive data through collection, storage, logs and export",
+        "Identify unnecessary fields and access paths",
+        "Define evidence needed for minimization and applicable institutional review"
+      ],
+      "artifact_columns": [
+        "data_class",
+        "purpose",
+        "flow",
+        "access_role",
+        "log_or_export_exposure",
+        "retention_basis",
+        "control_ref",
+        "review_gap"
+      ],
+      "acceptance": "The design review does not publish private records or claim legal compliance automatically.",
+      "source_topics": [
+        "security"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-threat-review",
+      "family": "engineering",
+      "title": "Build a scoped technical threat review",
+      "trigger": "A team needs a practical threat and mitigation assessment.",
+      "inputs": "System boundaries, assets, actors, trust boundaries and actual deployment context",
+      "steps": [
+        "Map plausible threats to concrete exposure and consequence",
+        "Review existing controls and their evidence",
+        "Choose validation actions and accountable residual-risk decisions"
+      ],
+      "artifact_columns": [
+        "asset",
+        "trust_boundary",
+        "threat",
+        "exposure",
+        "existing_control",
+        "evidence_ref",
+        "validation_action",
+        "residual_question",
+        "owner_role"
+      ],
+      "acceptance": "Threat hypotheses are not reported as confirmed compromises or calibrated probabilities.",
+      "source_topics": [
+        "security"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-dependency-review",
+      "family": "engineering",
+      "title": "Review software dependencies and update readiness",
+      "trigger": "A team needs to understand dependency/version exposure before changing software.",
+      "inputs": "Actual manifests, locked versions, owning advisories and supported runtime requirements",
+      "steps": [
+        "Reconcile installed/declared versions and dependency scope",
+        "Check relevant owning advisories and compatibility evidence",
+        "Prepare a tested update/rollback plan with unresolved risks"
+      ],
+      "artifact_columns": [
+        "component",
+        "installed_version",
+        "scope",
+        "advisory_ref",
+        "applicability",
+        "compatibility_ref",
+        "test_ref",
+        "rollback_ref",
+        "unknown"
+      ],
+      "acceptance": "An advisory mention is not automatically a confirmed exploitable condition in the actual system.",
+      "source_topics": [
+        "security"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-release-gates",
+      "family": "engineering",
+      "title": "Prepare a recoverable release checklist",
+      "trigger": "A team needs a reviewable release decision.",
+      "inputs": "Exact change, test evidence, migration state, deployment target and rollback plan",
+      "steps": [
+        "Identify the target and current baseline before release",
+        "Map change-specific tests and dependencies to evidence",
+        "Record authorized go/no-go criteria and recovery verification"
+      ],
+      "artifact_columns": [
+        "release_ref",
+        "target",
+        "baseline_ref",
+        "change_ref",
+        "test_ref",
+        "migration_dependency",
+        "rollback_ref",
+        "approval_ref",
+        "open_gap"
+      ],
+      "acceptance": "A local build or passing unit test is not reported as a deployed and verified release.",
+      "source_topics": [
+        "operations"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-incident-runbook",
+      "family": "engineering",
+      "title": "Prepare an actionable service incident runbook",
+      "trigger": "A team needs a response plan matched to actual services and authority.",
+      "inputs": "Service map, observed failure modes, escalation roles and approved actions",
+      "steps": [
+        "Define detection and triage evidence for the selected service",
+        "Separate read-only checks from actions needing authorization",
+        "Include abort, escalation, recovery and post-incident evidence"
+      ],
+      "artifact_columns": [
+        "service",
+        "failure_signal",
+        "read_only_check",
+        "action_authority",
+        "abort_condition",
+        "escalation_role",
+        "recovery_check",
+        "evidence_needed"
+      ],
+      "acceptance": "The runbook does not silently authorize destructive or production-affecting actions.",
+      "source_topics": [
+        "operations"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-logging-review",
+      "family": "engineering",
+      "title": "Review operational logging and sensitive-data exposure",
+      "trigger": "A team needs useful diagnostics without unnecessary data leakage.",
+      "inputs": "Current log fields, access/retention configuration and incident questions",
+      "steps": [
+        "Map each logged field to an operational purpose",
+        "Identify secrets, identifiers and excessive retention/exposure",
+        "Define redaction, access and diagnostic acceptance checks"
+      ],
+      "artifact_columns": [
+        "log_stream",
+        "field",
+        "purpose",
+        "sensitivity",
+        "access_scope",
+        "retention_basis",
+        "redaction_action",
+        "diagnostic_test"
+      ],
+      "acceptance": "Useful observability is not obtained by retaining credentials or unrestricted private payloads.",
+      "source_topics": [
+        "security"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-accessibility-review",
+      "family": "engineering",
+      "title": "Review a technology workflow for accessibility",
+      "trigger": "A team needs evidence that actual users can complete a workflow.",
+      "inputs": "Selected tasks, interface, user needs, accessibility standards and test context",
+      "steps": [
+        "Define critical tasks and relevant interaction modes",
+        "Inspect keyboard, labels, focus, errors and content barriers",
+        "Record reproducible failures and user/task acceptance criteria"
+      ],
+      "artifact_columns": [
+        "task",
+        "interaction_mode",
+        "criterion_ref",
+        "test_step",
+        "observed_barrier",
+        "impact",
+        "remediation",
+        "acceptance_test"
+      ],
+      "acceptance": "Automated checks alone are not described as exhaustive accessibility certification.",
+      "source_topics": [
+        "web"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-performance-baseline",
+      "family": "engineering",
+      "title": "Establish a reproducible application performance baseline",
+      "trigger": "A team needs a meaningful baseline before optimization.",
+      "inputs": "Actual workload, environment, data volume and service-level definitions",
+      "steps": [
+        "Define repeatable measurement conditions and success/error measures",
+        "Run only authorized bounded tests",
+        "Report distributions, bottlenecks and limits before proposing a change"
+      ],
+      "artifact_columns": [
+        "workload",
+        "environment",
+        "data_volume",
+        "measure",
+        "period",
+        "test_limit",
+        "result_ref",
+        "bottleneck",
+        "measurement_limit"
+      ],
+      "acceptance": "A single fast response is not presented as a general capacity or latency guarantee.",
+      "source_topics": [
+        "performance"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-query-review",
+      "family": "engineering",
+      "title": "Review a database query and its evidence",
+      "trigger": "A team needs to improve a query without changing result meaning.",
+      "inputs": "Exact query/schema/version, representative permitted data and execution evidence",
+      "steps": [
+        "Confirm intended result semantics and access boundaries",
+        "Inspect execution evidence and relevant indexes/constraints",
+        "Compare correctness and performance in a safe test environment"
+      ],
+      "artifact_columns": [
+        "query_ref",
+        "DB_version",
+        "intended_result",
+        "plan_ref",
+        "index_or_constraint",
+        "test_ref",
+        "correctness_check",
+        "performance_result",
+        "limit"
+      ],
+      "acceptance": "An optimization cannot silently change result correctness or run unsafe writes in production.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-pipeline-quality",
+      "family": "engineering",
+      "title": "Review data-pipeline integrity",
+      "trigger": "A team needs to detect and explain broken or misleading data ingestion.",
+      "inputs": "Source contract, transformation versions, reconciliation rules and job evidence",
+      "steps": [
+        "Trace ingestion through validation and transformation stages",
+        "Test missing, duplicate, late and rejected records",
+        "Preserve provenance and distinguish empty results from failed collection"
+      ],
+      "artifact_columns": [
+        "pipeline",
+        "source_ref",
+        "input_version",
+        "rule",
+        "test_case",
+        "observed_result",
+        "missingness",
+        "reconciliation_ref",
+        "next_action"
+      ],
+      "acceptance": "A failed fetch or parser is not reported as evidence that no underlying records exist.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-network-plan",
+      "family": "engineering",
+      "title": "Prepare a network addressing and dependency plan",
+      "trigger": "A team needs a documented network design for actual sites and users.",
+      "inputs": "Site inventory, current topology, address usage, service boundaries and support constraints",
+      "steps": [
+        "Reconcile actual addresses and dependencies",
+        "Identify overlap, segmentation and connectivity requirements",
+        "Define controlled validation and rollback for proposed changes"
+      ],
+      "artifact_columns": [
+        "site_ref",
+        "segment",
+        "address_scope",
+        "service_dependency",
+        "conflict",
+        "security_boundary",
+        "validation_test",
+        "rollback_ref"
+      ],
+      "acceptance": "A proposed network change is not treated as safe or deployed without site-specific verification.",
+      "source_topics": [
+        "network"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-endpoint-baseline",
+      "family": "engineering",
+      "title": "Review an endpoint configuration baseline",
+      "trigger": "A team needs manageable endpoint settings suited to actual users.",
+      "inputs": "Device/OS versions, role needs, update/support state and institutional policy",
+      "steps": [
+        "Map settings to user tasks and threats",
+        "Check observed configuration and support evidence",
+        "Prepare role-appropriate remediation and recovery tests"
+      ],
+      "artifact_columns": [
+        "device_role",
+        "OS_version",
+        "control",
+        "expected_basis",
+        "observed_ref",
+        "gap",
+        "user_impact",
+        "rollback_or_recovery",
+        "owner_role"
+      ],
+      "acceptance": "A generic hardening list is not applied blindly to every device or claimed compliant.",
+      "source_topics": [
+        "endpoint"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-service-monitoring",
+      "family": "engineering",
+      "title": "Design service monitoring with actionable signals",
+      "trigger": "A team needs alerts that support response rather than noise.",
+      "inputs": "Service objectives, failure modes, available telemetry and response coverage",
+      "steps": [
+        "Map signals to user-visible failure and actionable thresholds",
+        "Define alert ownership and permitted diagnostic steps",
+        "Test an alert-to-response path and document blind spots"
+      ],
+      "artifact_columns": [
+        "service",
+        "signal",
+        "threshold_basis",
+        "collection_gap",
+        "alert_owner",
+        "response_step",
+        "test_ref",
+        "blind_spot"
+      ],
+      "acceptance": "A configured dashboard is not described as verified continuous monitoring without operating evidence.",
+      "source_topics": [
+        "operations"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-engineering-support-handover",
+      "family": "engineering",
+      "title": "Prepare an engineering support handover",
+      "trigger": "A team needs another operator to maintain the delivered system.",
+      "inputs": "Actual configuration, versions, access authority, recovery procedure and support responsibilities",
+      "steps": [
+        "Reconcile handover material to delivered and tested behaviour",
+        "Include common tasks, failure handling and renewal dependencies",
+        "Have an authorized operator demonstrate essential tasks and record gaps"
+      ],
+      "artifact_columns": [
+        "system_ref",
+        "version",
+        "operating_task",
+        "instruction_ref",
+        "access_authority",
+        "recovery_ref",
+        "operator_test",
+        "gap",
+        "owner_role"
+      ],
+      "acceptance": "Documentation delivery alone is not proof that operations can maintain or recover the system.",
+      "source_topics": [
+        "operations"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-customer-discovery",
+      "family": "business",
+      "title": "Plan technology customer discovery",
+      "trigger": "A Nepal technology business needs to test a problem and buyer hypothesis.",
+      "inputs": "Defined segment, problem hypothesis, consent-based research plan and observed alternatives",
+      "steps": [
+        "Separate user, buyer and budget authority",
+        "Design neutral questions about actual behaviour and constraints",
+        "Record contradictory evidence and next validation steps without inventing demand"
+      ],
+      "artifact_columns": [
+        "segment",
+        "role",
+        "problem_hypothesis",
+        "observed_behaviour",
+        "evidence_ref",
+        "alternative",
+        "contradiction",
+        "next_test"
+      ],
+      "acceptance": "An interview preference or friendly reaction is not counted as a paying customer commitment.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-segmentation",
+      "family": "business",
+      "title": "Build evidence-based technology buyer segments",
+      "trigger": "A business needs segments useful for delivery and sales decisions.",
+      "inputs": "Observed needs, buying processes, support reach and available institutional data",
+      "steps": [
+        "Choose segmentation variables tied to actual decisions",
+        "Check whether evidence supports the proposed distinctions",
+        "Record reachable scope and validation gaps"
+      ],
+      "artifact_columns": [
+        "segment",
+        "need_basis",
+        "buying_process",
+        "support_geography",
+        "evidence_ref",
+        "reach_constraint",
+        "unknown",
+        "next_check"
+      ],
+      "acceptance": "National population or all registered institutions are not treated as immediately reachable buyers.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-market-bottomup",
+      "family": "business",
+      "title": "Build a bounded technology-market scenario",
+      "trigger": "A business needs a bottom-up market assessment.",
+      "inputs": "Verified buyer counts, eligibility/use cases, purchase frequency and explicitly sourced cost/price assumptions",
+      "steps": [
+        "Define the addressable population and exclusions",
+        "Separate total, eligible, reachable and funded/current buyers",
+        "Calculate labelled scenarios and sensitivity without inventing numbers"
+      ],
+      "artifact_columns": [
+        "population_ref",
+        "eligible_basis",
+        "reachable_constraint",
+        "purchase_basis",
+        "value_assumption",
+        "source_ref",
+        "scenario",
+        "uncertainty"
+      ],
+      "acceptance": "A scenario is not presented as measured demand or a guaranteed revenue forecast.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-offer-scope",
+      "family": "business",
+      "title": "Define a supportable ICT service offer",
+      "trigger": "A business needs an offer aligned with actual delivery capacity.",
+      "inputs": "Buyer problem, deliverables, delivery limits, evidence and support responsibilities",
+      "steps": [
+        "Define the outcome, included work and explicit exclusions",
+        "Check every promise against actual capability and evidence",
+        "Set acceptance, change and support boundaries for human approval"
+      ],
+      "artifact_columns": [
+        "buyer_need",
+        "deliverable",
+        "included_scope",
+        "exclusion",
+        "capability_ref",
+        "acceptance_method",
+        "change_boundary",
+        "support_owner"
+      ],
+      "acceptance": "The offer does not invent clients, guarantees, certifications or delivery capability.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-cost-scenario",
+      "family": "business",
+      "title": "Prepare a technology lifecycle cost scenario",
+      "trigger": "A business needs a transparent cost model for a proposed service or system.",
+      "inputs": "Actual quotes or labelled assumptions, units, periods and operating obligations",
+      "steps": [
+        "Separate upfront, recurring and replacement cost bases",
+        "Normalize consistent periods/currency and inclusion assumptions",
+        "Show missing inputs and sensitivity before a spending decision"
+      ],
+      "artifact_columns": [
+        "cost_item",
+        "amount",
+        "currency",
+        "unit",
+        "period",
+        "observed_or_assumed",
+        "source_ref",
+        "inclusion",
+        "scenario_limit"
+      ],
+      "acceptance": "The model is not a quotation, financing recommendation or invented market price.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-cash-cycle",
+      "family": "business",
+      "title": "Review a technology project cash cycle",
+      "trigger": "A business needs to see payment timing and funding gaps.",
+      "inputs": "Actual contract/payment terms, supplier obligations, expected timing bases and known balances",
+      "steps": [
+        "Distinguish recognized revenue/profit from cash timing",
+        "Map dated inflows and outflows to evidence or explicit scenarios",
+        "Identify timing mismatches and owner decisions without committing finance"
+      ],
+      "artifact_columns": [
+        "event_ref",
+        "inflow_or_outflow",
+        "amount",
+        "currency",
+        "date_basis",
+        "source_ref",
+        "dependency",
+        "timing_risk",
+        "owner_decision"
+      ],
+      "acceptance": "No unsupported cash balance, payment certainty or financial commitment is fabricated.",
+      "source_topics": [
+        "commercial"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-brand-claims",
+      "family": "business",
+      "title": "Audit technology marketing claims",
+      "trigger": "A business needs public copy that its delivery evidence supports.",
+      "inputs": "Draft copy, exact product/service scope and actual proof records",
+      "steps": [
+        "Classify material claims by the evidence they need",
+        "Check compatibility, certification, client, price and outcome wording",
+        "Revise unsupported wording and retain required human approval before publication"
+      ],
+      "artifact_columns": [
+        "claim_ref",
+        "claim_type",
+        "exact_scope",
+        "evidence_ref",
+        "limitation",
+        "revision",
+        "approval_needed",
+        "status"
+      ],
+      "acceptance": "Good wording does not convert an unsupported claim into a verified one.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-campaign-evidence",
+      "family": "business",
+      "title": "Prepare a source-backed technology campaign brief",
+      "trigger": "A business needs useful marketing tied to a real buyer problem.",
+      "inputs": "Target audience, problem evidence, supported offer and channel constraints",
+      "steps": [
+        "Define the buyer action and evidence-backed message",
+        "Select a format suitable to the actual audience and resources",
+        "Prepare creative requirements and a measurement plan without posting"
+      ],
+      "artifact_columns": [
+        "audience",
+        "problem_ref",
+        "message",
+        "proof_ref",
+        "format",
+        "buyer_action",
+        "metric_definition",
+        "resource_limit",
+        "approval_status"
+      ],
+      "acceptance": "No fabricated result, urgency, client or endorsement is added to improve persuasion.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-channel-comparison",
+      "family": "business",
+      "title": "Compare channels for a Nepal technology offer",
+      "trigger": "A business needs to choose where to spend marketing effort.",
+      "inputs": "Audience evidence, channel observations, available resources and matched outcome measures",
+      "steps": [
+        "Define the decision and comparable measurement windows",
+        "Separate observed results from expectations and attribution claims",
+        "Compare feasible tests and missing data rather than guaranteeing a channel"
+      ],
+      "artifact_columns": [
+        "channel",
+        "audience_basis",
+        "window",
+        "resource_basis",
+        "outcome_definition",
+        "evidence_ref",
+        "attribution_limit",
+        "next_test"
+      ],
+      "acceptance": "Unmatched periods or platform claims are not treated as reliable comparative returns.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-sales-qualification",
+      "family": "business",
+      "title": "Qualify an institutional technology opportunity",
+      "trigger": "A sales team needs a factual next-step decision.",
+      "inputs": "Actual need evidence, decision roles, funding/procurement stage and support reach",
+      "steps": [
+        "Separate a signal or enquiry from a verified opportunity",
+        "Check technical fit, authority, timing and reachable delivery",
+        "Record qualification gaps and the next authorized action"
+      ],
+      "artifact_columns": [
+        "opportunity_ref",
+        "need_ref",
+        "decision_role",
+        "funding_stage",
+        "technical_fit",
+        "timing_basis",
+        "support_reach",
+        "gap",
+        "next_action"
+      ],
+      "acceptance": "A relationship, public budget or news story is not counted as a confirmed sale.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-proposal-evidence",
+      "family": "business",
+      "title": "Build a reviewable technology proposal",
+      "trigger": "A business needs a proposal that traces promises to evidence.",
+      "inputs": "Actual requirements, supported solution scope, delivery evidence and commercial assumptions",
+      "steps": [
+        "Map each proposed deliverable to the buyer need and supporting evidence",
+        "Define dependencies, exclusions, acceptance and support",
+        "Flag unapproved prices/commitments for human review"
+      ],
+      "artifact_columns": [
+        "requirement_ref",
+        "proposed_deliverable",
+        "evidence_ref",
+        "dependency",
+        "exclusion",
+        "acceptance_method",
+        "cost_basis",
+        "approval_needed"
+      ],
+      "acceptance": "The proposal does not invent success stories, approvals or commercial commitments.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-project-dependencies",
+      "family": "business",
+      "title": "Plan technology project dependencies",
+      "trigger": "A project team needs a feasible sequence and accountable handoffs.",
+      "inputs": "Actual deliverables, site conditions, resources, procurement stages and acceptance roles",
+      "steps": [
+        "Identify dependencies before assigning dates",
+        "Separate assumed availability from confirmed constraints",
+        "Define phase exits, owners and unresolved blockers"
+      ],
+      "artifact_columns": [
+        "deliverable",
+        "dependency",
+        "availability_basis",
+        "owner_role",
+        "phase_exit",
+        "target_basis",
+        "blocker",
+        "next_decision"
+      ],
+      "acceptance": "A schedule does not imply approvals, resource availability or completion that has not been evidenced.",
+      "source_topics": [
+        "operations"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-staff-capacity",
+      "family": "business",
+      "title": "Assess staffing capacity for a technology service",
+      "trigger": "A business needs job-relevant capability and coverage planning.",
+      "inputs": "Actual workload, role duties, service hours, skills evidence and lawful staffing constraints",
+      "steps": [
+        "Map tasks to required capability and coverage",
+        "Distinguish training, experience and demonstrated task performance",
+        "Document gaps and practical staffing/training scenarios without judging sensitive personal traits"
+      ],
+      "artifact_columns": [
+        "task",
+        "required_capability",
+        "coverage_need",
+        "evidence_basis",
+        "capacity_gap",
+        "training_or_staffing_option",
+        "assumption",
+        "owner_role"
+      ],
+      "acceptance": "A role plan is not an automated hiring decision or fabricated employee-performance claim.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-partner-capability",
+      "family": "business",
+      "title": "Review a technology delivery partner",
+      "trigger": "A business needs to verify what a partner can actually supply and support.",
+      "inputs": "Exact proposed role, authorized credentials, delivery evidence and geographic support scope",
+      "steps": [
+        "Map responsibilities and dependencies between parties",
+        "Check claimed capability and authority against actual evidence",
+        "Record gaps, escalation and acceptance boundaries before commitment"
+      ],
+      "artifact_columns": [
+        "partner_ref",
+        "proposed_role",
+        "capability_claim",
+        "evidence_ref",
+        "authorization_scope",
+        "support_geography",
+        "gap",
+        "acceptance_boundary"
+      ],
+      "acceptance": "A partner claim or reseller relationship is not treated as an OEM authorization or delivery guarantee.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-metric-definition",
+      "family": "business",
+      "title": "Define actionable business and operating metrics",
+      "trigger": "A team needs metrics that can be calculated and interpreted consistently.",
+      "inputs": "Actual decision, source fields, periods, units and responsible data owners",
+      "steps": [
+        "Define numerator, denominator and inclusion rules",
+        "Trace collection and missingness to actual systems",
+        "State how the metric informs a decision and what it cannot establish"
+      ],
+      "artifact_columns": [
+        "metric",
+        "decision",
+        "numerator",
+        "denominator",
+        "period",
+        "unit",
+        "inclusion",
+        "source_ref",
+        "missingness",
+        "interpretation_limit"
+      ],
+      "acceptance": "A polished dashboard number is not trusted without a reproducible definition and evidence.",
+      "source_topics": [
+        "data"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    },
+    {
+      "id": "np-business-scenario-signals",
+      "family": "business",
+      "title": "Prepare technology-business scenarios and monitoring questions",
+      "trigger": "A Nepal technology business needs to plan around uncertainty.",
+      "inputs": "Actual dependencies, relevant external signals, base evidence and owner decisions",
+      "steps": [
+        "Define plausible scenarios and their explicit mechanisms for the business",
+        "Separate observed signals from assumptions and predictions",
+        "Specify trigger evidence and review actions without inventing probabilities"
+      ],
+      "artifact_columns": [
+        "dependency",
+        "scenario",
+        "mechanism",
+        "observed_signal_ref",
+        "assumption",
+        "trigger_definition",
+        "review_action",
+        "uncertainty"
+      ],
+      "acceptance": "A scenario or discovered source is not presented as a forecast or a running monitor.",
+      "source_topics": [
+        "business"
+      ],
+      "version": "0.4.0",
+      "origin": "Original Dharma OS authored workflow",
+      "license": "MIT"
+    }
+  ]
+}
