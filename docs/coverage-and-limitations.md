@@ -4,7 +4,7 @@ The public package supplies a taxonomy, research methods, source annotations, se
 
 ## Packaged resources
 
-The current package contains 60 domains, 600 core research topics, 164 finer engineering prompts, 30 methods, 119 source records representing 117 distinct URLs, 52 distinct statistical measurements and 37 checked publisher records. Most source checks are dated 2026-11-11; the selected NRB publication was rechecked on 2026-11-12. Some source routes failed, were search-index-only, or require further review; see each record.
+The research-workbench subset contains 60 domains, 600 core research topics, 164 finer engineering prompts, 30 methods, 119 source records representing 117 distinct URLs, 52 distinct statistical measurements and 37 checked publisher records. Most source checks are dated 2026-11-11; the selected NRB publication was rechecked on 2026-11-12. Some source routes failed, were search-index-only, or require further review; see each record.
 
 The new payment CSV contains 50 observations (ten selected series across five printed periods). Eight overlap the legacy ten-observation file; two legacy observations are additional. Do not add 50 and 10 and claim 60 distinct measurements. These are national payment figures from one publication, not a Nepal-wide sector dataset or a complete monthly time series.
 
@@ -13,6 +13,12 @@ Four maintainer desk studies link selected evidence to seven domains. No indepen
 Six authored protocols and the browser workspace help users create their own scoped work. Structural validation detects certain evidence/date/geography/reference problems; it does not evaluate semantic truth, causal identification, sampling validity, legal compliance or engineering adequacy. A national-only NRB source cannot be relabelled as local evidence. Other source scopes remain subject to human review.
 
 Research prompts can overlap and are not empirical findings. Candidate source mappings are discovery routes rather than proof of every topic. News reports, concepts, fundraising, budgets, procurement and awards remain distinct evidence states.
+
+## Task and reference library (0.4)
+
+The repository now includes 101 actual skill entrypoints: the existing Dharma OS router and 100 distinct authored task workflows, each with a blank working record. The separate discovery catalog contains 16,884 canonical URLs, including the 117 legacy Nepal URLs above and 16,767 official international technical references. Do not add the legacy source count to the discovery total. International references are not Nepal publications or measured findings; all remain marked as publisher-index discoveries, not individually reviewed pages.
+
+A bounded availability sample checked 33 URLs; all responded, without validating their content. An independent behavioral review covered three skills and corrected source-selection and intake-field defects. The release does not claim all 100 workflows were empirically tested with clients. See [reference provenance and count rules](reference-library.md) and [release validation](release-0.4.md).
 
 ## Wider research snapshot — not bundled data
 

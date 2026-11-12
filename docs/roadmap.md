@@ -4,6 +4,10 @@
 
 The offline browser workspace, evidence-aware study format, six research protocols, four worked desk studies, selected 50-observation payment dataset, citation/export tools and structural checks are implemented. The domain coverage ledger records where selected studies exist. See [the upgrade review](upgrade-review.md) for the tested behavior and remaining limits.
 
+## Available in 0.4
+
+The [focused task library](task-skills.md), [reference discovery catalog](reference-library.md), offline search/pagination and portable task export are implemented. Task skills provide methods and records; real institution-level evidence and usability evaluation remain research priorities below.
+
 ## Research priorities
 
 | Priority | Work | Completion evidence |
