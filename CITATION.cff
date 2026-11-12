@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this software when using its research workflows. Cite underlying data publishers separately."
+type: software
+title: "Dharma OS Nepal"
+authors:
+  - family-names: Aryal
+    given-names: Milan
+repository-code: "https://github.com/Aryalmilan-max/dharma-os-nepal"
+url: "https://github.com/Aryalmilan-max/dharma-os-nepal"
+license: MIT
+abstract: "An open Nepal technology-business research toolkit with explicit evidence states, study protocols, reproducible desk studies and offline helpers."
+keywords:
+  - Nepal
+  - research methods
+  - technology business
+  - evidence

@@ -6,24 +6,69 @@
 [![License: MIT](https://img.shields.io/badge/original_code-MIT-167564)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-245C9B)](skills/dharma-os/scripts/nepal.py)
 
-**Give your AI agent a research framework for Nepal's technology-business sector.**
+**Turn a Nepal technology question into a study with traceable evidence.**
 
-Explore 60 domains and 600 research topics spanning technology, business, people, institutions and local conditions. Follow source records, expose evidence gaps, and prepare a useful research brief before making a decision.
+Explore the knowledge tree, inspect a worked study, create a research protocol, attach evidence and export a reviewable result. Built for students, technology businesses and independent researchers working on Nepal.
 
 **नेपालको प्रविधि व्यवसाय बुझ्न—तथ्याङ्क, बजार, जनशक्ति, इन्जिनियरिङ र स्थानीय प्रमाणलाई जोड्ने खुला अनुसन्धान ढाँचा।**
 
-[Try an example](docs/examples.md) · [Explore all 60 domains](skills/dharma-os/references/nepal-tech-intelligence/INDEX.md) · [Contribute a source](https://github.com/Aryalmilan-max/dharma-os-nepal/issues/new/choose) · [Coverage limits](docs/coverage-and-limitations.md)
+[Worked studies](docs/studies/qr-growth.md) · [Workbench guide](skills/dharma-os/references/nepal-tech-intelligence/workbench.md) · [Explore all 60 domains](skills/dharma-os/references/nepal-tech-intelligence/INDEX.md) · [Coverage limits](docs/coverage-and-limitations.md)
 
-## Try it in a minute
+## Start without the command line
+
+Download this repository using GitHub's **Code → Download ZIP**, extract it, and open **`web/index.html`** in a modern browser. The workspace works offline without an account, API key, installation or server.
+
+- **Explore:** search 60 domains and their research leaves, including selected Nepali search aliases.
+- **Evidence:** inspect 50 selected payment observations and annotated source records; download CSV or a source citation.
+- **Worked studies:** follow four desk studies from facts through calculations, interpretation and limitations.
+- **Methods:** choose among 30 analytical methods with evidence requirements and common mistakes.
+- **My study:** choose a protocol, add claims and citations, check the evidence structure, save a local draft, and export JSON/Markdown.
+- **Coverage:** see which branches have selected studies and which still contain only research requirements.
+
+English/Nepali navigation labels are available; source text is not automatically translated. Drafts saved in the browser stay in that browser. Download JSON for a portable backup. The interface has no analytics, account connections, automatic source retrieval or network API requests. External source links open only when you choose them.
+
+If your browser restricts local scripts, see the [loopback-server fallback](skills/dharma-os/references/nepal-tech-intelligence/workbench.md#start-without-an-api-key).
+
+## Start with Python or an AI agent
 
 ```bash
 gh repo clone Aryalmilan-max/dharma-os-nepal
 cd dharma-os-nepal
 python3 skills/dharma-os/scripts/nepal.py find smartboard
 python3 skills/dharma-os/scripts/nepal.py brief --domain D39 --locality "Banganga Municipality"
+python3 skills/dharma-os/scripts/research.py search स्मार्टबोर्ड
+python3 skills/dharma-os/scripts/research.py report qr-growth
 ```
 
 The local helper needs Python 3.10+, no extra packages, no API key and no account connection. It reads the bundled snapshot; live research requires your agent's own available tools.
+
+## Complete a real workflow
+
+**Student:** choose `student-thesis`, establish the question and sample, build a literature/evidence matrix, and export a study for supervisor review. Your institution's ethics, academic-integrity and thesis-format requirements still apply.
+
+**Business:** choose `ict-market` or `school-readiness`, separate observed need from funding and buying intent, and identify the next evidence needed for a decision.
+
+**Technical researcher:** choose `engineering-review`, `tender-review` or `media-verification`, trace requirements and claims to their sources, and retain contradictions and unresolved checks.
+
+```bash
+python3 skills/dharma-os/scripts/research.py init --template school-readiness --question "Is the selected school ready for a smart classroom?" --locality "Banganga Municipality" --out study.json
+python3 skills/dharma-os/scripts/research.py validate study.json
+python3 skills/dharma-os/scripts/research.py report study.json
+```
+
+The new file is a research plan until actual evidence is added. `init` refuses to overwrite existing work. Validation catches structural mistakes; it cannot certify that a conclusion is true, a sample is representative or a purchase is justified.
+
+## Reproduce and challenge a finding
+
+The [QR study](docs/studies/qr-growth.md) computes an **83.95%** increase in reported national QR transaction volume between the printed Bhadra 2082 and 2083 periods. It explicitly does not infer unique-user growth, school demand, municipal adoption or a causal effect.
+
+```bash
+python3 skills/dharma-os/scripts/research.py compare NRB-qr-volume-202509 NRB-qr-volume-202609
+python3 skills/dharma-os/scripts/research.py dataset --format csv
+python3 skills/dharma-os/scripts/research.py cite NP-BIZ-NRB-PAYMENTS-BHADRA2083 --format bibtex
+```
+
+Inspect the [original NRB table](https://www.nrb.org.np/psd/payment-systems-indicators-of-2083-bhadra/), its units and periods, and the [selected CSV](data/payment-observations.csv). Other worked studies examine [wallet counts](docs/studies/wallet-interpretation.md), [average QR transaction amount](docs/studies/qr-ticket.md), and [what school/procurement source routes establish](docs/studies/classroom-evidence-audit.md).
 
 ## Who this helps
 
@@ -43,10 +88,13 @@ Dharma OS connects technology with statistics, markets, management, entrepreneur
 | Engineering specialization topics | 164 | Finer prompts; overlap with core topics is possible |
 | Analytical principles and methods | 30 | Nepal applications, evidence requirements and failure modes |
 | Source records | 119 | 117 distinct URLs, with individual verification limits |
-| Statistical observations | 10 | Attributed NRB payment figures with periods, units and caveats |
+| Payment dataset | 50 | 10 selected national series × 5 printed periods; not a continuous monthly series |
+| Distinct statistical measurements | 52 | Expanded dataset plus two legacy observations; eight legacy observations overlap |
+| Worked desk studies | 4 | Maintainer analyses, not independent academic peer review or field studies |
+| Research protocols | 6 | Students, markets, schools, tenders, engineering and media |
 | Checked publisher records | 37 | Historical checks; no continuous monitoring claim |
 
-Source-check snapshot: **2026-11-11**. Public edition prepared: **2026-11-12**. Recheck current facts before consequential use.
+Original source-check snapshot: **2026-11-11**. Selected NRB table rechecked: **2026-11-12**. Individual source dates still apply. Recheck current facts before consequential use. Linked studies touch seven domains; that does not establish complete coverage of those domains. See the [domain coverage ledger](data/domain-coverage.csv).
 
 ## Explore
 
@@ -88,8 +136,12 @@ See [source provenance](sources/provenance.json) and [third-party notices](THIRD
 
 ```bash
 python3 -m unittest discover -s tests -v
+node tests/browser_core.cjs
+python3 scripts/build_library.py
 ```
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include source corrections, verified local evidence, better methods and clearer coverage limits. A new source or topic must not silently become a claim of nationwide coverage.
+
+Python has no third-party runtime dependencies; Node.js 20+ is only needed for the browser-core development tests. CI checks Python 3.10/3.12, the browser core and deterministic generated artifacts. See the [upgrade review](docs/upgrade-review.md), [research priorities](docs/roadmap.md) and [software citation](CITATION.cff).
 
 **Help improve one leaf:** choose a domain, contribute a public Nepal source, explain what it establishes, and retain its limitations. See [starter contributions](docs/roadmap.md). If this is useful, star the repository or share it with someone researching Nepal's technology sector.

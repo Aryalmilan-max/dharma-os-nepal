@@ -1316,11 +1316,11 @@
     "language": [
       "en"
     ],
-    "verification_date": "2026-11-11",
+    "verification_date": "2026-11-12",
     "verification_method": "Official index and PDF opened; complete local PDF downloaded, page rendered and visually inspected against extracted table text",
     "verification_status": "publication_and_selected_observations_verified",
     "authority": "primary official publisher",
-    "evidence": "One-page publication separates access counts from monthly transaction volumes and NPR-million amounts. Selected Bhadra2083 observations were checked in the latest column.",
+    "evidence": "Selected ten series across five printed periods checked against the rendered one-page table on 2026-11-12; original periods, units and definitions retained.",
     "limitations": [
       "The observations are a limited national payment-statistics sample, not complete Nepal tech statistics.",
       "Access counts do not establish unique persons, activity, buying intent or municipal adoption.",
@@ -1333,8 +1333,11 @@
       "downloaded_bytes": 298179,
       "sha256": "0a3257c1b116ec42eb756600cc483b93afaa1951af54bb8d6372ff74e8cbbee1"
     },
-    "extraction_status": "10 selected numerical observations visually checked; complete underlying payments series not extracted",
-    "research_group": "business"
+    "extraction_status": "50 selected observations; not every row or a complete monthly series",
+    "research_group": "business",
+    "supported_evidence_levels": [
+      "national"
+    ]
   },
   {
     "id": "eng-nso-census-local-directory",

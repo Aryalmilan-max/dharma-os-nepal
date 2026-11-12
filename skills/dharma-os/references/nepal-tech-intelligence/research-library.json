@@ -1,0 +1,1509 @@
+{
+  "schema_version": "1.0",
+  "release": "0.2.0",
+  "checked_on": "2026-11-12",
+  "scope": "Selected national payment evidence and authored desk studies/protocols; not nationwide completed research.",
+  "observations": [
+    {
+      "id": "NRB-wallet-accounts-202507",
+      "series_id": "wallet-accounts",
+      "indicator": "Wallet accounts",
+      "value": 26765660,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A4, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Wallet access counts reported by NRB; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-accounts-202509",
+      "series_id": "wallet-accounts",
+      "indicator": "Wallet accounts",
+      "value": 24684836,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A4, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Wallet access counts reported by NRB; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-accounts-202607",
+      "series_id": "wallet-accounts",
+      "indicator": "Wallet accounts",
+      "value": 27698918,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A4, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Wallet access counts reported by NRB; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-accounts-202608",
+      "series_id": "wallet-accounts",
+      "indicator": "Wallet accounts",
+      "value": 28033039,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A4, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Wallet access counts reported by NRB; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-accounts-202609",
+      "series_id": "wallet-accounts",
+      "indicator": "Wallet accounts",
+      "value": 28150508,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A4, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Wallet access counts reported by NRB; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-mobile-banking-202507",
+      "series_id": "mobile-banking",
+      "indicator": "Mobile banking access",
+      "value": 27741284,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A9, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Mobile banking access counts; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-mobile-banking-202509",
+      "series_id": "mobile-banking",
+      "indicator": "Mobile banking access",
+      "value": 28240106,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A9, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Mobile banking access counts; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-mobile-banking-202607",
+      "series_id": "mobile-banking",
+      "indicator": "Mobile banking access",
+      "value": 30099932,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A9, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Mobile banking access counts; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-mobile-banking-202608",
+      "series_id": "mobile-banking",
+      "indicator": "Mobile banking access",
+      "value": 30317575,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A9, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Mobile banking access counts; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-mobile-banking-202609",
+      "series_id": "mobile-banking",
+      "indicator": "Mobile banking access",
+      "value": 30473251,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A9, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Mobile banking access counts; not unique persons or active customers.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-internet-banking-202507",
+      "series_id": "internet-banking",
+      "indicator": "Internet banking access",
+      "value": 2219341,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A10, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Internet banking access counts; not unique persons.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-internet-banking-202509",
+      "series_id": "internet-banking",
+      "indicator": "Internet banking access",
+      "value": 2278262,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A10, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Internet banking access counts; not unique persons.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-internet-banking-202607",
+      "series_id": "internet-banking",
+      "indicator": "Internet banking access",
+      "value": 2498583,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A10, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Internet banking access counts; not unique persons.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-internet-banking-202608",
+      "series_id": "internet-banking",
+      "indicator": "Internet banking access",
+      "value": 2462060,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A10, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Internet banking access counts; not unique persons.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-internet-banking-202609",
+      "series_id": "internet-banking",
+      "indicator": "Internet banking access",
+      "value": 2515803,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A10, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Internet banking access counts; not unique persons.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-atm-machines-202507",
+      "series_id": "atm-machines",
+      "indicator": "ATM machines",
+      "value": 5263,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A5, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "ATM terminals at the reference point; no availability or utilization measure.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-atm-machines-202509",
+      "series_id": "atm-machines",
+      "indicator": "ATM machines",
+      "value": 5292,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A5, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "ATM terminals at the reference point; no availability or utilization measure.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-atm-machines-202607",
+      "series_id": "atm-machines",
+      "indicator": "ATM machines",
+      "value": 5115,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-July 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A5, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "ATM terminals at the reference point; no availability or utilization measure.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-atm-machines-202608",
+      "series_id": "atm-machines",
+      "indicator": "ATM machines",
+      "value": 5108,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A5, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "ATM terminals at the reference point; no availability or utilization measure.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-atm-machines-202609",
+      "series_id": "atm-machines",
+      "indicator": "ATM machines",
+      "value": 5098,
+      "unit": "number",
+      "period_type": "stock",
+      "reference_period": "Mid-Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, A5, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "ATM terminals at the reference point; no availability or utilization measure.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-volume-202507",
+      "series_id": "qr-volume",
+      "indicator": "QR-based payments",
+      "value": 40236413,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2025–Mid Jul 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 volume, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly QR-based payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-volume-202509",
+      "series_id": "qr-volume",
+      "indicator": "QR-based payments",
+      "value": 41087808,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2025–Mid Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 volume, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly QR-based payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-volume-202607",
+      "series_id": "qr-volume",
+      "indicator": "QR-based payments",
+      "value": 69589977,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2026–Mid Jul 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 volume, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly QR-based payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-volume-202608",
+      "series_id": "qr-volume",
+      "indicator": "QR-based payments",
+      "value": 72438302,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jul 2026–Mid Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 volume, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly QR-based payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-volume-202609",
+      "series_id": "qr-volume",
+      "indicator": "QR-based payments",
+      "value": 75581982,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2026–Mid Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 volume, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly QR-based payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-amount-202507",
+      "series_id": "qr-amount",
+      "indicator": "QR-based payment amount",
+      "value": 113196,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2025–Mid Jul 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 amount, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal QR-based payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-amount-202509",
+      "series_id": "qr-amount",
+      "indicator": "QR-based payment amount",
+      "value": 101239,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2025–Mid Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 amount, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal QR-based payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-amount-202607",
+      "series_id": "qr-amount",
+      "indicator": "QR-based payment amount",
+      "value": 189906,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2026–Mid Jul 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 amount, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal QR-based payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-amount-202608",
+      "series_id": "qr-amount",
+      "indicator": "QR-based payment amount",
+      "value": 164427,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jul 2026–Mid Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 amount, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal QR-based payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-qr-amount-202609",
+      "series_id": "qr-amount",
+      "indicator": "QR-based payment amount",
+      "value": 167933,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2026–Mid Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B13 amount, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal QR-based payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-volume-202507",
+      "series_id": "wallet-volume",
+      "indicator": "Wallet payments",
+      "value": 40190678,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2025–Mid Jul 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 volume, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly wallet payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-volume-202509",
+      "series_id": "wallet-volume",
+      "indicator": "Wallet payments",
+      "value": 37902235,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2025–Mid Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 volume, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly wallet payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-volume-202607",
+      "series_id": "wallet-volume",
+      "indicator": "Wallet payments",
+      "value": 57040563,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2026–Mid Jul 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 volume, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly wallet payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-volume-202608",
+      "series_id": "wallet-volume",
+      "indicator": "Wallet payments",
+      "value": 53006769,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jul 2026–Mid Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 volume, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly wallet payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-volume-202609",
+      "series_id": "wallet-volume",
+      "indicator": "Wallet payments",
+      "value": 51494949,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2026–Mid Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 volume, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly wallet payment transactions as classified by NRB.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-amount-202507",
+      "series_id": "wallet-amount",
+      "indicator": "Wallet payment amount",
+      "value": 48441,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2025–Mid Jul 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 amount, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal wallet payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-amount-202509",
+      "series_id": "wallet-amount",
+      "indicator": "Wallet payment amount",
+      "value": 43340,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2025–Mid Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 amount, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal wallet payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-amount-202607",
+      "series_id": "wallet-amount",
+      "indicator": "Wallet payment amount",
+      "value": 58045,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2026–Mid Jul 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 amount, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal wallet payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-amount-202608",
+      "series_id": "wallet-amount",
+      "indicator": "Wallet payment amount",
+      "value": 48594,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jul 2026–Mid Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 amount, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal wallet payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-wallet-amount-202609",
+      "series_id": "wallet-amount",
+      "indicator": "Wallet payment amount",
+      "value": 49095,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2026–Mid Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B12 amount, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Monthly nominal wallet payment amount; NPR million, not NPR.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-volume-202507",
+      "series_id": "card-ecommerce-volume",
+      "indicator": "Card e-commerce",
+      "value": 196326,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2025–Mid Jul 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 volume, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Online payment using cards only; excludes other e-commerce payment forms.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-volume-202509",
+      "series_id": "card-ecommerce-volume",
+      "indicator": "Card e-commerce",
+      "value": 185301,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2025–Mid Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 volume, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Online payment using cards only; excludes other e-commerce payment forms.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-volume-202607",
+      "series_id": "card-ecommerce-volume",
+      "indicator": "Card e-commerce",
+      "value": 323833,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2026–Mid Jul 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 volume, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Online payment using cards only; excludes other e-commerce payment forms.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-volume-202608",
+      "series_id": "card-ecommerce-volume",
+      "indicator": "Card e-commerce",
+      "value": 350224,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Jul 2026–Mid Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 volume, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Online payment using cards only; excludes other e-commerce payment forms.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-volume-202609",
+      "series_id": "card-ecommerce-volume",
+      "indicator": "Card e-commerce",
+      "value": 244488,
+      "unit": "transactions",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2026–Mid Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 volume, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Online payment using cards only; excludes other e-commerce payment forms.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-amount-202507",
+      "series_id": "card-ecommerce-amount",
+      "indicator": "Card e-commerce amount",
+      "value": 1466,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2025–Mid Jul 2025",
+      "period_bs": "2082 Ashad",
+      "period_order": 202507,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 amount, 2082 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Nominal online card payment amount only; not all e-commerce sales.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-amount-202509",
+      "series_id": "card-ecommerce-amount",
+      "indicator": "Card e-commerce amount",
+      "value": 1578,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2025–Mid Sept 2025",
+      "period_bs": "2082 Bhadra",
+      "period_order": 202509,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 amount, 2082 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Nominal online card payment amount only; not all e-commerce sales.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-amount-202607",
+      "series_id": "card-ecommerce-amount",
+      "indicator": "Card e-commerce amount",
+      "value": 1951,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jun 2026–Mid Jul 2026",
+      "period_bs": "2083 Ashad",
+      "period_order": 202607,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 amount, 2083 Ashad",
+      "checked_on": "2026-11-12",
+      "definition": "Nominal online card payment amount only; not all e-commerce sales.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-amount-202608",
+      "series_id": "card-ecommerce-amount",
+      "indicator": "Card e-commerce amount",
+      "value": 2302,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Jul 2026–Mid Aug 2026",
+      "period_bs": "2083 Shrawan",
+      "period_order": 202608,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 amount, 2083 Shrawan",
+      "checked_on": "2026-11-12",
+      "definition": "Nominal online card payment amount only; not all e-commerce sales.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    },
+    {
+      "id": "NRB-card-ecommerce-amount-202609",
+      "series_id": "card-ecommerce-amount",
+      "indicator": "Card e-commerce amount",
+      "value": 2485,
+      "unit": "NPR million",
+      "period_type": "flow",
+      "reference_period": "Mid Aug 2026–Mid Sept 2026",
+      "period_bs": "2083 Bhadra",
+      "period_order": 202609,
+      "geography": "Nepal national",
+      "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+      "locator": "Page 1, B15 amount, 2083 Bhadra",
+      "checked_on": "2026-11-12",
+      "definition": "Nominal online card payment amount only; not all e-commerce sales.",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ]
+    }
+  ],
+  "studies": [
+    {
+      "schema_version": "1.0",
+      "id": "qr-growth",
+      "title": "QR payments: volume growth is not customer growth",
+      "question": "How did reported monthly QR volume and nominal amount change between Bhadra 2082 and 2083?",
+      "audience": "Students, Nepal ICT businesses and research reviewers",
+      "domain_ids": [
+        "D02",
+        "D49"
+      ],
+      "geography": {
+        "country": "Nepal",
+        "level": "national",
+        "name": "Nepal national"
+      },
+      "reference_period": "Source-specific periods stated with each claim",
+      "status": "desk_review",
+      "claims": [
+        {
+          "id": "Q1",
+          "text": "NRB reports 41,087,808 QR transactions in Bhadra 2082 and 75,581,982 in Bhadra 2083.",
+          "kind": "fact",
+          "limitations": "National descriptive evidence only; no locality or causal inference.",
+          "evidence": [
+            {
+              "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+              "locator": "Page 1, B13, transaction columns for 2082 and 2083 Bhadra",
+              "checked_on": "2026-11-12",
+              "reference_period": "Mid Aug–Mid Sept 2025 and Mid Aug–Mid Sept 2026",
+              "geography": "Nepal national",
+              "relation": "supports"
+            }
+          ]
+        },
+        {
+          "id": "Q2",
+          "text": "The corresponding nominal amounts are NPR 101,239 million and NPR 167,933 million.",
+          "kind": "fact",
+          "limitations": "National descriptive evidence only; no locality or causal inference.",
+          "evidence": [
+            {
+              "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+              "locator": "Page 1, B13, amount columns for 2082 and 2083 Bhadra",
+              "checked_on": "2026-11-12",
+              "reference_period": "Mid Aug–Mid Sept 2025 and Mid Aug–Mid Sept 2026",
+              "geography": "Nepal national",
+              "relation": "supports"
+            }
+          ]
+        },
+        {
+          "id": "Q3",
+          "text": "Volume increased 83.95% and nominal amount 65.88%. Formula: (later/earlier − 1) × 100. This is descriptive year-on-year change in the printed monthly totals.",
+          "kind": "inference",
+          "limitations": "National descriptive evidence only; no locality or causal inference.",
+          "basis": [
+            "Q1",
+            "Q2"
+          ]
+        },
+        {
+          "id": "Q4",
+          "text": "Investigate merchant workflow, settlement and support requirements in a defined segment before inferring an opportunity from these national totals.",
+          "kind": "recommendation",
+          "limitations": "No merchant sample, unique-user count, profitability or local adoption evidence is supplied.",
+          "basis": [
+            "Q1",
+            "Q2"
+          ]
+        }
+      ],
+      "limitations": [
+        "No causal attribution, inflation adjustment, seasonal model or forecast.",
+        "Five selected printed periods are not a continuous monthly series.",
+        "Statistics can be revised; use the named edition."
+      ],
+      "next_actions": [
+        "Reproduce the comparison with the CLI.",
+        "Collect a consent-based local merchant sample and document its selection.",
+        "Seek current settlement/support evidence before a business recommendation."
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "wallet-interpretation",
+      "title": "Wallet access counts cannot measure unique-person adoption",
+      "question": "What can NRB wallet counts establish, and what remains unknown?",
+      "audience": "Students, Nepal ICT businesses and research reviewers",
+      "domain_ids": [
+        "D02",
+        "D15",
+        "D49"
+      ],
+      "geography": {
+        "country": "Nepal",
+        "level": "national",
+        "name": "Nepal national"
+      },
+      "reference_period": "Source-specific periods stated with each claim",
+      "status": "desk_review",
+      "claims": [
+        {
+          "id": "W1",
+          "text": "The wallet access row reports 28,150,508 at mid-Sept 2026.",
+          "kind": "fact",
+          "limitations": "An access/account count; the source does not establish unique persons or activity.",
+          "evidence": [
+            {
+              "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+              "locator": "Page 1, A4, 2083 Bhadra",
+              "checked_on": "2026-11-12",
+              "reference_period": "Mid-Sept 2026",
+              "geography": "Nepal national",
+              "relation": "supports"
+            }
+          ]
+        },
+        {
+          "id": "W2",
+          "text": "The wallet usage row reports 51,494,949 monthly transactions for Bhadra 2083.",
+          "kind": "fact",
+          "limitations": "National descriptive evidence only; no locality or causal inference.",
+          "evidence": [
+            {
+              "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+              "locator": "Page 1, B12, transaction column, 2083 Bhadra",
+              "checked_on": "2026-11-12",
+              "reference_period": "Mid Aug 2026–Mid Sept 2026",
+              "geography": "Nepal national",
+              "relation": "supports"
+            }
+          ]
+        },
+        {
+          "id": "W3",
+          "text": "Access counts and monthly transaction counts measure different units and time bases. Neither establishes the number of distinct active people in a municipality.",
+          "kind": "inference",
+          "limitations": "No deduplicated user or geographic breakdown is present.",
+          "basis": [
+            "W1",
+            "W2"
+          ]
+        },
+        {
+          "id": "W4",
+          "text": "Use a separately sourced, defined active-user measure for adoption research; preserve its population, period and deduplication method.",
+          "kind": "recommendation",
+          "limitations": "National descriptive evidence only; no locality or causal inference.",
+          "basis": [
+            "W1",
+            "W2"
+          ]
+        }
+      ],
+      "limitations": [
+        "No person-level data or local inference.",
+        "Do not divide access counts by population and label the result unique-person adoption."
+      ],
+      "next_actions": [
+        "Define active user before selecting a denominator.",
+        "Request public aggregate methodology rather than private customer records."
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "qr-ticket",
+      "title": "Reproduce a national QR average transaction amount",
+      "question": "What was the aggregate mean QR amount per transaction in Bhadra 2083?",
+      "audience": "Students, Nepal ICT businesses and research reviewers",
+      "domain_ids": [
+        "D02",
+        "D12",
+        "D49"
+      ],
+      "geography": {
+        "country": "Nepal",
+        "level": "national",
+        "name": "Nepal national"
+      },
+      "reference_period": "Source-specific periods stated with each claim",
+      "status": "desk_review",
+      "claims": [
+        {
+          "id": "A1",
+          "text": "NRB B13 reports NPR 167,933 million and 75,581,982 transactions for the same monthly period.",
+          "kind": "fact",
+          "limitations": "National descriptive evidence only; no locality or causal inference.",
+          "evidence": [
+            {
+              "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+              "locator": "Page 1, B13, amount and transaction columns, 2083 Bhadra",
+              "checked_on": "2026-11-12",
+              "reference_period": "Mid Aug 2026–Mid Sept 2026",
+              "geography": "Nepal national",
+              "relation": "supports"
+            }
+          ]
+        },
+        {
+          "id": "A2",
+          "text": "The aggregate mean is approximately NPR 2,221.87: 167933 × 1000000 / 75581982. Convert NPR million before dividing.",
+          "kind": "inference",
+          "limitations": "A ratio of national aggregates, not the median, a typical merchant ticket, or profitability.",
+          "basis": [
+            "A1"
+          ]
+        },
+        {
+          "id": "A3",
+          "text": "Use a sector/locality-specific transaction distribution and actual fee schedule before pricing a payment service.",
+          "kind": "recommendation",
+          "limitations": "No merchant-specific mix, fees, costs or margins are supplied.",
+          "basis": [
+            "A1",
+            "A2"
+          ]
+        }
+      ],
+      "limitations": [
+        "The published amount is rounded in NPR million, so the derived mean is approximate.",
+        "The mean can conceal a skewed distribution and cannot establish a causal effect."
+      ],
+      "next_actions": [
+        "Check matching period, category and unit before any ratio.",
+        "Collect lawful aggregate sector evidence for a local business decision."
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "classroom-evidence-audit",
+      "title": "Smart classrooms: what the source routes establish",
+      "question": "Do the bundled school/procurement source routes establish a funded smartboard buyer?",
+      "audience": "Students, Nepal ICT businesses and research reviewers",
+      "domain_ids": [
+        "D07",
+        "D39",
+        "D43"
+      ],
+      "geography": {
+        "country": "Nepal",
+        "level": "national",
+        "name": "Nepal national"
+      },
+      "reference_period": "Source-specific periods stated with each claim",
+      "status": "desk_review",
+      "claims": [
+        {
+          "id": "S1",
+          "text": "The bundled D39 route points to PPMO goods bidding documents, CTEVT school requirements and IEMIS. Their recorded checks concern different source roles.",
+          "kind": "fact",
+          "limitations": "This is an audit of bundled annotations, not a fresh validation of each linked underlying document.",
+          "evidence": [
+            {
+              "source_id": "NP-BIZ-PPMO-GOODS",
+              "locator": "Source registry record NP-BIZ-PPMO-GOODS; goods-document index check",
+              "checked_on": "2026-11-12",
+              "reference_period": "Snapshot 2026-11-11",
+              "geography": "Nepal national",
+              "relation": "supports"
+            },
+            {
+              "source_id": "eng-ctevt-school-minimums",
+              "locator": "Source registry record eng-ctevt-school-minimums; requirements-page check",
+              "checked_on": "2026-11-12",
+              "reference_period": "Snapshot 2026-11-11",
+              "geography": "Nepal national",
+              "relation": "supports"
+            },
+            {
+              "source_id": "eng-iemis",
+              "locator": "Source registry record eng-iemis; search discovery with direct-page timeout",
+              "checked_on": "2026-11-12",
+              "reference_period": "Snapshot 2026-11-11",
+              "geography": "Nepal national",
+              "relation": "supports"
+            }
+          ]
+        },
+        {
+          "id": "S2",
+          "text": "These routes do not, by themselves, identify a school with an approved allocation, released funds or an active purchase.",
+          "kind": "inference",
+          "limitations": "Absence from this sample does not prove absence of a real opportunity.",
+          "basis": [
+            "S1"
+          ]
+        },
+        {
+          "id": "S3",
+          "text": "Select a real institution, verify its identity and obtain the current need, readiness, budget/procurement evidence and support plan before qualifying a lead.",
+          "kind": "recommendation",
+          "limitations": "National descriptive evidence only; no locality or causal inference.",
+          "basis": [
+            "S1",
+            "S2"
+          ]
+        }
+      ],
+      "limitations": [
+        "No site visit, local demand measurement, budget approval or buyer commitment.",
+        "IEMIS accessibility and public fields remain unresolved in the inherited source snapshot."
+      ],
+      "next_actions": [
+        "Create a school-readiness study for a defined institution.",
+        "Attach official documents by page/clause and retain amendment versions."
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "student-thesis",
+      "title": "Student research protocol / विद्यार्थी अनुसन्धान",
+      "audience": "Students and supervisors",
+      "domain_ids": [
+        "D02",
+        "D26",
+        "D59"
+      ],
+      "questions": [
+        "What is the research question and unit of analysis?",
+        "What gap does the literature establish?",
+        "Which population, sampling frame and inclusion rules apply?",
+        "What outcome, comparison and confounders will be measured?"
+      ],
+      "steps": [
+        "Define one answerable question and review owning-source literature.",
+        "Choose descriptive, qualitative, comparative or causal design appropriate to the question.",
+        "Predefine measures, sample selection, missing-data treatment and analysis before observing results.",
+        "Obtain institutional ethics/participant consent where required; collect minimal non-identifying data.",
+        "Record instruments, source editions, transformations and contradictory findings.",
+        "Report limitations, reproducibility steps and supervisor review."
+      ],
+      "deliverables": [
+        "Research protocol and literature evidence matrix",
+        "Sampling and analysis plan",
+        "Consent/ethics requirements and anonymization plan",
+        "Results separated from interpretation"
+      ]
+    },
+    {
+      "id": "ict-market",
+      "title": "ICT market decision / प्रविधि बजार",
+      "audience": "Founders, suppliers and business students",
+      "domain_ids": [
+        "D15",
+        "D12",
+        "D18",
+        "D58"
+      ],
+      "questions": [
+        "Who experiences the problem and who pays?",
+        "What observed behaviour establishes need?",
+        "What alternatives, procurement timing and support radius constrain purchase?",
+        "Which price/cost assumptions are still unverified?"
+      ],
+      "steps": [
+        "Choose one customer segment, locality and decision.",
+        "Establish institution/enterprise counts with dates and definitions.",
+        "Use public procurement/operating records and consent-based interviews to triangulate needs.",
+        "Separate total institutions from eligible, reachable and currently funded buyers.",
+        "Build cost and support scenarios using explicitly labelled assumptions.",
+        "Test a small offer and record actual objections and outcomes."
+      ],
+      "deliverables": [
+        "Source-backed segment brief",
+        "Assumptions and contradictory evidence ledger",
+        "Reachable-market scenario with denominators",
+        "Next validation action"
+      ]
+    },
+    {
+      "id": "tender-review",
+      "title": "Tender evidence review / बोलपत्र समीक्षा",
+      "audience": "ICT suppliers and procurement researchers",
+      "domain_ids": [
+        "D07",
+        "D22",
+        "D57"
+      ],
+      "questions": [
+        "Which issuing entity, notice/version and procurement method apply?",
+        "What are the exact deadline, timezone, security and eligibility requirements?",
+        "Which BOQ clauses need exact-model OEM evidence?",
+        "Which amendments or clarifications supersede earlier text?"
+      ],
+      "steps": [
+        "Retrieve the official notice, full bid document and all amendments.",
+        "Preserve original BS/AD dates; verify conversion and submission timezone separately.",
+        "Extract eligibility, financial, documentary and technical requirements by page/clause.",
+        "Map each requirement to the offered exact model and authoritative OEM evidence.",
+        "Mark unknown/partial/non-compliant items and prepare clarification questions.",
+        "Have the authorized human reviewer decide bid/no-bid and approve any submission."
+      ],
+      "deliverables": [
+        "Clause-to-evidence compliance matrix",
+        "Deadline and document checklist",
+        "Open questions and amendment register",
+        "Human bid/no-bid review"
+      ]
+    },
+    {
+      "id": "school-readiness",
+      "title": "Smart-classroom readiness / स्मार्ट कक्षा",
+      "audience": "Schools, municipal researchers and integrators",
+      "domain_ids": [
+        "D39",
+        "D43",
+        "D37",
+        "D58"
+      ],
+      "questions": [
+        "Which teaching problem requires a change?",
+        "Are room, power, acoustics, connectivity and accessibility suitable?",
+        "What training, content rights and support are available?",
+        "Is there a verified funding/procurement record, or only a proposal?"
+      ],
+      "steps": [
+        "Identify the actual school, class, users and existing equipment.",
+        "Obtain institution permission before any site observation or interview.",
+        "Measure room, power, mounting and connectivity conditions using competent personnel.",
+        "Map teacher workflow, accessible content, licensing and maintenance responsibilities.",
+        "Check official budget and procurement stage independently from need.",
+        "Define acceptance tests and later usage measures before choosing equipment."
+      ],
+      "deliverables": [
+        "Site-readiness and teaching-workflow checklist",
+        "Evidence of funding stage or explicit UNKNOWN",
+        "Lifecycle cost assumptions",
+        "Installation, training, acceptance and support plan"
+      ]
+    },
+    {
+      "id": "engineering-review",
+      "title": "Engineering design review / इन्जिनियरिङ",
+      "audience": "Engineers, integrators and technical students",
+      "domain_ids": [
+        "D21",
+        "D22",
+        "D28",
+        "D58"
+      ],
+      "questions": [
+        "What measurable functional and operating constraints apply?",
+        "Which standards, OEM versions and compatibility evidence are applicable?",
+        "How will failure, recovery, accessibility and maintenance be tested?",
+        "Who can accept the delivered system?"
+      ],
+      "steps": [
+        "Define requirements, environment, users and measurable acceptance criteria.",
+        "Compare architectures against current OEM/standards evidence and exact versions.",
+        "Trace power, connectivity, data, physical installation and support dependencies.",
+        "Document security/privacy and failure modes specific to this system.",
+        "Prototype or bench-test uncertain interfaces in an isolated environment.",
+        "Retain test results, limitations, rollback/recovery and handover responsibilities."
+      ],
+      "deliverables": [
+        "Requirements-to-design-to-test traceability matrix",
+        "Versioned evidence and test log",
+        "Risk and recovery plan",
+        "Acceptance and maintenance record"
+      ]
+    },
+    {
+      "id": "media-verification",
+      "title": "Technology news verification / समाचार जाँच",
+      "audience": "Researchers, journalists and students",
+      "domain_ids": [
+        "D55",
+        "D56",
+        "D59"
+      ],
+      "questions": [
+        "What exact claim is being made and by whom?",
+        "Where and when did the event happen?",
+        "Is ICT substantive and is the Nepal business mechanism explicit?",
+        "Are multiple reports independent or syndicated?"
+      ],
+      "steps": [
+        "Retain original publisher, URL, title, publication/event date and attributed claim.",
+        "Separate registration/activity checks from evidence about this article.",
+        "Resolve institution/locality from primary records rather than publisher location.",
+        "Corroborate budget, procurement, award or deployment with the responsible owner.",
+        "Cluster duplicates and preserve contradictions and inaccessible sources.",
+        "Classify reported plan, verified event or unresolved lead with a next check."
+      ],
+      "deliverables": [
+        "Claim and corroboration ledger",
+        "Syndication/duplicate notes",
+        "Technology/locality relevance decision",
+        "Correction and follow-up record"
+      ]
+    }
+  ],
+  "provenance": {
+    "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+    "downloaded_sha256": "0a3257c1b116ec42eb756600cc483b93afaa1951af54bb8d6372ff74e8cbbee1",
+    "extraction": "Selected 10 series × 5 printed periods, manually transcribed and visually cross-checked on page 1.",
+    "review": "Maintainer desk review; no independent academic peer-review claim.",
+    "omitted": "Other NRB rows, other months, provincial/local payment statistics and private data."
+  }
+}

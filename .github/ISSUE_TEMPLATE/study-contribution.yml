@@ -1,0 +1,32 @@
+name: Contribute a reproducible study
+description: Propose one Nepal technology-business study with evidence and limits.
+title: "[Study] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and scope
+      description: State the question, domain IDs, geography, period and unit of analysis.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Owning sources and exact locators
+      description: Public URLs, publishers, publication/reference periods, page/table/clause and check date. Do not upload private participant or client records.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How to reproduce
+      description: Commands, inputs, transformations and study JSON or a link to the proposed change. Separate facts, assumptions and interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Uncertainty and review
+      description: Missing data, contradictory evidence, sampling/definition limits, ethics requirements and who reviewed the work. An AI check is not academic peer review.
+    validations:
+      required: true

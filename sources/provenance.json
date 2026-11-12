@@ -212,7 +212,7 @@
       "id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
       "publisher": "Nepal Rastra Bank, Payment Systems Department",
       "url": "https://www.nrb.org.np/psd/payment-systems-indicators-of-2083-bhadra/",
-      "verification_date": "2026-11-11"
+      "verification_date": "2026-11-12"
     },
     {
       "id": "eng-nso-census-local-directory",
@@ -718,5 +718,12 @@
       "url": "https://butwaltoday.com/2026/06/28/digital-lumbini-concept/",
       "verification_date": "2026-11-11"
     }
-  ]
+  ],
+  "workbench": {
+    "source_id": "NP-BIZ-NRB-PAYMENTS-BHADRA2083",
+    "downloaded_sha256": "0a3257c1b116ec42eb756600cc483b93afaa1951af54bb8d6372ff74e8cbbee1",
+    "extraction": "Selected 10 series × 5 printed periods, manually transcribed and visually cross-checked on page 1.",
+    "review": "Maintainer desk review; no independent academic peer-review claim.",
+    "omitted": "Other NRB rows, other months, provincial/local payment statistics and private data."
+  }
 }
