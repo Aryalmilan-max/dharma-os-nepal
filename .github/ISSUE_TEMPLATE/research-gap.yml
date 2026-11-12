@@ -1,0 +1,21 @@
+name: Nepal technology research gap
+description: Propose a focused question, locality or missing research branch.
+title: "[Research] "
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain ID or proposed topic
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Nepal-specific question and why it matters
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence and missing information
+      description: Include locality and date if known. Distinguish a hypothesis from an observed finding; omit private data.

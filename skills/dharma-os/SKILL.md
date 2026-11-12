@@ -1,6 +1,8 @@
 ---
 name: dharma-os
 description: Nepal technology-business research across statistics, management, entrepreneurship, marketing, HR, engineering, procurement, provincial and municipal intelligence, technology media, and external business conditions. Use for source-backed Nepal ICT-sector decisions and research briefs. Separates research topics, reported claims, verified evidence, and coverage gaps.
+metadata:
+  version: "0.1.0"
 ---
 
 # Dharma OS

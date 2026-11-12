@@ -1,0 +1,29 @@
+name: Source correction or addition
+description: Improve one Nepal technology-business source with clear evidence.
+title: "[Source] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Existing source ID or proposed publisher
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Public owning-source URL
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What does this source establish?
+      description: Include the reference period, page/table, geography, check date and limitations. Do not submit confidential material.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Suggested correction or addition
+    validations:
+      required: true

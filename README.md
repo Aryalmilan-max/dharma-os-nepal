@@ -1,6 +1,36 @@
 # Dharma OS Nepal
 
-A portable AI-agent skill for evidence-based research into Nepal's technology-business sector.
+![Dharma OS Nepal: connect technology, business and local evidence](docs/assets/banner.svg)
+
+[![Checks](https://github.com/Aryalmilan-max/dharma-os-nepal/actions/workflows/checks.yml/badge.svg)](https://github.com/Aryalmilan-max/dharma-os-nepal/actions/workflows/checks.yml)
+[![License: MIT](https://img.shields.io/badge/original_code-MIT-167564)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-245C9B)](skills/dharma-os/scripts/nepal.py)
+
+**Give your AI agent a research framework for Nepal's technology-business sector.**
+
+Explore 60 domains and 600 research topics spanning technology, business, people, institutions and local conditions. Follow source records, expose evidence gaps, and prepare a useful research brief before making a decision.
+
+**नेपालको प्रविधि व्यवसाय बुझ्न—तथ्याङ्क, बजार, जनशक्ति, इन्जिनियरिङ र स्थानीय प्रमाणलाई जोड्ने खुला अनुसन्धान ढाँचा।**
+
+[Try an example](docs/examples.md) · [Explore all 60 domains](skills/dharma-os/references/nepal-tech-intelligence/INDEX.md) · [Contribute a source](https://github.com/Aryalmilan-max/dharma-os-nepal/issues/new/choose) · [Coverage limits](docs/coverage-and-limitations.md)
+
+## Try it in a minute
+
+```bash
+gh repo clone Aryalmilan-max/dharma-os-nepal
+cd dharma-os-nepal
+python3 skills/dharma-os/scripts/nepal.py find smartboard
+python3 skills/dharma-os/scripts/nepal.py brief --domain D39 --locality "Banganga Municipality"
+```
+
+The local helper needs Python 3.10+, no extra packages, no API key and no account connection. It reads the bundled snapshot; live research requires your agent's own available tools.
+
+## Who this helps
+
+- **Nepal technology founders and SMEs:** connect market questions with operating costs, skills, suppliers and institutional needs.
+- **ICT suppliers and procurement researchers:** structure evidence around requirements, local context and actual procurement stages.
+- **Students, analysts and contributors:** find a research question, check the source and add a useful correction or local evidence.
+- **Agent builders:** reuse a portable `SKILL.md`, source registry and standard-library helper.
 
 Dharma OS connects technology with statistics, markets, management, entrepreneurship, HR, procurement, institutions, infrastructure and the external conditions affecting business in Nepal. It is a research framework and source-discovery collection. It is not a complete market database or a running media monitor.
 
@@ -61,3 +91,5 @@ python3 -m unittest discover -s tests -v
 ```
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include source corrections, verified local evidence, better methods and clearer coverage limits. A new source or topic must not silently become a claim of nationwide coverage.
+
+**Help improve one leaf:** choose a domain, contribute a public Nepal source, explain what it establishes, and retain its limitations. See [starter contributions](docs/roadmap.md). If this is useful, star the repository or share it with someone researching Nepal's technology sector.
