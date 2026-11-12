@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0",
+  "scope": "Authored Nepal technology and operating-requirement assessment. Not a legal classification, certification, customer survey or completed organization audit.",
+  "baseline": [
+    "workflow",
+    "cost",
+    "access",
+    "backup",
+    "power",
+    "records",
+    "training",
+    "support"
+  ],
+  "scales": [
+    {
+      "id": "solo",
+      "title": "Solo / home-based operator",
+      "modules": [
+        "workflow",
+        "cost",
+        "access",
+        "backup",
+        "power",
+        "records",
+        "training",
+        "support"
+      ]
+    },
+    {
+      "id": "micro",
+      "title": "Micro business / small workshop",
+      "modules": [
+        "workflow",
+        "cost",
+        "access",
+        "backup",
+        "power",
+        "records",
+        "training",
+        "support"
+      ]
+    },
+    {
+      "id": "small",
+      "title": "Small organization",
+      "modules": [
+        "workflow",
+        "cost",
+        "access",
+        "backup",
+        "power",
+        "records",
+        "training",
+        "support",
+        "people",
+        "delivery"
+      ]
+    },
+    {
+      "id": "growing",
+      "title": "Growing organization",
+      "modules": [
+        "workflow",
+        "cost",
+        "access",
+        "backup",
+        "power",
+        "records",
+        "training",
+        "support",
+        "people",
+        "delivery",
+        "integration",
+        "governance",
+        "measurement"
+      ]
+    },
+    {
+      "id": "enterprise",
+      "title": "Large / multi-site enterprise",
+      "modules": [
+        "workflow",
+        "cost",
+        "access",
+        "backup",
+        "power",
+        "records",
+        "training",
+        "support",
+        "people",
+        "delivery",
+        "integration",
+        "governance",
+        "measurement",
+        "procurement",
+        "security",
+        "continuity"
+      ]
+    },
+    {
+      "id": "institution",
+      "title": "Public / major service institution",
+      "modules": [
+        "workflow",
+        "cost",
+        "access",
+        "backup",
+        "power",
+        "records",
+        "training",
+        "support",
+        "people",
+        "delivery",
+        "integration",
+        "governance",
+        "measurement",
+        "procurement",
+        "security",
+        "continuity"
+      ]
+    }
+  ],
+  "organization_types": [
+    {
+      "id": "repair",
+      "title": "Repair and technical services",
+      "modules": [
+        "support",
+        "records"
+      ],
+      "sector_question": "Track diagnosis, customer-device custody, consent, parts, repair tests and return acceptance."
+    },
+    {
+      "id": "retail",
+      "title": "Retail and distribution",
+      "modules": [
+        "records",
+        "integration"
+      ],
+      "sector_question": "Trace SKU/variant, purchase, sale, stock adjustments, returns, payment and supplier support."
+    },
+    {
+      "id": "manufacturing",
+      "title": "Manufacturing / small industry",
+      "modules": [
+        "delivery",
+        "security",
+        "continuity"
+      ],
+      "sector_question": "Map production bottlenecks, equipment interfaces, safe isolation, maintenance and quality records; changes to machinery require competent engineering review."
+    },
+    {
+      "id": "software",
+      "title": "Software / IT services",
+      "modules": [
+        "integration",
+        "security",
+        "delivery"
+      ],
+      "sector_question": "Trace requirements, code/release ownership, test environments, service commitments and incident handling."
+    },
+    {
+      "id": "school",
+      "title": "School / training / university",
+      "modules": [
+        "training",
+        "measurement",
+        "security"
+      ],
+      "sector_question": "Establish teaching workflow, accessibility, content rights, equipment readiness and student-data boundaries."
+    },
+    {
+      "id": "health",
+      "title": "Health service institution",
+      "modules": [
+        "security",
+        "continuity",
+        "governance"
+      ],
+      "sector_question": "Map critical workflows and sensitive data; keep clinical decisions and device approval with the responsible professionals."
+    },
+    {
+      "id": "finance",
+      "title": "Financial service / cooperative",
+      "modules": [
+        "security",
+        "continuity",
+        "governance",
+        "integration"
+      ],
+      "sector_question": "Map transaction integrity, approval separation, reconciliation and current regulator-specific requirements; this checklist does not establish compliance."
+    },
+    {
+      "id": "government",
+      "title": "Government / municipality",
+      "modules": [
+        "procurement",
+        "governance",
+        "security"
+      ],
+      "sector_question": "Retain official identity, source-linked requirements, procurement authority, public service continuity and records responsibilities."
+    },
+    {
+      "id": "nonprofit",
+      "title": "NGO / development organization",
+      "modules": [
+        "governance",
+        "measurement",
+        "security"
+      ],
+      "sector_question": "Map project evidence, funder reporting, participant-data minimization and field connectivity/support."
+    },
+    {
+      "id": "hospitality",
+      "title": "Tourism / hospitality",
+      "modules": [
+        "records",
+        "integration",
+        "continuity"
+      ],
+      "sector_question": "Trace reservations, guest-data boundaries, payments, connectivity and service outages."
+    },
+    {
+      "id": "agriculture",
+      "title": "Agriculture / resource enterprise",
+      "modules": [
+        "power",
+        "delivery",
+        "support"
+      ],
+      "sector_question": "Check seasonality, field conditions, connectivity, sensors/equipment maintenance and usable local support."
+    },
+    {
+      "id": "research",
+      "title": "Research / student institution",
+      "modules": [
+        "measurement",
+        "security",
+        "governance"
+      ],
+      "sector_question": "Define research design, ethics authority, consent where applicable, provenance, reproducibility and dissemination boundaries."
+    }
+  ],
+  "modules": [
+    {
+      "id": "workflow",
+      "title": "Business workflow",
+      "domain_id": "D10",
+      "requirement": "Map the work from enquiry or input through delivery, payment and support.",
+      "evidence_to_collect": "Observe one complete work cycle and identify users, handoffs, exceptions and delays.",
+      "deliverable": "Workflow map, problem baseline and accountable owner.",
+      "acceptance": "The owner and actual operator can trace a normal case and an exception."
+    },
+    {
+      "id": "cost",
+      "title": "Budget and lifecycle cost",
+      "domain_id": "D12",
+      "requirement": "Establish an affordable acquisition, operating and replacement plan.",
+      "evidence_to_collect": "Obtain dated quotations and explicit assumptions for installation, subscriptions, support, power and renewal.",
+      "deliverable": "Comparable lifecycle cost scenarios and spending authority.",
+      "acceptance": "Every cost has a unit, period, basis and owner; unknown costs remain visible."
+    },
+    {
+      "id": "access",
+      "title": "Identity and access",
+      "domain_id": "D28",
+      "requirement": "Give each person the access their work requires and remove it when roles change.",
+      "evidence_to_collect": "Inventory users, shared logins, sensitive actions and joiner/leaver procedures.",
+      "deliverable": "Role/access matrix and recovery procedure.",
+      "acceptance": "A test user can perform assigned work and cannot perform prohibited work; access removal is demonstrated."
+    },
+    {
+      "id": "backup",
+      "title": "Backup and recovery",
+      "domain_id": "D33",
+      "requirement": "Recover essential records and systems after loss or failure.",
+      "evidence_to_collect": "Identify essential data, tolerable loss, recovery time and available storage/connectivity.",
+      "deliverable": "Backup ownership, retention and restore plan.",
+      "acceptance": "Restore a representative backup in an isolated environment and compare it to the agreed recovery target."
+    },
+    {
+      "id": "power",
+      "title": "Power and connectivity",
+      "domain_id": "D37",
+      "requirement": "Match equipment and service operation to actual site conditions.",
+      "evidence_to_collect": "Measure power/load conditions with competent staff; record link availability and required operating hours.",
+      "deliverable": "Site readiness and outage response plan.",
+      "acceptance": "Demonstrate agreed power/link failure behaviour safely before acceptance."
+    },
+    {
+      "id": "records",
+      "title": "Records and financial integration",
+      "domain_id": "D13",
+      "requirement": "Keep transaction, stock and service records consistent with actual operations.",
+      "evidence_to_collect": "Inspect current record formats, reconciliation steps, access and software interfaces.",
+      "deliverable": "Record model, reconciliation checklist and integration requirements.",
+      "acceptance": "Reconcile a representative test transaction across affected records without unexplained differences."
+    },
+    {
+      "id": "training",
+      "title": "Training and adoption",
+      "domain_id": "D25",
+      "requirement": "Make the solution usable by the people who operate it.",
+      "evidence_to_collect": "Observe language, accessibility, task familiarity, staff turnover and available learning time.",
+      "deliverable": "Role-specific training and operating instructions.",
+      "acceptance": "Representative users complete agreed tasks and an exception without the installer doing the work."
+    },
+    {
+      "id": "support",
+      "title": "Support and asset lifecycle",
+      "domain_id": "D58",
+      "requirement": "Define who maintains, repairs, renews and replaces each component.",
+      "evidence_to_collect": "Check local service reach, included warranty terms, spare parts, subscriptions and response responsibilities.",
+      "deliverable": "Asset register, support handover and renewal calendar.",
+      "acceptance": "A realistic support request reaches the accountable person and the escalation route works."
+    },
+    {
+      "id": "procurement",
+      "title": "Procurement and supplier assurance",
+      "domain_id": "D07",
+      "requirement": "Translate verified requirements into comparable offers and a reviewable purchase decision.",
+      "evidence_to_collect": "Read the applicable procurement documents, approvals, exact configuration evidence and amendment history.",
+      "deliverable": "Requirements-to-offer matrix, approval evidence and acceptance criteria.",
+      "acceptance": "Each material requirement maps to a source and offered configuration; unresolved deviations are recorded."
+    },
+    {
+      "id": "integration",
+      "title": "Systems and data integration",
+      "domain_id": "D31",
+      "requirement": "Keep connected systems consistent and recover safely from interface failures.",
+      "evidence_to_collect": "Inventory systems, data owners, formats, versions, volumes and failed-transfer behaviour.",
+      "deliverable": "Interface contracts, migration mapping and rollback plan.",
+      "acceptance": "Test reconciliation, duplicate prevention, rejected records and recovery using authorized test data."
+    },
+    {
+      "id": "security",
+      "title": "Security and privacy review",
+      "domain_id": "D28",
+      "requirement": "Address concrete threats and sensitive-data exposure in the intended environment.",
+      "evidence_to_collect": "Identify data classes, access paths, third parties, likely failures and applicable current instruments.",
+      "deliverable": "Threat/exposure register, control ownership and incident process.",
+      "acceptance": "Test agreed controls and incident escalation; unresolved risks receive an accountable decision."
+    },
+    {
+      "id": "continuity",
+      "title": "Service continuity",
+      "domain_id": "D33",
+      "requirement": "Keep critical services available or restore them within agreed limits.",
+      "evidence_to_collect": "Define service criticality, dependencies, outage consequences, recovery objectives and provider commitments.",
+      "deliverable": "Continuity runbook, dependency map and recovery exercise record.",
+      "acceptance": "Demonstrate recovery or failover against owner-approved objectives; record measured limits."
+    },
+    {
+      "id": "governance",
+      "title": "Governance and accountability",
+      "domain_id": "D08",
+      "requirement": "Identify decision rights and keep material changes reviewable.",
+      "evidence_to_collect": "Establish entity identity, accountable sponsor, operating owner, approvers and review requirements.",
+      "deliverable": "Decision/approval matrix and change register.",
+      "acceptance": "A representative purchase or system change follows the agreed authority and leaves a traceable record."
+    },
+    {
+      "id": "delivery",
+      "title": "Project and change delivery",
+      "domain_id": "D21",
+      "requirement": "Deliver changes through agreed stages and measurable acceptance.",
+      "evidence_to_collect": "Establish sites, dependencies, stakeholder availability, migration windows and operating constraints.",
+      "deliverable": "Phased delivery, change, acceptance and rollback plan.",
+      "acceptance": "Each phase meets agreed exit criteria before dependent work proceeds."
+    },
+    {
+      "id": "people",
+      "title": "People and technical capacity",
+      "domain_id": "D23",
+      "requirement": "Match ongoing work to available skills and accountable roles.",
+      "evidence_to_collect": "Map duties, workload, support coverage, capability gaps and lawful job-relevant assessment.",
+      "deliverable": "Role/capability plan and handover responsibilities.",
+      "acceptance": "Named roles can perform the agreed operating and escalation tasks."
+    },
+    {
+      "id": "measurement",
+      "title": "Performance and research quality",
+      "domain_id": "D02",
+      "requirement": "Measure whether the technology helps the agreed problem.",
+      "evidence_to_collect": "Establish baseline, numerator/denominator, period, sample selection and possible alternative explanations.",
+      "deliverable": "Measurement plan and source-linked review.",
+      "acceptance": "Reported results can be reproduced and are limited to the observed population and design."
+    }
+  ],
+  "context_questions": [
+    "What problem and measurable operating outcome matter?",
+    "Which users, sites, branches and field locations are involved?",
+    "Which data is sensitive and who owns it?",
+    "What downtime and data loss can the owner tolerate?",
+    "What budget, staff capacity and support reach are actually available?",
+    "Which current legal, regulatory, procurement and contract instruments apply?",
+    "What existing systems, versions and migration constraints must be respected?"
+  ],
+  "required_outputs": [
+    "Organization and site context",
+    "Current-state evidence and explicit unknowns",
+    "Prioritized requirements and dependencies",
+    "Options and lifecycle cost assumptions",
+    "Delivery, acceptance and support responsibilities",
+    "Evidence gaps and authorized next decisions"
+  ],
+  "limits": [
+    "Scale labels describe workflow complexity; they are not Nepal statutory enterprise-size definitions.",
+    "A selected profile creates an assessment plan, not proof that requirements are met.",
+    "Critical or sensitive operations need deeper review even in a one-person organization.",
+    "Technology/operating needs are covered; sector-specific professional conclusions require appropriate expertise."
+  ]
+}
