@@ -140,7 +140,7 @@ def main():
               ['No site visit, local demand measurement, budget approval or buyer commitment.', 'IEMIS accessibility and public fields remain unresolved in the inherited source snapshot.'],
               ['Create a school-readiness study for a defined institution.', 'Attach official documents by page/clause and retain amendment versions.'])
     ]
-    data = dict(schema_version='1.0', release='0.3.0', checked_on=CHECKED,
+    data = dict(schema_version='1.0', release='0.4.0', checked_on=CHECKED,
                 scope='Selected national payment evidence and authored desk studies/protocols; not nationwide completed research.',
                 observations=observations, studies=studies, templates=templates(),
                 provenance=dict(source_id=SOURCE, downloaded_sha256='0a3257c1b116ec42eb756600cc483b93afaa1951af54bb8d6372ff74e8cbbee1',
@@ -166,7 +166,7 @@ def main():
             source['extraction_status'] = '50 selected observations; not every row or a complete monthly series'
     dump(REF / 'source-registry.json', registry)
     coverage = research.read('coverage.json')
-    coverage['release'] = '0.3.0'
+    coverage['release'] = '0.4.0'
     coverage['packaged']['statistical_observations'] = 52
     coverage['workbench'] = dict(payment_observations=50, legacy_observations=10, overlapping_observations=8,
                                  distinct_measurements=52, desk_studies=len(studies), protocols=len(data['templates']),

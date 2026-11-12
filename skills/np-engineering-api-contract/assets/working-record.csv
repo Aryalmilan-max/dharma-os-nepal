@@ -1,0 +1,1 @@
+interface,version,auth_scope,payload_ref,error_case,retry_rule,idempotency_basis,test_ref,gap

@@ -10,7 +10,7 @@
 
 Explore the knowledge tree, inspect a worked study, create a research protocol, attach evidence and export a reviewable result. Built for students, technology businesses and independent researchers working on Nepal.
 
-**New in 0.3:** complete an organization assessment from findings through an owned action queue and a printable decision report. Record what the evidence establishes, what remains unknown, who acts next and how acceptance will be demonstrated. No automated readiness/compliance score is invented.
+**New in 0.4:** [101 portable skills](docs/task-skills.md) (100 focused tasks + the Dharma OS router) and [16,884 unique reference URLs](docs/reference-library.md): 117 Nepal references and 16,767 official international technical references. Search the [offline skills and sources library](web/library.html), choose a task and use its blank working record. International links are publisher-index discoveries, **not individually reviewed pages or Nepal findings**.
 
 **नेपालको प्रविधि व्यवसाय बुझ्न—तथ्याङ्क, बजार, जनशक्ति, इन्जिनियरिङ र स्थानीय प्रमाणलाई जोड्ने खुला अनुसन्धान ढाँचा।**
 
@@ -20,6 +20,7 @@ Explore the knowledge tree, inspect a worked study, create a research protocol, 
 
 Download this repository using GitHub's **Code → Download ZIP**, extract it, and open **`web/index.html`** in a modern browser. The workspace works offline without an account, API key, installation or server.
 
+- **Skills & sources:** find task instructions and blank templates; search reference URLs by topic, publisher and source kind, with 25 results per page.
 - **Explore:** search 60 domains and their research leaves, including selected Nepali search aliases.
 - **Evidence:** inspect 50 selected payment observations and annotated source records; download CSV or a source citation.
 - **Worked studies:** follow four desk studies from facts through calculations, interpretation and limitations.

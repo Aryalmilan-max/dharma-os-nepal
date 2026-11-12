@@ -1,0 +1,1 @@
+service,failure_signal,read_only_check,action_authority,abort_condition,escalation_role,recovery_check,evidence_needed

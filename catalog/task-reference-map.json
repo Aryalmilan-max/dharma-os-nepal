@@ -1,0 +1,208 @@
+{
+  "np-bank-regulatory-crosswalk": [
+    {
+      "url": "https://www.nrb.org.np/bfr/it-guidelines-2012/",
+      "label": "NRB IT Guidelines 2012 (historical instrument; check current applicability and amendments)",
+      "publisher": "Nepal Rastra Bank",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    },
+    {
+      "url": "https://www.nrb.org.np/category/policies-guidelines/",
+      "label": "NRB policy and guideline index; identify instruments applicable to the actual institution",
+      "publisher": "Nepal Rastra Bank",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-bank-access-review": [
+    {
+      "url": "https://www.nrb.org.np/bfr/it-guidelines-2012/",
+      "label": "NRB IT Guidelines 2012 (historical instrument; check current applicability and amendments)",
+      "publisher": "Nepal Rastra Bank",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-bank-service-map": [
+    {
+      "url": "https://www.nrb.org.np/bfr/it-guidelines-2012/",
+      "label": "NRB IT Guidelines 2012 (historical instrument; check current applicability and amendments)",
+      "publisher": "Nepal Rastra Bank",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-bank-recovery-exercise": [
+    {
+      "url": "https://www.nrb.org.np/bfr/it-guidelines-2012/",
+      "label": "NRB IT Guidelines 2012 (historical instrument; check current applicability and amendments)",
+      "publisher": "Nepal Rastra Bank",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-notice-triage": [
+    {
+      "url": "https://bolpatra.gov.np/egp/",
+      "label": "Official e-GP portal; retrieve the actual notice, amendments and issuer documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-submission-deadline": [
+    {
+      "url": "https://bolpatra.gov.np/egp/",
+      "label": "Official e-GP portal; retrieve the actual notice, amendments and issuer documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-amendment-register": [
+    {
+      "url": "https://bolpatra.gov.np/egp/",
+      "label": "Official e-GP portal; retrieve the actual notice, amendments and issuer documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-clarification-draft": [
+    {
+      "url": "https://bolpatra.gov.np/egp/",
+      "label": "Official e-GP portal; retrieve the actual notice, amendments and issuer documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-bid-readiness": [
+    {
+      "url": "https://bolpatra.gov.np/egp/",
+      "label": "Official e-GP portal; retrieve the actual notice, amendments and issuer documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-eligibility-matrix": [
+    {
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "label": "PPMO goods procurement documents; choose the applicable procedure and actual bid documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-boq-extraction": [
+    {
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "label": "PPMO goods procurement documents; choose the applicable procedure and actual bid documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-model-evidence": [
+    {
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "label": "PPMO goods procurement documents; choose the applicable procedure and actual bid documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-contract-handover": [
+    {
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "label": "PPMO goods procurement documents; choose the applicable procedure and actual bid documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-delivery-inspection": [
+    {
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "label": "PPMO goods procurement documents; choose the applicable procedure and actual bid documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-procurement-acceptance-payment": [
+    {
+      "url": "https://ppmo.gov.np/category/1211/?page=1",
+      "label": "PPMO goods procurement documents; choose the applicable procedure and actual bid documents",
+      "publisher": "Public Procurement Monitoring Office",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-shop-landed-cost": [
+    {
+      "url": "https://nnsw.gov.np/trade/customs/tariff/search",
+      "label": "Nepal tariff search; classification and effective rate require case-specific review",
+      "publisher": "Department of Customs",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-school-student-data": [
+    {
+      "url": "https://emis.cehrd.gov.np/",
+      "label": "Official IEMIS; use only data definitions applicable to the actual school study",
+      "publisher": "CEHRD",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-school-usage-evaluation": [
+    {
+      "url": "https://emis.cehrd.gov.np/",
+      "label": "Official IEMIS; use only data definitions applicable to the actual school study",
+      "publisher": "CEHRD",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-engineering-api-contract": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status",
+      "label": "HTTP response status codes; use for the actual HTTP API contract",
+      "publisher": "Mozilla Contributors / MDN",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-engineering-accessibility-review": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+      "label": "Web accessibility guidance; test actual task flows and applicable requirements",
+      "publisher": "Mozilla Contributors / MDN",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-engineering-restore-test": [
+    {
+      "url": "https://www.postgresql.org/docs/current/backup.html",
+      "label": "PostgreSQL backup and restore; applicable only to PostgreSQL and the deployed version",
+      "publisher": "PostgreSQL Global Development Group",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-engineering-migration-rehearsal": [
+    {
+      "url": "https://www.postgresql.org/docs/current/backup.html",
+      "label": "PostgreSQL backup and restore; applicable only to PostgreSQL and the deployed version",
+      "publisher": "PostgreSQL Global Development Group",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-engineering-query-review": [
+    {
+      "url": "https://www.postgresql.org/docs/current/using-explain.html",
+      "label": "PostgreSQL EXPLAIN; applicable only to the actual database/version",
+      "publisher": "PostgreSQL Global Development Group",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-engineering-auth-boundary": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies",
+      "label": "HTTP cookies; one browser/session mechanism, not a complete authorization policy",
+      "publisher": "Mozilla Contributors / MDN",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ],
+  "np-engineering-privacy-design": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Privacy",
+      "label": "Web privacy guidance; does not establish Nepal legal compliance",
+      "publisher": "Mozilla Contributors / MDN",
+      "verification_state": "CURATED_STARTING_POINT_REQUIRES_PASSAGE_AND_APPLICABILITY_REVIEW"
+    }
+  ]
+}

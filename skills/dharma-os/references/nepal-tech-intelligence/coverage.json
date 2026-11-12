@@ -33,7 +33,7 @@
     "Unlisted/new/unregistered media and broadcasts without text archives",
     "Source-by-source legal status, dates, amendments and technical verification"
   ],
-  "release": "0.3.0",
+  "release": "0.4.0",
   "workbench": {
     "payment_observations": 50,
     "legacy_observations": 10,
