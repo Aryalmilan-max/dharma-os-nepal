@@ -50,7 +50,7 @@ The local helper needs Python 3.10+, no extra packages, no API key and no accoun
 
 ### Finish an assessment and hand it over
 
-Open **Organizations → Build assessment → Review findings**. Select a requirement and record a finding, source/test reference, exact locator, check date and rationale. Add the responsible role and next action. Unknowns remain investigation tasks; evidence-backed gaps enter the action queue. A recorded **MET** state requires an acceptance reference and reviewer role/date.
+Open **Organizations → Build assessment → Review findings**. Save the case reference, locality and reference period first. Select a requirement and record a finding, source/test reference, exact locator, check date and rationale. Add the responsible role and next action. Unknowns remain investigation tasks; evidence-backed gaps enter the action queue. A recorded **MET** state requires an acceptance reference and reviewer role/date.
 
 Export a printable HTML report for an owner or reviewer, or Markdown/JSON for further work. No accounts, uploads, crawler or paid API are needed. The report contains states and evidence limits rather than an overall compliance/readiness percentage. Read the [complete workflow and evidence rules](skills/dharma-os/references/nepal-tech-intelligence/assessment-review.md).
 

@@ -3,6 +3,10 @@
 Micro business / small workshop · Repair and technical services
 
 **HUMAN DECISION REQUIRED**
+Case: SYNTHETIC-DEMO-SHOP (not a real client)
+Locality: Synthetic Nepal locality; not an official-code match
+Period: Synthetic exercise 2026-11-12
+
 
 ## Evidence states
 

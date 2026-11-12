@@ -5,6 +5,8 @@ const A=require('../web/assessment-core.js');
 const modules=JSON.parse(fs.readFileSync(path.join(__dirname,'../skills/dharma-os/references/nepal-tech-intelligence/organization-needs.json'))).modules;
 const original=JSON.parse(fs.readFileSync(path.join(__dirname,'../examples/assessment-review/synthetic-shop.json')));
 const today='2026-11-12';
+const noContext=structuredClone(original);delete noContext.context;assert.equal(A.validate(noContext,modules,today).valid,false);
+noContext.requirements.find(m=>m.id==='backup').assessment='NOT_ASSESSED';assert.equal(A.validate(noContext,modules,today).valid,true);
 const summary=A.summary(original,modules,today);
 assert.equal(summary.counts.GAP,1);assert.equal(summary.counts.NOT_ASSESSED,7);
 assert.equal(summary.actions[0].id,'backup');assert.equal(summary.actions[0].priority,'IMMEDIATE_REVIEW');

@@ -39,6 +39,13 @@ def validate(plan, today=None):
     requirements = plan.get('requirements')
     if not isinstance(requirements, list) or not requirements or len(requirements) > 100:
         return dict(errors=errors + ['requirements: 1–100 records required'], warnings=warnings, valid=False)
+    context = plan.get('context', {})
+    if not isinstance(context, dict):
+        errors.append('context must be an object'); context = {}
+    assessed = any(isinstance(m, dict) and m.get('assessment') in ('GAP', 'PARTIAL', 'MET', 'NOT_APPLICABLE') for m in requirements)
+    for field in ('organization_ref', 'locality', 'reference_period'):
+        if not text(context.get(field)):
+            (errors if assessed else warnings).append('context.' + field + ': establish the case, geography and period before assessing findings')
     known = {m['id'] for m in json.loads((ROOT / 'organization-needs.json').read_text())['modules']}
     ids = []
     for i, item in enumerate(requirements):
@@ -142,6 +149,8 @@ def report(plan, today=None):
     s = summary(plan, today)
     lines = ['# Organization decision report', '', plan['scale'] + ' · ' + plan['organization_type'], '',
              '**HUMAN DECISION REQUIRED**', '', '## Evidence states', '']
+    context = plan.get('context', {})
+    lines[5:5] = [f"Case: {context.get('organization_ref') or 'NOT_ESTABLISHED'}", f"Locality: {context.get('locality') or 'NOT_ESTABLISHED'}", f"Period: {context.get('reference_period') or 'NOT_ESTABLISHED'}", '']
     if plan.get('is_synthetic'):
         lines += ['**SYNTHETIC DEMONSTRATION — no real organization was assessed.**', '']
     lines += ['- ' + state + ': ' + str(s['counts'].get(state, 0)) for state in STATES]
@@ -171,6 +180,8 @@ def html_report(plan, today=None):
              '<p>' + h(plan['scale']) + ' · ' + h(plan['organization_type']) + '</p><p><b>HUMAN DECISION REQUIRED</b></p>']
     if plan.get('is_synthetic'):
         parts += ['<p class="notice"><b>SYNTHETIC DEMONSTRATION — no real organization was assessed.</b></p>']
+    context = plan.get('context', {})
+    parts += ['<p><b>' + label + ':</b> ' + h(context.get(key) or 'NOT_ESTABLISHED') + '</p>' for key, label in [('organization_ref', 'Case'), ('locality', 'Locality'), ('reference_period', 'Period')]]
     parts += ['<h2>Evidence states</h2><p>' + ' · '.join(h(k) + ': ' + str(s['counts'].get(k, 0)) for k in STATES) + '</p>',
               '<h2>Action queue</h2><table><thead><tr><th>Priority</th><th>Action</th><th>Owner</th><th>Target</th></tr></thead><tbody>']
     for item in s['actions']:

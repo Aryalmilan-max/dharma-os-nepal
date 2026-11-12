@@ -14,6 +14,10 @@
     if(plan.country!=='Nepal') errors.push('country must be Nepal');
     if('is_synthetic' in plan&&typeof plan.is_synthetic!=='boolean')errors.push('is_synthetic must be a boolean');
     if(!Array.isArray(plan.requirements)||!plan.requirements.length||plan.requirements.length>100) return {valid:false,errors:[...errors,'requirements: 1–100 records required'],warnings};
+    let context=plan.context===undefined?{}:plan.context;
+    if(!context||typeof context!=='object'||Array.isArray(context)){errors.push('context must be an object');context={};}
+    const assessed=plan.requirements.some(m=>m&&['GAP','PARTIAL','MET','NOT_APPLICABLE'].includes(m.assessment));
+    for(const field of ['organization_ref','locality','reference_period'])if(!nonempty(context[field]))(assessed?errors:warnings).push('context.'+field+': establish the case, geography and period before assessing findings');
     const ids=[];
     plan.requirements.forEach((m,i)=>{
       const p='requirements['+i+']';
@@ -64,6 +68,7 @@
   }
   function markdown(plan,modules,today){
     const s=summary(plan,modules,today),lines=['# Organization decision report','',plan.scale+' · '+plan.organization_type,'','**HUMAN DECISION REQUIRED**',''];
+    const context=plan.context||{};lines.push('Case: '+(context.organization_ref||'NOT_ESTABLISHED'),'Locality: '+(context.locality||'NOT_ESTABLISHED'),'Period: '+(context.reference_period||'NOT_ESTABLISHED'),'');
     if(plan.is_synthetic)lines.push('**SYNTHETIC DEMONSTRATION — no real organization was assessed.**','');
     lines.push('## Evidence states','',...states.map(x=>'- '+x+': '+(s.counts[x]||0)),'','## Action queue','');
     for(const a of s.actions)lines.push('- '+a.priority+' · '+a.id+': '+a.action+' | Owner: '+a.owner+' | Target: '+a.target_date);
@@ -77,6 +82,7 @@
     const s=summary(plan,modules,today),h=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     let out='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Organization decision report</title><style>body{font:16px/1.6 system-ui,sans-serif;color:#193d31;max-width:1000px;margin:40px auto;padding:0 24px}h1,h2{line-height:1.25}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #ccd7cb;padding:10px;text-align:left;vertical-align:top}th{background:#edf2e7}section{border-top:1px solid #ccd7cb;padding:20px 0}a{overflow-wrap:anywhere}.notice{background:#fff0de;padding:16px}@media print{body{margin:0}h2{break-after:avoid}tr{break-inside:avoid}}</style><h1>Organization decision report</h1><p>'+h(plan.scale)+' · '+h(plan.organization_type)+'</p><p><b>HUMAN DECISION REQUIRED</b></p>';
     if(plan.is_synthetic)out+='<p class="notice"><b>SYNTHETIC DEMONSTRATION — no real organization was assessed.</b></p>';
+    const context=plan.context||{};for(const [key,label]of [['organization_ref','Case'],['locality','Locality'],['reference_period','Period']])out+='<p><b>'+label+':</b> '+h(context[key]||'NOT_ESTABLISHED')+'</p>';
     out+='<h2>Evidence states</h2><p>'+states.map(k=>h(k)+': '+(s.counts[k]||0)).join(' · ')+'</p><h2>Action queue</h2><table><thead><tr><th>Priority</th><th>Action</th><th>Owner</th><th>Target</th></tr></thead><tbody>';
     for(const a of s.actions)out+='<tr>'+[a.priority,a.title+': '+a.action,a.owner,a.target_date].map(x=>'<td>'+h(x)+'</td>').join('')+'</tr>';
     out+='</tbody></table>';

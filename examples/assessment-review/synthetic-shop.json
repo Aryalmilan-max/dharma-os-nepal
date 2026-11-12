@@ -155,5 +155,10 @@
     "Critical or sensitive operations need deeper review even in a one-person organization.",
     "Technology/operating needs are covered; sector-specific professional conclusions require appropriate expertise."
   ],
-  "is_synthetic": true
+  "is_synthetic": true,
+  "context": {
+    "organization_ref": "SYNTHETIC-DEMO-SHOP (not a real client)",
+    "locality": "Synthetic Nepal locality; not an official-code match",
+    "reference_period": "Synthetic exercise 2026-11-12"
+  }
 }

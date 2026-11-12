@@ -6,7 +6,7 @@ Use this workflow when a user needs a practical assessment, remediation queue or
 
 1. Open `web/index.html`, choose **Organizations**, select the operating scale/type and actual criticality/data context, then **Build assessment**.
 2. Choose **Review findings**. The initial report contains unknowns and investigation tasks. It does not recommend buying a product.
-3. Select a requirement. Read its evidence needs and acceptance criteria. Record an actual evidence reference/title, page/record/test locator, AD check date and what it establishes. An original HTTP(S) source URL is optional; an authorized private test record can be referenced without uploading its contents.
+3. Establish and **Save case context**: case/organization reference, locality and reference period/calendar. An internal case ID can identify the organization without exposing private names. These fields are required before recording assessed findings; naming a locality does not verify its official code or source coverage. Select a requirement, read its evidence needs/acceptance criteria, and record an actual evidence reference/title, page/record/test locator, AD check date and what it establishes. An original HTTP(S) source URL is optional; an authorized private test record can be referenced without uploading its contents.
 4. Record the finding rationale, state, responsible role, next action and agreed target. Keep facts separate from assumptions and preserve contradictory findings in evidence records. Optional impact/urgency values from 1 to 5 are judgments supplied by the user, not automatically measured risk.
 5. Click **Save finding** before switching requirements or navigating away. This saves the session only. Use **Save locally** or **Download JSON** for persistence.
 6. Export Markdown or printable HTML. Open the HTML file in a browser and use its normal print/save-PDF flow if needed. The report retains evidence states, unknowns, action ownership, targets, acceptance references, review roles and unresolved warnings.
@@ -24,6 +24,8 @@ The form edits the first evidence link and retains additional imported links. Fo
 | NOT_APPLICABLE | Needs the reason for exclusion and a reviewer role/date. Do not use it to hide an uninvestigated requirement. |
 
 Each evidence object contains `reference`, `locator`, `finding`, `checked_on` (AD `YYYY-MM-DD`), and an optional `url`. The check detects invalid/future dates, unsafe URL schemes or embedded credentials, unknown/duplicate requirement IDs, invalid ratings and malformed records. Evidence checks older than 90 days are flagged for contextual freshness review. A reference can still be wrong, a test can be inadequate and a reviewer role can be misrepresented; human assessment of the actual source and authority remains necessary.
+
+The top-level `context` object contains `organization_ref`, `locality` and `reference_period`. A new unassessed plan can leave them unresolved with warnings; observed/excluded assessment states require all three as text. Keep actual identity mapping in the authorized private system when a case ID is used. These fields establish the stated scope; the software does not independently verify the organization's identity, locality or institutional authority.
 
 ## Action ordering and limits
 

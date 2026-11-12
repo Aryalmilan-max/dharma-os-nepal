@@ -81,6 +81,13 @@ class AssessmentReviewTests(unittest.TestCase):
             invalid=subprocess.run([sys.executable,str(SCRIPT),'report',str(p),'--as-of','2026-11-12'],capture_output=True,text=True,cwd=tmp)
             self.assertNotEqual(invalid.returncode,0);self.assertIn('needs evidence',invalid.stderr)
 
+    def test_assessed_findings_need_case_geography_and_period(self):
+        del self.plan['context']
+        self.assertFalse(a.validate(self.plan, TODAY)['valid'])
+        self.gap['assessment'] = 'NOT_ASSESSED'
+        self.assertTrue(a.validate(self.plan, TODAY)['valid'])
+        self.assertTrue(any('context.organization_ref' in w for w in a.validate(self.plan, TODAY)['warnings']))
+
     def test_printable_report_escapes_content_and_retains_unknowns(self):
         self.gap['rationale'] = '<script>unsafe()</script>'
         html = a.html_report(self.plan, TODAY)
