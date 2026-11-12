@@ -27,3 +27,9 @@ Verify current local websites, institutions, budgets and source ownership; valid
 The interface provides English/Nepali navigation labels and selected search aliases, not a fully translated corpus. Desktop Brave was checked manually for local-file loading, search, study creation, unsupported-claim rejection and worked-study viewing. Responsive CSS is included; no claim of exhaustive browser/mobile/accessibility certification is made. Browser storage is optional, local to the browser and unencrypted; do not store sensitive participant or client records.
 
 The skill neither trains a model on these sources nor grants access to accounts or private history. Legal, financial, procurement and engineering conclusions need the current owning source and appropriate professional/decision authority.
+
+## Organization review workspace (0.3)
+
+The new assessment workflow records actual user-supplied findings, evidence references, reviewer records and actions. It rejects structurally unsupported observed states and requires acceptance/review references for recorded MET states. It cannot establish that an evidence reference is genuine, an acceptance test is adequate or a reviewer has authority. These remain human checks. Action ratings are user judgments ordered by an explicitly documented heuristic, not a validated Nepal risk model. No overall compliance or readiness percentage is produced.
+
+The shop assessment fixture and generated reports are explicitly synthetic software demonstrations. They add no empirical organization, customer or field-research coverage. No real bank, school or shop was audited by implementing this interface. Browser testing exercised plan-to-review navigation, unsupported-finding rejection and importing the labelled example; test/review scope is reported without claiming exhaustive device coverage.

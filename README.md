@@ -10,6 +10,8 @@
 
 Explore the knowledge tree, inspect a worked study, create a research protocol, attach evidence and export a reviewable result. Built for students, technology businesses and independent researchers working on Nepal.
 
+**New in 0.3:** complete an organization assessment from findings through an owned action queue and a printable decision report. Record what the evidence establishes, what remains unknown, who acts next and how acceptance will be demonstrated. No automated readiness/compliance score is invented.
+
 **नेपालको प्रविधि व्यवसाय बुझ्न—तथ्याङ्क, बजार, जनशक्ति, इन्जिनियरिङ र स्थानीय प्रमाणलाई जोड्ने खुला अनुसन्धान ढाँचा।**
 
 [Worked studies](docs/studies/qr-growth.md) · [Workbench guide](skills/dharma-os/references/nepal-tech-intelligence/workbench.md) · [Explore all 60 domains](skills/dharma-os/references/nepal-tech-intelligence/INDEX.md) · [Coverage limits](docs/coverage-and-limitations.md)
@@ -25,6 +27,7 @@ Download this repository using GitHub's **Code → Download ZIP**, extract it, a
 - **My study:** choose a protocol, add claims and citations, check the evidence structure, save a local draft, and export JSON/Markdown.
 - **Coverage:** see which branches have selected studies and which still contain only research requirements.
 - **Organizations:** build requirements for solo operators, micro/small businesses, growing organizations, large enterprises and major public institutions. Combine 12 organization types with critical-service and sensitive-data flags; export an assessment with evidence needs, deliverables and acceptance checks.
+- **Assessment review:** open a generated plan, record findings/evidence, assign owners and action dates, review acceptance, and export Markdown or printable HTML. Save/load a local draft or download JSON; use **Forget saved copy** to remove the browser's saved assessment.
 
 English/Nepali navigation labels are available; source text is not automatically translated. Drafts saved in the browser stay in that browser. Download JSON for a portable backup. The interface has no analytics, account connections, automatic source retrieval or network API requests. External source links open only when you choose them.
 
@@ -44,6 +47,21 @@ python3 skills/dharma-os/scripts/research.py report qr-growth
 The local helper needs Python 3.10+, no extra packages, no API key and no account connection. It reads the bundled snapshot; live research requires your agent's own available tools.
 
 ## Complete a real workflow
+
+### Finish an assessment and hand it over
+
+Open **Organizations → Build assessment → Review findings**. Select a requirement and record a finding, source/test reference, exact locator, check date and rationale. Add the responsible role and next action. Unknowns remain investigation tasks; evidence-backed gaps enter the action queue. A recorded **MET** state requires an acceptance reference and reviewer role/date.
+
+Export a printable HTML report for an owner or reviewer, or Markdown/JSON for further work. No accounts, uploads, crawler or paid API are needed. The report contains states and evidence limits rather than an overall compliance/readiness percentage. Read the [complete workflow and evidence rules](skills/dharma-os/references/nepal-tech-intelligence/assessment-review.md).
+
+```bash
+python3 skills/dharma-os/scripts/organizations.py assess --scale micro --type repair > assessment.json
+python3 skills/dharma-os/scripts/assessments.py validate assessment.json
+python3 skills/dharma-os/scripts/assessments.py summary assessment.json
+python3 skills/dharma-os/scripts/assessments.py report assessment.json --format html > report.html
+```
+
+Inspect the [explicitly synthetic example](examples/assessment-review/synthetic-shop.json) and [its report](examples/assessment-review/synthetic-shop-report.md): one invented failed restore becomes an owned follow-up action, while seven requirements remain unknown. This demonstrates software behavior; it is not a real shop assessment or measured customer outcome.
 
 ### Dedicated working playbooks
 
@@ -170,7 +188,10 @@ See [source provenance](sources/provenance.json) and [third-party notices](THIRD
 ```bash
 python3 -m unittest discover -s tests -v
 node tests/browser_core.cjs
+node tests/assessment_core.cjs
 python3 scripts/build_library.py
+python3 scripts/build_packs.py
+python3 scripts/build_assessment_example.py
 ```
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include source corrections, verified local evidence, better methods and clearer coverage limits. A new source or topic must not silently become a claim of nationwide coverage.
