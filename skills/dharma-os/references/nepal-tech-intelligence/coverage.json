@@ -50,5 +50,11 @@
     "organization_types": 12,
     "requirement_areas": 16,
     "status": "AUTHORED_GUIDANCE_NOT_ORGANIZATION_AUDITS"
+  },
+  "sector_working_packs": {
+    "packs": 4,
+    "decision_workflows": 24,
+    "blank_csv_templates": 16,
+    "status": "AUTHORED_PLAYBOOKS_NOT_COMPLETED_AUDITS"
   }
 }
