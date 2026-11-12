@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-11-12",
+  "meaning": "Discovery and failed-access frontier, not verified data or completed coverage.",
+  "candidates": [
+    {
+      "title": "NPHC 2021 Housing and Household thematic report, Table 4.3",
+      "publisher": "National Statistics Office",
+      "url": "https://censusnepal.cbs.gov.np/results/files/result-folder/Final_Housing_Household_Report_website_12_2.pdf",
+      "scope": "Historical household facility percentages at national/province and selected classification levels",
+      "status": "PRIMARY_SEARCH_INDEX_DISCOVERY; DIRECT_PDF_TIMEOUT",
+      "next_action": "Retrieve the original PDF, inspect complete table 4.3 and its denominator/footnotes, retain checksum and page, and reconcile definitions before adding observations.",
+      "limits": "Search indexing is not a rendered-table audit. No numerical observations from this report were added by this upgrade. Census 2021 is a historical baseline, not current demand."
+    },
+    {
+      "title": "Statistical Pocket Book Nepal 2024, household communication facilities",
+      "publisher": "National Statistics Office / government document CDN",
+      "url": "https://giwmscdntwo.gov.np/media/pdf_upload/Statistical%20Pocket%20book%20-%20Nepal%202024-compressed_cdxhdwp.pdf",
+      "status": "PRIMARY_SEARCH_INDEX_DISCOVERY; DIRECT_FETCH_502",
+      "next_action": "Locate a responsive official edition and verify the complete table, reference year, units and source before extraction.",
+      "limits": "No checked province-level dataset is claimed. Do not substitute a secondary copy without reviewing edition and provenance."
+    },
+    {
+      "title": "Banganga Municipality annual budget index",
+      "publisher": "Banganga Municipality",
+      "url": "https://bangangamun.gov.np/divisions/information-technology-branch/category/annual-budget/",
+      "status": "OFFICIAL_DOMAIN_SEARCH_DISCOVERY; DIRECT_PAGE_TIMEOUT",
+      "next_action": "Retrieve the current index and actual fiscal-year document, verify institution/locality identity and amendments, and inspect exact ICT-related budget clauses.",
+      "limits": "No funded school, approved allocation, released funds or procurement opportunity has been established by this failed-access attempt."
+    }
+  ]
+}

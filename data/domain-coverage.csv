@@ -1,0 +1,61 @@
+domain_id,domain,topics,bundled_studies,observation_records,status
+D01,Taxonomy and knowledge architecture,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D02,Statistics and measurement,10,3,50,SELECTED_DESK_EVIDENCE
+D03,Macroeconomy and business cycle,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D04,Population migration and inclusion,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D05,Federalism public institutions and policy,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D06,Public finance grants and budgets,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D07,Tender and public procurement lifecycle,10,1,0,SELECTED_DESK_EVIDENCE
+D08,Company registration and governance,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D09,Tax customs and international trade,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D10,Strategy and management principles,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D11,Entrepreneurship and venture building,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D12,Pricing unit economics and business models,10,1,0,SELECTED_DESK_EVIDENCE
+D13,Accounting cash flow and financial control,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D14,Finance credit insurance and investment,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D15,Customer research and segmentation,10,1,0,SELECTED_DESK_EVIDENCE
+D16,Marketing positioning and brand,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D17,Content media and demand generation,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D18,Sales CRM and institutional relationships,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D19,Distribution channels and partnerships,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D20,Import logistics inventory and supply chain,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D21,Project management and field delivery,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D22,Quality standards warranties and assurance,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D23,Human resource planning and recruitment,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D24,Labour social security and workplace operations,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D25,Education TVET and technical talent pipeline,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D26,Research innovation and intellectual property,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D27,Contracts data rights and digital regulation,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D28,Cybersecurity and operational resilience,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D29,Software engineering and architecture,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D30,Web mobile and product engineering,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D31,Data engineering analytics and decision systems,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D32,AI machine learning language and automation,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D33,Cloud data centres DevOps and continuity,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D34,Telecommunications networking and spectrum,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D35,Electronics embedded systems and repair,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D36,Computing hardware endpoints and printing,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D37,Power protection UPS solar and energy readiness,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D38,IoT industrial automation and controls,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D39,Audio visual smart classrooms and collaboration,10,1,0,SELECTED_DESK_EVIDENCE
+D40,Video surveillance access and physical security,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D41,GIS mapping remote sensing and geospatial systems,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D42,ICT site infrastructure and installation engineering,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D43,Education research and institutional technology demand,10,1,0,SELECTED_DESK_EVIDENCE
+D44,Health social care and medical technology demand,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D45,Agriculture water forests and natural-resource technology,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D46,Tourism culture hospitality and creative technology,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D47,Industry construction and enterprise digitization,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D48,Energy utilities transport and logistics technology,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D49,Commerce fintech cooperatives and digital transactions,10,3,50,SELECTED_DESK_EVIDENCE
+D50,Digital government identity and public service platforms,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D51,Internet markets affordability and consumer access,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D52,Digital literacy local languages and accessibility,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D53,Climate disaster environmental and e-waste resilience,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D54,Cross-border dynamics exports diaspora and dependencies,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D55,Nepal media technology reporting and verification,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D56,Municipal provincial and district technology ecosystems,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D57,Competitors suppliers OEMs and commercial evidence,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D58,Maintenance managed services and asset lifecycle,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D59,Ethics trust accountability and public interest,10,0,0,RESEARCH_REQUIREMENTS_ONLY
+D60,Technology foresight scenarios and strategic learning,10,0,0,RESEARCH_REQUIREMENTS_ONLY

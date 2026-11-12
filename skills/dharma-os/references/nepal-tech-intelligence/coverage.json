@@ -9,7 +9,7 @@
     "principles_and_methods": 30,
     "source_records": 119,
     "unique_source_urls": 117,
-    "statistical_observations": 10,
+    "statistical_observations": 52,
     "checked_publisher_records": 37
   },
   "research_snapshot_not_bundled": {
@@ -32,5 +32,17 @@
     "Article corpus and monitored feed coverage",
     "Unlisted/new/unregistered media and broadcasts without text archives",
     "Source-by-source legal status, dates, amendments and technical verification"
-  ]
+  ],
+  "release": "0.2.0",
+  "workbench": {
+    "payment_observations": 50,
+    "legacy_observations": 10,
+    "overlapping_observations": 8,
+    "distinct_measurements": 52,
+    "desk_studies": 4,
+    "protocols": 6,
+    "domains_with_linked_desk_study": 7,
+    "observation_source_check": "2026-11-12",
+    "independent_academic_peer_review": false
+  }
 }

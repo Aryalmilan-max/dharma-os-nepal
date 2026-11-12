@@ -2,7 +2,7 @@
 name: dharma-os
 description: Nepal technology-business research across statistics, management, entrepreneurship, marketing, HR, engineering, procurement, provincial and municipal intelligence, technology media, and external business conditions. Use for source-backed Nepal ICT-sector decisions and research briefs. Separates research topics, reported claims, verified evidence, and coverage gaps.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Dharma OS
@@ -27,6 +27,23 @@ python3 scripts/nepal.py brief --domain D39 --locality "Banganga Municipality"
 ```
 
 The public package includes authored instructions, source metadata and a small attributed statistical sample. It excludes bulk locality and media-register extracts. A supplied locality in a brief is an unverified research target; resolve official codes and current boundaries from the owning source before joining data or making local claims. See `coverage.json` for the difference between packaged resources and the broader research snapshot.
+
+## Reproducible evidence and studies
+
+For a study, thesis protocol, evidence audit or export, use `scripts/research.py`. Read [the workbench guide](references/nepal-tech-intelligence/workbench.md) for the study format and command examples. The helper supports unified English/selected Nepali search, six scoped protocols, four maintainer desk studies, a selected 50-observation national payment dataset, chronological comparisons, Markdown/CSV exports, RIS/BibTeX citations, and structural evidence checks. These new observations overlap the original ten-observation sample; do not add them together.
+
+```bash
+python3 scripts/research.py search भुक्तानी --kind observation
+python3 scripts/research.py templates
+python3 scripts/research.py report qr-growth
+python3 scripts/research.py compare NRB-qr-volume-202509 NRB-qr-volume-202609
+python3 scripts/research.py init --template school-readiness --question "What readiness evidence is needed at this school?" --locality "Banganga Municipality" --out study.json
+python3 scripts/research.py validate study.json
+```
+
+`init` creates a draft without overwriting an existing file. A user-supplied locality is not validated by naming it. A passed structural check is never a truth certification, peer review, evidence of representative sampling, or a procurement approval. Keep fact, inference, hypothesis and recommendation distinct. A derived claim needs explicit basis IDs, supporting evidence needs a source locator, reference period, geography and AD check date, and contradictory evidence must remain visible. Resolve every reported defect before calling a study reproducible. Use the student's institution's own thesis, ethics and citation requirements; this toolkit does not grant academic approval or invent original field results.
+
+The repository includes `web/index.html`, an offline browser interface using the same public research library. It supports exploring branches, inspecting evidence, following worked studies and creating a local study. No account, server, paid API, telemetry or automatic live retrieval is included. Browser drafts stay in that browser and can be exported as JSON; keep confidential participant/client data out of shareable files. The public skill alone remains usable without the web folder.
 
 ## Investigate and decide
 

@@ -11,3 +11,11 @@ Keep contributions focused on Nepal technology-business decisions and evidence q
 - Update coverage counts when packaged resources change. Do not count unbundled or unreviewed material as verified coverage.
 
 Run `python3 -m unittest discover -s tests -v` before proposing changes. Include what changed, how it was checked and any unresolved gaps. Do not add a live crawler or recurring job as an incidental documentation change.
+
+For study/data changes, read the [study format and workbench guide](skills/dharma-os/references/nepal-tech-intelligence/workbench.md). Add sources before citing their IDs. Preserve facts, inferences, hypotheses and recommendations separately, including contradictions and incomplete local evidence. Do not attach national-only NRB measurements to a local geography by relabelling the evidence.
+
+`scripts/build_library.py` maintains the selected NRB transcription and authored protocols/studies. Update its reviewed inputs rather than editing generated JSON/CSV/Markdown/catalog copies. Revisit the original source before changing a check date, record its checksum/locator, explain revisions, and regenerate. The builder makes no network requests and cannot refresh evidence by itself.
+
+For browser changes run `node --check web/app.js` and `node tests/browser_core.cjs` with Node.js 20+. Open `web/index.html` and exercise the changed user flow. Browser and Python checks should preserve the same important evidence states. Exported reports must retain material review warnings. CI regenerates the library and rejects committed/generated drift.
+
+Use the study contribution issue form for a scoped new case. A passed structural checker or AI-agent evaluation must not be presented as academic peer review, legal compliance, field validation or a verified customer outcome.

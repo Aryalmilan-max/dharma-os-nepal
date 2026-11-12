@@ -4,6 +4,7 @@ import argparse
 import csv
 import json
 from pathlib import Path
+from research import ALIASES
 
 ROOT = Path(__file__).resolve().parents[1] / 'references/nepal-tech-intelligence'
 
@@ -13,7 +14,10 @@ def load(name):
 
 
 def matches(record, query):
-    return query.casefold() in json.dumps(record, ensure_ascii=False).casefold()
+    text = json.dumps(record, ensure_ascii=False).casefold()
+    queries = [query.casefold()]
+    queries += [query.casefold().replace(ne.casefold(), en.casefold()) for ne, en in ALIASES.items() if ne.casefold() in query.casefold()]
+    return any(q in text for q in queries)
 
 
 def main():

@@ -1,10 +1,16 @@
 # Coverage and limitations
 
-The public package supplies a taxonomy, research methods, source annotations, selected publisher checks and ten attributed numerical observations. It does not claim to contain every Nepal technology fact, source, newspaper, municipality record or engineering discipline.
+The public package supplies a taxonomy, research methods, source annotations, selected publisher checks, a small attributed numerical dataset, worked desk studies and an offline study workspace. It does not claim to contain every Nepal technology fact, source, newspaper, municipality record or engineering discipline.
 
 ## Packaged resources
 
-The current package contains 60 domains, 600 core research topics, 164 finer engineering prompts, 30 methods, 119 source records representing 117 distinct URLs, ten observations and 37 checked publisher records. Source checks are dated 2026-11-11. Some source routes failed, were search-index-only, or require further review; see each record.
+The current package contains 60 domains, 600 core research topics, 164 finer engineering prompts, 30 methods, 119 source records representing 117 distinct URLs, 52 distinct statistical measurements and 37 checked publisher records. Most source checks are dated 2026-11-11; the selected NRB publication was rechecked on 2026-11-12. Some source routes failed, were search-index-only, or require further review; see each record.
+
+The new payment CSV contains 50 observations (ten selected series across five printed periods). Eight overlap the legacy ten-observation file; two legacy observations are additional. Do not add 50 and 10 and claim 60 distinct measurements. These are national payment figures from one publication, not a Nepal-wide sector dataset or a complete monthly time series.
+
+Four maintainer desk studies link selected evidence to seven domains. No independent academic peer review, field survey or customer outcome is claimed. Three studies analyse the payment publication; the classroom study audits inherited source annotations and explicitly does not revalidate every linked document. A linked study does not establish full research coverage of a domain. `data/domain-coverage.csv` marks every other branch as research requirements only.
+
+Six authored protocols and the browser workspace help users create their own scoped work. Structural validation detects certain evidence/date/geography/reference problems; it does not evaluate semantic truth, causal identification, sampling validity, legal compliance or engineering adequacy. A national-only NRB source cannot be relabelled as local evidence. Other source scopes remain subject to human review.
 
 Research prompts can overlap and are not empirical findings. Candidate source mappings are discovery routes rather than proof of every topic. News reports, concepts, fundraising, budgets, procurement and awards remain distinct evidence states.
 
@@ -17,5 +23,7 @@ Counts do not establish current activity, independent outlet identity, full extr
 ## Remaining work
 
 Verify current local websites, institutions, budgets and source ownership; validate active publishers and feeds; review actual articles; link evidence to official locality codes; expand authoritative statistics and sector dossiers; and correct extraction defects before relying on them. No continuous monitoring or production deployment is supplied.
+
+The interface provides English/Nepali navigation labels and selected search aliases, not a fully translated corpus. Desktop Brave was checked manually for local-file loading, search, study creation, unsupported-claim rejection and worked-study viewing. Responsive CSS is included; no claim of exhaustive browser/mobile/accessibility certification is made. Browser storage is optional, local to the browser and unencrypted; do not store sensitive participant or client records.
 
 The skill neither trains a model on these sources nor grants access to accounts or private history. Legal, financial, procurement and engineering conclusions need the current owning source and appropriate professional/decision authority.

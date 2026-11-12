@@ -1,0 +1,41 @@
+/* Run: node tests/browser_core.cjs — no browser driver or external packages. */
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+const core = require('../web/core.js');
+const sandbox = {window:{}};
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../web/catalog.js'),'utf8'),sandbox);
+const data = JSON.parse(JSON.stringify(sandbox.window.DHARMA_DATA));
+const date='2026-11-12';
+for(const study of data.studies) {
+  const result=core.validate(study,data,date);
+  assert.equal(result.structurally_valid,true,JSON.stringify(result));
+  assert.equal(result.review_status,'HUMAN_REVIEW_REQUIRED');
+  assert.ok(core.markdown(study,data).includes('https://'));
+}
+const study=structuredClone(data.studies[0]);
+study.geography={country:'Nepal',level:'municipality',name:'Banganga Municipality',code_source_url:'https://censusresults.nsonepal.gov.np/local-level'};
+let result=core.validate(study,data,date);
+assert.equal(result.structurally_valid,true);assert.ok(result.warnings.some(w=>w.includes('geographic')));
+assert.ok(core.markdown(study,data).includes('geographic mismatch'));
+assert.ok(core.markdown(study,data).includes('Structural review'));
+study.claims[0].evidence[0].geography='Banganga Municipality';
+assert.equal(core.validate(study,data,date).structurally_valid,false);
+study.claims[0].evidence=[];
+assert.equal(core.validate(study,data,date).structurally_valid,false);
+const circular=structuredClone(data.studies[0]);
+circular.claims[2].basis=['Q4'];circular.claims[3].basis=['Q3'];
+assert.ok(core.validate(circular,data,date).errors.some(e=>e.includes('Circular')));
+const future=structuredClone(data.studies[0]);future.claims[0].evidence[0].checked_on='2027-01-01';
+assert.equal(core.validate(future,data,date).structurally_valid,false);
+for(const bad of [null,[],{}, {domain_ids:[{}],claims:[null]}]) assert.equal(core.validate(bad,data,date).structurally_valid,false);
+const badProtocol=structuredClone(data.studies[0]);badProtocol.protocol={bad:'shape'};assert.equal(core.validate(badProtocol,data,date).structurally_valid,false);
+const draft=core.createStudy(data.templates[0],'My question','Nepal');
+result=core.validate(draft,data,date);assert.equal(result.structurally_valid,true);assert.ok(result.warnings.some(w=>w.includes('research plan')));
+assert.equal(core.safeURL('javascript:alert(1)'),false);assert.equal(core.safeURL('https://user:secret@example.com'),false);assert.equal(core.safeURL('https://www.nrb.org.np/'),true);
+assert.equal(core.validDate('2026-02-30'),false);assert.equal(core.validDate('2024-02-29'),true);
+assert.equal(data.observations.length,50);
+const raw=JSON.parse(fs.readFileSync(path.join(__dirname,'../skills/dharma-os/references/nepal-tech-intelligence/research-library.json'),'utf8'));
+assert.deepEqual(data.observations,raw.observations);assert.deepEqual(data.studies,raw.studies);
+console.log('Browser core: valid studies, authoring, malformed input, geography, source safety, dates, circular basis and catalog consistency passed.');
