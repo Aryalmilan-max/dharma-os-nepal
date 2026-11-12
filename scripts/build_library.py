@@ -173,6 +173,7 @@ def main():
                                  domains_with_linked_desk_study=len({d for s in studies for d in s['domain_ids']}),
                                  observation_source_check=CHECKED, independent_academic_peer_review=False)
     coverage['organization_assessment'] = dict(scale_profiles=6, organization_types=12, requirement_areas=16, status='AUTHORED_GUIDANCE_NOT_ORGANIZATION_AUDITS')
+    coverage['sector_working_packs'] = dict(packs=4, decision_workflows=24, blank_csv_templates=16, status='AUTHORED_PLAYBOOKS_NOT_COMPLETED_AUDITS')
     dump(REF / 'coverage.json', coverage)
     provenance = json.loads((REPO / 'sources/provenance.json').read_text())
     provenance['workbench'] = data['provenance']

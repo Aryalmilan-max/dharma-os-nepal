@@ -45,6 +45,24 @@ The local helper needs Python 3.10+, no extra packages, no API key and no accoun
 
 ## Complete a real workflow
 
+### Dedicated working playbooks
+
+These provide decision steps, evidence to collect, deliverables, acceptance checks and blank working records:
+
+| User | Playbook and templates |
+| --- | --- |
+| [Commercial banks](docs/packs/commercial-bank/README.md) | Service dependencies/recovery, access review, regulatory evidence and supplier/change assurance |
+| [Small tech shops](docs/packs/tech-shop/README.md) | Repair custody, stock ledger, costs/quotes and warranty/support cases |
+| [Schools and colleges](docs/packs/school/README.md) | Site readiness, funding stages, teacher acceptance and usage review |
+| [Students and researchers](docs/packs/researcher/README.md) | Literature matrix, protocol/sampling, data dictionary and reproducibility review |
+
+```bash
+python3 skills/dharma-os/scripts/packs.py show commercial-bank
+python3 skills/dharma-os/scripts/packs.py export tech-shop --out my-shop-pack
+```
+
+Exports contain the playbook, structured JSON and four header-only CSVs. Existing folders are preserved. These are authored methods to apply to actual evidence, not completed audits or invented customer examples. Bank source routes include the original NRB IT guideline and policy index; current applicability and later amendments still require qualified review.
+
 ### From small industry to major institutions
 
 Use **Organizations** in the browser, or:

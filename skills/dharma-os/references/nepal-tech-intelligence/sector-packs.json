@@ -1,0 +1,580 @@
+{
+  "schema_version": "1.0",
+  "authorship": "Authored working playbooks and blank templates; not completed institutional evidence.",
+  "packs": [
+    {
+      "id": "commercial-bank",
+      "title": "Commercial bank technology and service operations",
+      "scope": "Nepal commercial-bank technology assessment; not credit decisions, a completed IS audit or a regulatory compliance opinion.",
+      "owners": [
+        "Business service owner",
+        "IT operations",
+        "Information security",
+        "Risk/compliance",
+        "Procurement",
+        "Internal audit; independent from implementation"
+      ],
+      "workflows": [
+        {
+          "title": "Service and branch dependency mapping",
+          "decision": "Which customer services must survive a branch or provider outage?",
+          "evidence": "Service hours, channels, branch dependencies, owners and observed outage records.",
+          "deliverable": "Service-to-system/site/provider dependency map and business-impact assessment.",
+          "acceptance": "Business owners confirm dependencies and approve service-specific recovery objectives.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Access and transaction integrity",
+          "decision": "Who can initiate, approve, change and reconcile a sensitive transaction?",
+          "evidence": "Role permissions, joiner/leaver records, privileged accounts, approval paths and exception records; use redacted or synthetic samples.",
+          "deliverable": "Access/segregation matrix and review exceptions.",
+          "acceptance": "Demonstrate permitted and prohibited actions in an authorized test environment; reconcile an approved test transaction.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Continuity and recovery exercise",
+          "decision": "Can the service recover within owner-approved data-loss and time limits?",
+          "evidence": "Backup/replication configuration, restore evidence, recovery dependencies and actual exercise timestamps.",
+          "deliverable": "Recovery scenario, exercise log, measured recovery gap and remediation ownership.",
+          "acceptance": "Recover a representative service safely in an isolated or explicitly approved exercise and compare measured results with targets.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Supplier and outsourced service assurance",
+          "decision": "What happens if the platform or connectivity supplier fails or changes?",
+          "evidence": "Service scope, subcontractors, data access/location, support escalation, contract evidence and exit dependencies.",
+          "deliverable": "Supplier due-diligence/exit matrix linked to service criticality.",
+          "acceptance": "Walk through an outage and termination/export scenario with accountable owners; unsupported supplier claims remain open.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "System change and migration",
+          "decision": "Can a release or migration preserve records and allow recovery?",
+          "evidence": "Source/target mappings, reconciliation totals, test results, approvals and rollback dependencies.",
+          "deliverable": "Change record, reconciliation tests and go/no-go criteria.",
+          "acceptance": "Test duplicates, rejected records, rollback and reconciled totals before authorized release.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Regulatory and audit evidence",
+          "decision": "Which current instrument and exact provision apply to this bank and service?",
+          "evidence": "Original NRB documents, applicable later directives/circulars, bank policies and independent review.",
+          "deliverable": "Provision-to-control-to-evidence mapping with applicability and amendment fields.",
+          "acceptance": "The bank risk/compliance reviewer resolves current applicability; the toolkit never marks a bank compliant automatically.",
+          "status": "NOT_ASSESSED"
+        }
+      ],
+      "templates": [
+        {
+          "name": "service-recovery",
+          "purpose": "Map services and record actual recovery tests.",
+          "columns": [
+            "service_id",
+            "channel_or_branch",
+            "business_owner_role",
+            "dependency",
+            "criticality_basis",
+            "approved_RTO",
+            "approved_RPO",
+            "target_approval_ref",
+            "exercise_date",
+            "measured_restore_time",
+            "measured_data_loss",
+            "evidence_ref",
+            "gap",
+            "remediation_owner",
+            "review_status"
+          ]
+        },
+        {
+          "name": "access-review",
+          "purpose": "Review roles and conflicting powers without publishing customer data.",
+          "columns": [
+            "system_id",
+            "role_id",
+            "permission",
+            "initiate_or_approve",
+            "conflict_rule_ref",
+            "review_evidence_ref",
+            "exception",
+            "authorized_reviewer_role",
+            "remediation",
+            "due_date",
+            "status"
+          ]
+        },
+        {
+          "name": "regulatory-evidence",
+          "purpose": "Keep exact instruments and later amendments distinct.",
+          "columns": [
+            "instrument_title",
+            "issuer",
+            "original_url",
+            "publication_date",
+            "effective_period",
+            "entity_and_service_scope",
+            "clause_page",
+            "later_amendment_ref",
+            "applicability_decision",
+            "control_id",
+            "evidence_ref",
+            "gap",
+            "reviewer_role",
+            "review_date",
+            "status"
+          ]
+        },
+        {
+          "name": "supplier-change",
+          "purpose": "Trace providers, data exposure, change tests and exit.",
+          "columns": [
+            "service_id",
+            "supplier_role",
+            "contract_ref",
+            "data_access_scope",
+            "subcontractor_dependency",
+            "exit_export_test_ref",
+            "change_id",
+            "test_ref",
+            "rollback_ref",
+            "approval_ref",
+            "unresolved_risk",
+            "status"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "NRB IT Guidelines, August 2012",
+          "url": "https://www.nrb.org.np/bfr/it-guidelines-2012/",
+          "check": "Official 19-page PDF opened 2026-11-12; content/navigation inspected. Historical instrument; current amendments/applicability are not exhaustively audited."
+        },
+        {
+          "title": "NRB policies and guidelines index",
+          "url": "https://www.nrb.org.np/category/policies-guidelines/",
+          "check": "Official index opened 2026-11-12. Discovery route, not a complete instrument/applicability audit."
+        }
+      ]
+    },
+    {
+      "id": "tech-shop",
+      "title": "Small technology shop: sales, repair and support",
+      "scope": "Nepal technology retail/repair operating workflow. No invented stock, prices, margins, warranties, tax rates or customers.",
+      "owners": [
+        "Shop owner",
+        "Sales/stock operator",
+        "Repair technician",
+        "Accounts/support role"
+      ],
+      "workflows": [
+        {
+          "title": "Enquiry to comparable offer",
+          "decision": "What problem, configuration and support does the buyer actually need?",
+          "evidence": "Use case, budget authority, exact SKU/configuration, dated supplier evidence and included/excluded services.",
+          "deliverable": "Requirements-to-offer comparison and quotation assumptions.",
+          "acceptance": "Buyer requirements map to the exact offered configuration; price validity and support exclusions are explicit.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Purchase and stock receipt",
+          "decision": "Did the shop receive the expected, traceable configuration?",
+          "evidence": "Purchase reference, quantities, exact variants, serial records where appropriate and physical condition.",
+          "deliverable": "Stock/serial receipt and discrepancy log.",
+          "acceptance": "Count and configuration reconcile with receipt evidence; discrepant units are not silently sold as verified.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Repair intake and device custody",
+          "decision": "What work and data access did the customer authorize?",
+          "evidence": "Device condition, fault description, accessories, consent scope and custody handovers; keep identifiers private.",
+          "deliverable": "Repair job, authorization and custody record.",
+          "acceptance": "Technician work stays inside authorization; return condition, accessories and agreed tests are recorded.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Job and unit economics",
+          "decision": "Does the sale or repair cover its actual acquisition and delivery obligations?",
+          "evidence": "Dated purchase cost, labour time/cost basis, transport, returns, warranty reserve assumptions and consistent tax treatment.",
+          "deliverable": "Cost worksheet separating observed amounts from estimates.",
+          "acceptance": "Every amount has currency, unit and evidence/assumption basis; unknowns are not replaced with made-up margins.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Warranty and after-sales",
+          "decision": "Who is responsible when a sold device or repair fails?",
+          "evidence": "Exact warranty document, supplier route, exclusions, service history and promised response.",
+          "deliverable": "Warranty/support case and supplier escalation log.",
+          "acceptance": "A test support case reaches the responsible role; promises match actual documented coverage.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Records, backup and owner review",
+          "decision": "Can the owner reconcile stock, jobs, receipts and essential records?",
+          "evidence": "Opening/closing balances, sales/return/job records, access ownership and restore test.",
+          "deliverable": "Daily reconciliation, exception queue and recovery instructions.",
+          "acceptance": "A sample sale, return and repair reconcile across records; an essential backup is restored successfully.",
+          "status": "NOT_ASSESSED"
+        }
+      ],
+      "templates": [
+        {
+          "name": "repair-custody",
+          "purpose": "Keep real device/customer records private; use job IDs in shared research.",
+          "columns": [
+            "job_id",
+            "device_category",
+            "condition_ref",
+            "accessories_ref",
+            "fault_description",
+            "authorized_work_ref",
+            "data_access_consent_ref",
+            "custody_handover_ref",
+            "diagnosis",
+            "approval_for_extra_work_ref",
+            "repair_test_ref",
+            "return_acceptance_ref",
+            "status"
+          ]
+        },
+        {
+          "name": "stock-ledger",
+          "purpose": "Trace exact variants and physical movements.",
+          "columns": [
+            "movement_id",
+            "date",
+            "SKU",
+            "variant",
+            "private_serial_ref",
+            "movement_type",
+            "quantity",
+            "purchase_or_sale_ref",
+            "condition",
+            "discrepancy",
+            "operator_role",
+            "status"
+          ]
+        },
+        {
+          "name": "cost-and-quote",
+          "purpose": "Supply real values or explicit assumptions, never default market prices.",
+          "columns": [
+            "offer_id",
+            "cost_item",
+            "amount",
+            "currency",
+            "unit",
+            "observed_or_assumption",
+            "source_ref",
+            "tax_treatment_basis",
+            "valid_until",
+            "included_service",
+            "excluded_service",
+            "unknown",
+            "review_status"
+          ]
+        },
+        {
+          "name": "support-case",
+          "purpose": "Follow actual warranty responsibility.",
+          "columns": [
+            "case_id",
+            "sale_or_job_ref",
+            "warranty_document_ref",
+            "reported_fault",
+            "support_owner_role",
+            "supplier_case_ref",
+            "promised_response_basis",
+            "action",
+            "acceptance_ref",
+            "status"
+          ]
+        }
+      ],
+      "sources": []
+    },
+    {
+      "id": "school",
+      "title": "School and college technology: teaching through maintenance",
+      "scope": "Nepal school/college technology assessment. Institution, funding and procurement stages need verification; equipment purchase is not proof of learning improvement.",
+      "owners": [
+        "School leadership",
+        "Teachers and actual operators",
+        "IT/support role",
+        "Finance/procurement authority",
+        "Accessibility/data responsibility role"
+      ],
+      "workflows": [
+        {
+          "title": "Teaching need and baseline",
+          "decision": "Which lesson or administrative task needs improvement?",
+          "evidence": "Teacher workflow, existing equipment/use, class context and accessibility barriers; avoid identifiable student records.",
+          "deliverable": "Problem statement, baseline and alternatives including non-purchase options.",
+          "acceptance": "Teachers can explain the intended use and observable success criteria before a product is selected.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Room, power and connectivity readiness",
+          "decision": "Can the equipment be installed and used safely and reliably?",
+          "evidence": "Room layout, sightlines, acoustics, mounting, measured load conditions and connectivity; competent personnel for safety assessment.",
+          "deliverable": "Site survey and unresolved readiness risks.",
+          "acceptance": "Demonstrate visibility, sound and intended interaction under actual room conditions; address safety issues before installation.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Funding and procurement evidence",
+          "decision": "Is this an idea, allocation, released funding or an actual purchase process?",
+          "evidence": "Actual institution identity, budget/notice, approval authority, applicable process and amendments.",
+          "deliverable": "Evidence-stage register and specification/offer matrix.",
+          "acceptance": "Every funding/procurement status points to its own dated document; no jump from announcement to confirmed purchase.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Content, software and student data",
+          "decision": "Are content rights, accessibility and data handling appropriate?",
+          "evidence": "Licence terms, renewal cost, language/accessibility needs, account roles and any data collection/sharing.",
+          "deliverable": "Licence/data/access register and renewal responsibilities.",
+          "acceptance": "Test intended lesson content and access boundaries; resolve unsupported permissions and hidden renewals.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Training and acceptance",
+          "decision": "Can teachers operate the delivered system in their workflow?",
+          "evidence": "Agreed tasks, training time, support materials, actual equipment configuration and installation tests.",
+          "deliverable": "Teacher task demonstration, installation acceptance and support handover.",
+          "acceptance": "Representative operators deliver an agreed task and recover from a common problem without installer assistance.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Use and outcome follow-up",
+          "decision": "Is the system used, and what does the evidence say about outcomes?",
+          "evidence": "Usage definitions, baseline/follow-up periods, downtime, support events and limitations of comparison.",
+          "deliverable": "Usage/maintenance review separating association from causal learning claims.",
+          "acceptance": "Reported results preserve periods, denominators, missingness and study-design limits.",
+          "status": "NOT_ASSESSED"
+        }
+      ],
+      "templates": [
+        {
+          "name": "site-readiness",
+          "purpose": "Record room evidence before choosing a display or network.",
+          "columns": [
+            "institution_ref",
+            "room_id",
+            "teaching_task",
+            "existing_assets",
+            "sightline_test_ref",
+            "acoustic_test_ref",
+            "power_assessment_ref",
+            "mounting_review_ref",
+            "connectivity_test_ref",
+            "accessibility_gap",
+            "owner_role",
+            "status"
+          ]
+        },
+        {
+          "name": "funding-stage",
+          "purpose": "Keep need, budget and procurement stages separate.",
+          "columns": [
+            "institution_ref",
+            "need_evidence_ref",
+            "stage",
+            "document_title",
+            "official_url",
+            "fiscal_year",
+            "page_clause",
+            "amount_as_printed",
+            "unit",
+            "amendment_ref",
+            "authority_review",
+            "unknown",
+            "status"
+          ]
+        },
+        {
+          "name": "teacher-acceptance",
+          "purpose": "Record task-based acceptance rather than box delivery.",
+          "columns": [
+            "task_id",
+            "operator_role",
+            "configuration_ref",
+            "training_ref",
+            "expected_result",
+            "observed_result",
+            "evidence_ref",
+            "accessibility_issue",
+            "support_escalation_test",
+            "acceptance_authority",
+            "status"
+          ]
+        },
+        {
+          "name": "usage-review",
+          "purpose": "No named students in public contributions.",
+          "columns": [
+            "asset_or_room_id",
+            "period",
+            "usage_definition",
+            "numerator",
+            "denominator",
+            "downtime",
+            "support_event_ref",
+            "baseline_ref",
+            "followup_ref",
+            "missingness",
+            "alternative_explanation",
+            "interpretation_limit",
+            "status"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "CEHRD educational technology branch",
+          "url": "https://old.cehrd.gov.np/section_details/div/17",
+          "check": "Official search discovery 2026-11-12; direct page timed out. Not a verified school procurement rule or approved equipment specification."
+        }
+      ]
+    },
+    {
+      "id": "researcher",
+      "title": "Student and professional researcher: protocol to reproducible report",
+      "scope": "Nepal technology-business research across quantitative, qualitative, engineering and mixed-method questions. Adapt to the discipline and institutional requirements; no universal research validity claim.",
+      "owners": [
+        "Researcher",
+        "Supervisor or subject reviewer",
+        "Data steward",
+        "Ethics/permission authority where applicable"
+      ],
+      "workflows": [
+        {
+          "title": "Question and literature gap",
+          "decision": "What answerable question is missing, and for whom does it matter?",
+          "evidence": "Original studies, definitions, scope, dates, methods and conflicting findings.",
+          "deliverable": "Literature/evidence matrix and bounded research question.",
+          "acceptance": "A reviewer can trace the gap to the cited work; a topic list is not presented as a literature review.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Design and sampling",
+          "decision": "Which design can answer the question without unsupported extrapolation?",
+          "evidence": "Target population, frame, inclusion rules, selection, feasibility, confounders and missing-data plan.",
+          "deliverable": "Protocol and justified sampling/analysis plan.",
+          "acceptance": "The design matches descriptive, comparative or causal claims; convenience samples are not labelled Nepal-representative.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Ethics, permissions and collection",
+          "decision": "What may be collected, and how are participants or confidential systems protected?",
+          "evidence": "Institutional requirements, required consent/permissions, minimization, retention and access roles.",
+          "deliverable": "Permission/ethics decision and collection instrument.",
+          "acceptance": "Required approvals precede relevant collection; public artifacts omit identifiable/confidential records.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Data provenance and analysis",
+          "decision": "Can another researcher reproduce the transformations?",
+          "evidence": "Source editions, raw-to-derived mapping, units, calendars, code versions, exclusions and analysis logs.",
+          "deliverable": "Data dictionary, transformation log and executable analysis references.",
+          "acceptance": "Re-run on authorized data and reconcile output; distinguish unavailable data from zero.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Robustness and interpretation",
+          "decision": "Could selection, definitions or another explanation change the result?",
+          "evidence": "Missingness, sensitivity checks, contradictions, uncertainty and alternative explanations.",
+          "deliverable": "Robustness review and claims-to-evidence ledger.",
+          "acceptance": "Conclusions remain bounded by evidence/design; unresolved contradictions stay visible.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "title": "Writing, review and dissemination",
+          "decision": "Can readers distinguish methods, results and interpretation?",
+          "evidence": "Claim citations/locators, institution format, reviewer comments, rights and reproducibility limits.",
+          "deliverable": "Report, bibliography, reproducibility checklist and correction record.",
+          "acceptance": "Supervisor/subject reviewer can trace material claims and methods; AI checks are not described as peer review.",
+          "status": "NOT_ASSESSED"
+        }
+      ],
+      "templates": [
+        {
+          "name": "literature-matrix",
+          "purpose": "Capture study methods and limits, not just titles.",
+          "columns": [
+            "source_id",
+            "title",
+            "publisher_author",
+            "original_url",
+            "reference_period",
+            "geography",
+            "question",
+            "design",
+            "population_sample",
+            "finding_locator",
+            "finding_paraphrase",
+            "limitation",
+            "contradiction",
+            "gap_relevance",
+            "checked_on"
+          ]
+        },
+        {
+          "name": "protocol",
+          "purpose": "Plan before collecting or interpreting results.",
+          "columns": [
+            "question_id",
+            "research_question",
+            "unit_of_analysis",
+            "target_population",
+            "sampling_frame",
+            "selection_method",
+            "inclusion_exclusion",
+            "measure_definition",
+            "analysis_plan",
+            "confounder",
+            "missing_data_plan",
+            "permission_ref",
+            "review_status"
+          ]
+        },
+        {
+          "name": "data-dictionary",
+          "purpose": "Retain original definitions and transformations.",
+          "columns": [
+            "variable",
+            "definition",
+            "unit",
+            "stock_or_flow",
+            "reference_period_calendar",
+            "geography_boundary",
+            "source_locator",
+            "allowed_values",
+            "missingness_code",
+            "transformation_ref",
+            "data_access_class",
+            "version"
+          ]
+        },
+        {
+          "name": "reproducibility-review",
+          "purpose": "Track independent review and unresolved findings honestly.",
+          "columns": [
+            "claim_or_output_id",
+            "input_version_ref",
+            "code_command_ref",
+            "expected_output_ref",
+            "reproduced_result_ref",
+            "difference",
+            "sensitivity_check_ref",
+            "reviewer_role",
+            "review_date",
+            "correction",
+            "remaining_limit",
+            "status"
+          ]
+        }
+      ],
+      "sources": []
+    }
+  ]
+}
