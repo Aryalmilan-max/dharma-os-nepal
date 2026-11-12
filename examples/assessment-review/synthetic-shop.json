@@ -1,0 +1,164 @@
+{
+  "status": "ASSESSMENT_PLAN_NOT_AN_AUDIT",
+  "country": "Nepal",
+  "scale": "Micro business / small workshop",
+  "organization_type": "Repair and technical services",
+  "critical_service": false,
+  "sensitive_data": false,
+  "sector_question": "Track diagnosis, customer-device custody, consent, parts, repair tests and return acceptance.",
+  "context_questions": [
+    "What problem and measurable operating outcome matter?",
+    "Which users, sites, branches and field locations are involved?",
+    "Which data is sensitive and who owns it?",
+    "What downtime and data loss can the owner tolerate?",
+    "What budget, staff capacity and support reach are actually available?",
+    "Which current legal, regulatory, procurement and contract instruments apply?",
+    "What existing systems, versions and migration constraints must be respected?"
+  ],
+  "requirements": [
+    {
+      "id": "workflow",
+      "title": "Business workflow",
+      "domain_id": "D10",
+      "requirement": "Map the work from enquiry or input through delivery, payment and support.",
+      "evidence_to_collect": "Observe one complete work cycle and identify users, handoffs, exceptions and delays.",
+      "deliverable": "Workflow map, problem baseline and accountable owner.",
+      "acceptance": "The owner and actual operator can trace a normal case and an exception.",
+      "assessment": "NOT_ASSESSED",
+      "evidence": [],
+      "owner": "TO_BE_ASSIGNED",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required"
+    },
+    {
+      "id": "cost",
+      "title": "Budget and lifecycle cost",
+      "domain_id": "D12",
+      "requirement": "Establish an affordable acquisition, operating and replacement plan.",
+      "evidence_to_collect": "Obtain dated quotations and explicit assumptions for installation, subscriptions, support, power and renewal.",
+      "deliverable": "Comparable lifecycle cost scenarios and spending authority.",
+      "acceptance": "Every cost has a unit, period, basis and owner; unknown costs remain visible.",
+      "assessment": "NOT_ASSESSED",
+      "evidence": [],
+      "owner": "TO_BE_ASSIGNED",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required"
+    },
+    {
+      "id": "access",
+      "title": "Identity and access",
+      "domain_id": "D28",
+      "requirement": "Give each person the access their work requires and remove it when roles change.",
+      "evidence_to_collect": "Inventory users, shared logins, sensitive actions and joiner/leaver procedures.",
+      "deliverable": "Role/access matrix and recovery procedure.",
+      "acceptance": "A test user can perform assigned work and cannot perform prohibited work; access removal is demonstrated.",
+      "assessment": "NOT_ASSESSED",
+      "evidence": [],
+      "owner": "TO_BE_ASSIGNED",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required"
+    },
+    {
+      "id": "backup",
+      "title": "Backup and recovery",
+      "domain_id": "D33",
+      "requirement": "Recover essential records and systems after loss or failure.",
+      "evidence_to_collect": "Identify essential data, tolerable loss, recovery time and available storage/connectivity.",
+      "deliverable": "Backup ownership, retention and restore plan.",
+      "acceptance": "Restore a representative backup in an isolated environment and compare it to the agreed recovery target.",
+      "assessment": "GAP",
+      "evidence": [
+        {
+          "reference": "SYNTHETIC-RESTORE-EXERCISE-01",
+          "locator": "Fixture step 3: restore comparison",
+          "finding": "The selected test record was absent after restore. This is invented test data, not an actual shop incident.",
+          "checked_on": "2026-11-12"
+        }
+      ],
+      "owner": "Synthetic shop operating role",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required",
+      "rationale": "Synthetic exercise: the selected backup could not restore the selected test record.",
+      "next_action": "Investigate the failed restore, correct the backup process, and repeat a controlled restore test.",
+      "target_date": "2026-11-30",
+      "impact": 4,
+      "urgency": 4
+    },
+    {
+      "id": "power",
+      "title": "Power and connectivity",
+      "domain_id": "D37",
+      "requirement": "Match equipment and service operation to actual site conditions.",
+      "evidence_to_collect": "Measure power/load conditions with competent staff; record link availability and required operating hours.",
+      "deliverable": "Site readiness and outage response plan.",
+      "acceptance": "Demonstrate agreed power/link failure behaviour safely before acceptance.",
+      "assessment": "NOT_ASSESSED",
+      "evidence": [],
+      "owner": "TO_BE_ASSIGNED",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required"
+    },
+    {
+      "id": "records",
+      "title": "Records and financial integration",
+      "domain_id": "D13",
+      "requirement": "Keep transaction, stock and service records consistent with actual operations.",
+      "evidence_to_collect": "Inspect current record formats, reconciliation steps, access and software interfaces.",
+      "deliverable": "Record model, reconciliation checklist and integration requirements.",
+      "acceptance": "Reconcile a representative test transaction across affected records without unexplained differences.",
+      "assessment": "NOT_ASSESSED",
+      "evidence": [],
+      "owner": "TO_BE_ASSIGNED",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required"
+    },
+    {
+      "id": "training",
+      "title": "Training and adoption",
+      "domain_id": "D25",
+      "requirement": "Make the solution usable by the people who operate it.",
+      "evidence_to_collect": "Observe language, accessibility, task familiarity, staff turnover and available learning time.",
+      "deliverable": "Role-specific training and operating instructions.",
+      "acceptance": "Representative users complete agreed tasks and an exception without the installer doing the work.",
+      "assessment": "NOT_ASSESSED",
+      "evidence": [],
+      "owner": "TO_BE_ASSIGNED",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required"
+    },
+    {
+      "id": "support",
+      "title": "Support and asset lifecycle",
+      "domain_id": "D58",
+      "requirement": "Define who maintains, repairs, renews and replaces each component.",
+      "evidence_to_collect": "Check local service reach, included warranty terms, spare parts, subscriptions and response responsibilities.",
+      "deliverable": "Asset register, support handover and renewal calendar.",
+      "acceptance": "A realistic support request reaches the accountable person and the escalation route works.",
+      "assessment": "NOT_ASSESSED",
+      "evidence": [],
+      "owner": "TO_BE_ASSIGNED",
+      "priority": "TO_BE_JUSTIFIED",
+      "gap": "Current-state evidence required"
+    }
+  ],
+  "required_outputs": [
+    "Organization and site context",
+    "Current-state evidence and explicit unknowns",
+    "Prioritized requirements and dependencies",
+    "Options and lifecycle cost assumptions",
+    "Delivery, acceptance and support responsibilities",
+    "Evidence gaps and authorized next decisions"
+  ],
+  "limitations": [
+    "Scale labels describe workflow complexity; they are not Nepal statutory enterprise-size definitions.",
+    "A selected profile creates an assessment plan, not proof that requirements are met.",
+    "Critical or sensitive operations need deeper review even in a one-person organization.",
+    "Technology/operating needs are covered; sector-specific professional conclusions require appropriate expertise."
+  ],
+  "is_synthetic": true,
+  "context": {
+    "organization_ref": "SYNTHETIC-DEMO-SHOP (not a real client)",
+    "locality": "Synthetic Nepal locality; not an official-code match",
+    "reference_period": "Synthetic exercise 2026-11-12"
+  }
+}

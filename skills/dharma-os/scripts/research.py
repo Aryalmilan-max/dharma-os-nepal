@@ -12,7 +12,7 @@ import sys
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1] / 'references/nepal-tech-intelligence'
-VERSION = '0.2.0'
+VERSION = '0.3.0'
 ALIASES = {'smartboard': 'classroom', 'स्मार्टबोर्ड': 'classroom', 'स्मार्ट कक्षा': 'classroom', 'भुक्तानी': 'payment',
            'तथ्याङ्क': 'statistics', 'जनशक्ति': 'human resource', 'बोलपत्र': 'procurement',
            'इन्टरनेट': 'internet', 'अनुसन्धान': 'research', 'साइबर': 'cybersecurity',
@@ -250,7 +250,7 @@ def compare(a_id, b_id):
 def dataset_csv():
     rows = library()['observations']
     out = io.StringIO(newline='')
-    writer = csv.DictWriter(out, fieldnames=list(rows[0]))
+    writer = csv.DictWriter(out, fieldnames=list(rows[0]), lineterminator='\n')
     writer.writeheader(); writer.writerows(rows)
     return out.getvalue()
 

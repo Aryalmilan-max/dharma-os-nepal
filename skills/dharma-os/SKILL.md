@@ -2,7 +2,7 @@
 name: dharma-os
 description: Nepal technology-business research across statistics, management, entrepreneurship, marketing, HR, engineering, procurement, provincial and municipal intelligence, technology media, and external business conditions. Use for source-backed Nepal ICT-sector decisions and research briefs. Separates research topics, reported claims, verified evidence, and coverage gaps.
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Dharma OS
@@ -46,6 +46,17 @@ python3 scripts/research.py validate study.json
 The repository includes `web/index.html`, an offline browser interface using the same public research library. It supports exploring branches, inspecting evidence, following worked studies and creating a local study. No account, server, paid API, telemetry or automatic live retrieval is included. Browser drafts stay in that browser and can be exported as JSON; keep confidential participant/client data out of shareable files. The public skill alone remains usable without the web folder.
 
 ## Investigate and decide
+
+To turn an organization plan into a reviewed finding/action report, use the browser **Organizations → Review findings** or read [the assessment review guide](references/nepal-tech-intelligence/assessment-review.md). Record actual evidence, rationale, ownership and follow-up per requirement. Without current-state evidence retain `NOT_ASSESSED`; a `GAP`/`PARTIAL`/`MET` state needs evidence. A `MET` state also needs an actual acceptance reference and reviewer role/date; exclusions need a reason and review. These are structural requirements, not truth or compliance certification.
+
+```bash
+python3 scripts/organizations.py assess --scale micro --type repair > assessment.json
+python3 scripts/assessments.py validate assessment.json
+python3 scripts/assessments.py summary assessment.json
+python3 scripts/assessments.py report assessment.json --format html > decision-report.html
+```
+
+Keep unknowns in the report and separate investigation tasks from evidence-backed remediation. Optional impact/urgency ratings only order a user-supplied action queue; they are not a calibrated risk model or measured readiness percentage. Obtain authoritative review for the actual bank, school or other institution. Use the synthetic example only to demonstrate tool behavior, never as real customer or research evidence.
 
 For commercial banks, small technology shops, schools/colleges or student/professional researchers, use the detailed `sector-packs.json` and `scripts/packs.py list`, `show <pack-id>` or `export <pack-id> --out <new-folder>`. IDs are `commercial-bank`, `tech-shop`, `school`, `researcher`. Each pack supplies six sector-specific decision workflows and four blank CSV working templates. Choose the actual task and evidence rather than reciting every checklist. Bank regulatory mapping requires exact current instruments and applicability/amendment review; historical NRB IT guidance is not a complete current compliance audit. School equipment delivery is not evidence of learning outcomes. Research templates do not establish representativeness or academic approval. Exports refuse to overwrite an existing folder and never invent operational records.
 
